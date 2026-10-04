@@ -22,6 +22,27 @@ COMPUTE001 correctness method: FP32 C[i]=A[i]+B[i], A[i]=(i%31)-15, B[i]=((i*7)%
 
 No performance measurement was made. The ISO timestamps identify capture/run events and are not GPU kernel timing evidence; no duration, throughput or speedup is derived from them. Adapter support for `timestamp-query` and `shader-f16` was reported, but neither was enabled or actually verified in this run. No device loss was recorded before export; loss recovery was not tested.
 
+### TIMING001 compute timestamp validation
+
+Two actual Android runs explicitly requested and enabled timestamp-query, wrote timestamps at compute-pass begin/end, and resolved/copied/mapped the results. Both device feature lists contain timestamp-query. Each run covers N=1025/65536/1048576 with 1/32 dispatches per pass, fixed-seed shuffled configuration blocks, 10 excluded warm-up passes and 30 measured passes per block. All correctness summaries report PASS with zero errors/non-finite values; compilation and GPU error arrays are empty. The exports contain correctness summaries, not full output arrays for an independent offline element-by-element check. See [run 1](../results/raw/TIMING001-2026-10-04T11-25-41-874Z.json) and [run 2](../results/raw/TIMING001-2026-10-04T11-39-21-730Z.json).
+
+All 240 timestamp deltas per run were independently recomputed from decimal endpoint strings using integer subtraction. Measured-only median, nearest-rank p95 (29th of 30), min/max and zero counts matched the exported summaries. GPU pass intervals exclude resolve/copy/readback but may include pass scheduling. The separate submit-to-completion wall interval includes the submitted resolve/copies and excludes mapping/CPU checking. ISO timestamps are event identifiers, not kernel durations.
+
+GPU compute-pass duration (milliseconds; runs kept separate):
+
+| N | Dispatches/pass | Run 1 median | Run 1 p95 | Run 2 median | Run 2 p95 | Zero count R1 / R2 |
+|---:|---:|---:|---:|---:|---:|---:|
+| 1025 | 1 | 0.065536 | 3.145728 | 0.065536 | 0.655360 | 6 / 6 |
+| 1025 | 32 | 0.327680 | 3.211264 | 0.327680 | 0.393216 | 0 / 0 |
+| 65536 | 1 | 0.065536 | 2.490368 | 0.065536 | 0.196608 | 0 / 0 |
+| 65536 | 32 | 2.523136 | 6.160384 | 2.457600 | 3.670016 | 0 / 0 |
+| 1048576 | 1 | 1.114112 | 4.259840 | 1.114112 | 1.900544 | 0 / 0 |
+| 1048576 | 32 | 9.404416 | 12.320768 | 10.125312 | 11.206656 | 0 / 0 |
+
+Separately in each run, raw timestamps, consecutive unique timestamp spacings and pass-duration deltas have GCD 65536 ns: an observed 65.536 microsecond grid. All endpoints/deltas are multiples of this grid; even-count median averaging can yield half-grid values. This is empirical granularity of these records, not an established physical timer resolution or a universal browser rule. The smallest single-dispatch configuration has 6/30 measured zeros in both runs; zeros do not mean no GPU work.
+
+Every run-2 GPU-pass p95 is lower, but not every median falls. DevTools state was not recorded in either original JSON; no controlled comparison or causal attribution to DevTools is possible. Manual conditions in both files report no noticeable warmth (temperature unmeasured), not charging at 100%, and the developer flag disabled; neither file records background entry. Preserve all zero and long-tail samples and the two original files; do not combine them into one statistical population. Repeated 32-dispatch passes overwrite the same output and may involve cache and resource dependencies. Their pass duration is not converted into independent single-kernel latency. No strict workload-time monotonicity, bottleneck, peak bandwidth or GEMM benchmark conclusion is claimed. shader-f16 remains unverified.
+
 ## 4 Baseline profiling
 
 Table: prompt tokens, prefill median/p95, decode tokens/s median/p95, token-latency distribution, memory, dispatch count. Include grouped per-kernel table and stacked decode breakdown. State whether denominator is GPU sum or token wall time; label residual separately.

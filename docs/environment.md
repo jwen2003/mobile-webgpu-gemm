@@ -49,6 +49,26 @@ COMPUTE001 used 4100-byte buffers, three storage bindings, workgroup_size(64) an
 
 The sample displayed roughly millisecond-scale values with visible variation. Exact statistic, units and sample distribution were not captured. Do not use these observations in a performance table or infer timing precision from them.
 
+## TIMING001 actual timestamp environment
+
+Evidence: [run 1](../results/raw/TIMING001-2026-10-04T11-25-41-874Z.json) and [run 2](../results/raw/TIMING001-2026-10-04T11-39-21-730Z.json). Both ran at `http://localhost:8000/src/benchmark/timing.html` with secureContext true and the same exported userAgent as COMPUTE001. Adapter info remained vendor `arm`, architecture `gen-5`, device/description empty. No specific model is inferred from empty fields. Both runs exported identical adapter/device feature lists and limits; complete limit records remain in each JSON. Relevant buffer/compute limits match the COMPUTE001 table above.
+
+Both devices reported `["core-features-and-limits", "timestamp-query"]` with `requiredFeatures: ["timestamp-query"]`. Compute-pass timestampWrites, query resolve and mapped 64-bit timestamp readback actually succeeded. Unlike COMPUTE001, timestamp-query is now execution-validated. shader-f16 is adapter-supported but was not enabled or tested. Both runs completed 240 passes, their correctness summaries all PASS, with empty compilation messages/GPU error records and no recorded device loss.
+
+| Recorded condition | Run 1 | Run 2 |
+|---|---|---|
+| Start ISO time | 2026-10-04T11:25:38.441Z | 2026-10-04T11:39:17.730Z |
+| End ISO time | 2026-10-04T11:25:40.884Z | 2026-10-04T11:39:20.220Z |
+| Thermal (manual text) | 手感无明显发热；未测量温度 | 手感无明显发热；未测量温度 |
+| Charging (manual text) | 未充电：电量100% | 未充电：电量100% |
+| WebGPU Developer Features flag (manual text) | 已停用 | 已停用 |
+| Initial page visibility | visible | visible |
+| Background entry during run / sampling | false / false | false / false |
+| Visibility events | empty | empty |
+| DevTools state | Not recorded in original JSON | Not recorded in original JSON |
+
+Manual flag/charging/thermal values are self-reported, not independently probed; temperature was not measured and thermal stability is not established. Each run independently exhibits a 65536 ns (65.536 microseconds) timestamp grid, established from integer GCDs of raw timestamps, unique timestamp spacings and durations. The smallest single-dispatch configuration has 6/30 measured zeros in both runs. Preserve those zeros and the tails; the grid limits interpretation of short intervals. It does not establish an intrinsic hardware resolution or a general browser quantization rule. See [the per-run comparison](experiment_log.md#timing001-android-webgpu-compute-timestamp-validation). Lower run-2 p95 values cannot be causally attributed to DevTools because its state is absent from both files.
+
 ## Per-session conditions
 
 Session ID / local date and timezone / start and end time / battery percent / charging state / power mode / screen brightness / background activity / case and cooling / ambient temperature if measured / exposed device temperatures and their source / idle interval / Chrome flags / browser restart / OS or browser changes.

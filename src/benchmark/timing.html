@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TIMING001 compute timestamp validation</title>
+<style>
+body { font-family: system-ui, sans-serif; max-width: 1000px; margin: 24px auto; padding: 0 16px; }
+button, input { padding: 10px; margin: 4px; } label { display: block; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #eee; padding: 12px; }
+</style>
+<h1>TIMING001 compute timestamp validation</h1>
+<p>FP32 向量加法；三个 N × 每 pass 1/32 dispatch；10 warm-up + 30 measured pass。
+这是计时链路验证，不是正式 GEMM benchmark。请保持页面在前台。</p>
+<p>GPU pass 时间可能包含 pass 内调度成本。32 dispatch 重复覆盖同一输出，可能涉及缓存与资源依赖；
+不得除以 32 后称为独立 kernel latency。零时长样本保留，不要求工作量与时间严格单调。</p>
+<label>Thermal 状态（手动观察）<input id="thermal" value="UNKNOWN"></label>
+<label>Charging 状态<input id="charging" value="UNKNOWN"></label>
+<label>WebGPU Developer Features flag 状态<input id="flag" value="UNKNOWN"></label>
+<p>以上输入仅记录状态，不会修改 Chrome flags。</p>
+<button id="run">运行 TIMING001</button>
+<button id="download" disabled>下载结果 JSON</button>
+<p id="status" role="status">NOT_RUN</p>
+<pre id="summary"></pre>
+<details><summary>完整原始记录</summary><pre id="evidence"></pre></details>
+<p><a href="./">COMPUTE001 smoke test</a></p>
+<script type="module" src="timing.js"></script>
+</html>
