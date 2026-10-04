@@ -22,9 +22,30 @@
 | Skia backend | GaneshVulkan | Browser drawing backend; does not establish WebGPU backend |
 | Timestamp sample | Animated output and changing nonzero render-pass duration | User observation on 2026-10-03; raw queries not captured |
 
-## Capability probe still required
+## COMPUTE001 exported adapter and device evidence
 
-Record actual GPUAdapter info, adapter/device features and relevant limits as exported JSON. Explicitly test `timestamp-query`, `shader-f16`, requestDevice success and device loss. Record maxBufferSize, maxStorageBufferBindingSize, maxComputeWorkgroupStorageSize, maxComputeInvocationsPerWorkgroup and per-axis workgroup limits. Actual WebGPU backend and driver: pending if not exposed.
+Source: [original phone JSON](../results/raw/COMPUTE001-2026-10-04T10-53-11-629Z.json), environment ISO time `2026-10-04T10:53:07.372Z`. Page: `http://localhost:8000/src/benchmark/`; secureContext and webgpuExposed both true. Exported userAgent: `Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36`. Preserve this browser-reported string separately from the earlier device/version screenshots; it does not replace their OS/build evidence.
+
+Adapter info: vendor `arm`, architecture `gen-5`, device `""`, description `""`. Empty values are retained; no specific GPU model, backend or driver is inferred from this export. The full adapter feature list is preserved in the JSON. Adapter support for `timestamp-query` and `shader-f16` is true, but both are NOT_TESTED here. `requiredFeatures: []`; actual device features: `["core-features-and-limits"]`. Neither optional feature was enabled.
+
+The default device limits below differ from the adapter limits in seven recorded fields. Values are copied from the export; byte units apply to buffer sizes, storage sizes and alignment. These are exposed limits, not measured allocation capacity or performance.
+
+| Limit | Adapter | Actual device |
+|---|---:|---:|
+| maxBufferSize | 4294967292 | 268435456 |
+| maxStorageBufferBindingSize | 2147483644 | 134217728 |
+| maxStorageBuffersPerShaderStage | 16 | 8 |
+| maxBindGroups | 4 | 4 |
+| maxBindingsPerBindGroup | 1000 | 1000 |
+| minStorageBufferOffsetAlignment | 256 | 256 |
+| maxComputeWorkgroupStorageSize | 32768 | 16384 |
+| maxComputeInvocationsPerWorkgroup | 1024 | 256 |
+| maxComputeWorkgroupSizeX | 1024 | 256 |
+| maxComputeWorkgroupSizeY | 1024 | 256 |
+| maxComputeWorkgroupSizeZ | 64 | 64 |
+| maxComputeWorkgroupsPerDimension | 65535 | 65535 |
+
+COMPUTE001 used 4100-byte buffers, three storage bindings, workgroup_size(64) and 17 workgroups, within actual device limits. requestDevice succeeded and all 1025 FP32 sums were independently verified exactly (max absolute error 0). Compilation messages and GPU error records were empty; no device loss was recorded before export. Device-loss recovery has not been deliberately tested. This run contains no performance measurement; ISO timestamp differences must not be reported as GPU kernel time. FP16 and timestamp-query execution still require separate tests.
 
 The sample displayed roughly millisecond-scale values with visible variation. Exact statistic, units and sample distribution were not captured. Do not use these observations in a performance table or infer timing precision from them.
 

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WebGPU compute smoke test</title>
+<style>
+body { font-family: system-ui, sans-serif; max-width: 900px; margin: 24px auto; padding: 0 16px; }
+button { padding: 12px; margin: 4px; } pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #eee; padding: 12px; }
+</style>
+<h1>WebGPU 向量加法 smoke test</h1>
+<p>FP32 · N=1025 · workgroup_size(64) · 17 workgroups。只验证正确性，不测性能。
+可选 feature 支持情况不代表已验证 FP16 或 timestamp 功能。</p>
+<button id="detect">检测 WebGPU</button>
+<button id="run" disabled>运行向量加法</button>
+<button id="download" disabled>下载结果 JSON</button>
+<p id="status" role="status">尚未检测</p>
+<pre id="evidence"></pre>
+<script type="module" src="smoke.js"></script>
+</html>

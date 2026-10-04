@@ -1,2 +1,4 @@
 # Preserve original PDF bytes, including cross-reference offsets.
 *.pdf binary
+# Preserve downloaded experiment JSON bytes without newline normalization.
+/results/raw/*.json -text
