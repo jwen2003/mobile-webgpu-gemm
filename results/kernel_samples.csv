@@ -1,0 +1,1 @@
+run_id,session_id,experiment_id,commit,variant,m,n,k,input_dtype,accum_dtype,output_dtype,weight_format,tile_m,tile_n,tile_k,wg_x,wg_y,wg_z,batch_index,sample_index,warmup_count,dispatches_in_interval,gpu_time_ns,timing_scope,max_abs_error,max_rel_error,nonfinite_count,correctness_pass,logical_bytes,byte_model_id,status,raw_path

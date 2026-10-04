@@ -1,0 +1,1 @@
+device_id,experiment_id,variant,m,n,k,weight_format,input_dtype,accum_dtype,output_dtype,tile_m,tile_n,tile_k,wg_x,wg_y,wg_z,timing_scope,sample_count,median_ms,p95_ms,gflops,effective_gb_s,byte_model_id,max_abs_error,correctness_pass,baseline_id,speedup,source_run_ids

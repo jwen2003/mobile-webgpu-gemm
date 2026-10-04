@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+
+# Build output and caches
+/dist/
+/build/
+.cache/
+.parcel-cache/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*.tsbuildinfo
+
+# Temporary files and local editor state
+/tmp/
+/temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+.aws/
+.ssh/
+.npmrc
+.pypirc
+credentials.json
+service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Keep results/raw, CSV samples, figures, and experiment logs tracked.
