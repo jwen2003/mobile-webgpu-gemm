@@ -13,8 +13,6 @@ Development device: OnePlus Ace 6 Supreme Edition, Dimensity 9500, ARM Mali-G1-U
 - `docs/requirements.md`: assignment-to-evidence checklist.
 - `report/performance_report.md`: English final-report skeleton.
 - `results/*.csv`: schemas for raw samples and summary tables; header-only until measured.
-- `updates/daily_update_template.md`: founder email template.
-- `updates/environment_update_draft.md`: first factual update, ready for review.
 
 ## Daily workflow
 

@@ -52,3 +52,6 @@ service-account*.json
 *.litertlm
 *.task
 *.safetensors
+
+# Private local email correspondence
+/updates/
