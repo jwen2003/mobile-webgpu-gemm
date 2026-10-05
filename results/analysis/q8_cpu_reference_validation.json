@@ -1,0 +1,210 @@
+{
+  "evidenceType": "CPU_REFERENCE_PREFLIGHT_ONLY",
+  "phoneStatus": "NOT_RUN",
+  "contractVersion": "PART2-QROW-v1",
+  "bits": 8,
+  "status": "PASS",
+  "thresholds": {
+    "exact": {
+      "atol": 0,
+      "rtol": 0
+    },
+    "fractionalSemantic": {
+      "atol": 0.02,
+      "rtol": 0.01
+    },
+    "fractionalHigh": {
+      "atol": 0.04,
+      "rtol": 0.04
+    },
+    "fallback": {
+      "atol": 0.0002,
+      "rtol": 0.0002
+    },
+    "relativeFloor": 1e-8
+  },
+  "rows": [
+    {
+      "shape": {
+        "id": "representative-decode",
+        "M": 1,
+        "K": 1024,
+        "N": 1024,
+        "performance": true,
+        "source": "REPRESENTATIVE_NOT_CONFIRMED_LOGICAL_MODEL_SHAPE"
+      },
+      "kind": "exact",
+      "canonicalVsHigh": {
+        "status": "PASS",
+        "elementCount": 1024,
+        "maxAbsoluteError": 0,
+        "maxRelativeError": 0,
+        "errorElementCount": 0,
+        "nonFiniteCount": 0,
+        "worst": {
+          "index": 0,
+          "expected": -10,
+          "actual": -10
+        },
+        "tolerance": {
+          "atol": 0,
+          "rtol": 0
+        }
+      },
+      "canonicalVsFp32": {
+        "status": "PASS",
+        "elementCount": 1024,
+        "maxAbsoluteError": 0,
+        "maxRelativeError": 0,
+        "errorElementCount": 0,
+        "nonFiniteCount": 0,
+        "worst": {
+          "index": 0,
+          "expected": -10,
+          "actual": -10
+        },
+        "tolerance": {
+          "atol": 0,
+          "rtol": 0
+        }
+      }
+    },
+    {
+      "shape": {
+        "id": "representative-decode",
+        "M": 1,
+        "K": 1024,
+        "N": 1024,
+        "performance": true,
+        "source": "REPRESENTATIVE_NOT_CONFIRMED_LOGICAL_MODEL_SHAPE"
+      },
+      "kind": "fractional",
+      "canonicalVsHigh": {
+        "status": "PASS",
+        "elementCount": 1024,
+        "maxAbsoluteError": 0.017425537109375,
+        "maxRelativeError": 1.0930232558139534,
+        "errorElementCount": 0,
+        "nonFiniteCount": 0,
+        "worst": {
+          "index": 21,
+          "expected": 1.760589599609375,
+          "actual": 1.7431640625
+        },
+        "tolerance": {
+          "atol": 0.04,
+          "rtol": 0.04
+        }
+      },
+      "canonicalVsFp32": {
+        "status": "PASS",
+        "elementCount": 1024,
+        "maxAbsoluteError": 0.017425537109375,
+        "maxRelativeError": 1.0930232558139534,
+        "errorElementCount": 0,
+        "nonFiniteCount": 0,
+        "worst": {
+          "index": 21,
+          "expected": 1.760589599609375,
+          "actual": 1.7431640625
+        },
+        "tolerance": {
+          "atol": 0.04,
+          "rtol": 0.04
+        }
+      }
+    },
+    {
+      "shape": {
+        "id": "representative-prefill",
+        "M": 128,
+        "K": 1024,
+        "N": 1024,
+        "performance": true,
+        "source": "REPRESENTATIVE_NOT_CONFIRMED_LOGICAL_MODEL_SHAPE"
+      },
+      "kind": "exact",
+      "canonicalVsHigh": {
+        "status": "PASS",
+        "elementCount": 131072,
+        "maxAbsoluteError": 0,
+        "maxRelativeError": 0,
+        "errorElementCount": 0,
+        "nonFiniteCount": 0,
+        "worst": {
+          "index": 0,
+          "expected": 38,
+          "actual": 38
+        },
+        "tolerance": {
+          "atol": 0,
+          "rtol": 0
+        }
+      },
+      "canonicalVsFp32": {
+        "status": "PASS",
+        "elementCount": 131072,
+        "maxAbsoluteError": 0,
+        "maxRelativeError": 0,
+        "errorElementCount": 0,
+        "nonFiniteCount": 0,
+        "worst": {
+          "index": 0,
+          "expected": 38,
+          "actual": 38
+        },
+        "tolerance": {
+          "atol": 0,
+          "rtol": 0
+        }
+      }
+    },
+    {
+      "shape": {
+        "id": "representative-prefill",
+        "M": 128,
+        "K": 1024,
+        "N": 1024,
+        "performance": true,
+        "source": "REPRESENTATIVE_NOT_CONFIRMED_LOGICAL_MODEL_SHAPE"
+      },
+      "kind": "fractional",
+      "canonicalVsHigh": {
+        "status": "PASS",
+        "elementCount": 131072,
+        "maxAbsoluteError": 0.03326416015625,
+        "maxRelativeError": 238037.109375,
+        "errorElementCount": 0,
+        "nonFiniteCount": 0,
+        "worst": {
+          "index": 66575,
+          "expected": -2.50189208984375,
+          "actual": -2.53515625
+        },
+        "tolerance": {
+          "atol": 0.04,
+          "rtol": 0.04
+        }
+      },
+      "canonicalVsFp32": {
+        "status": "PASS",
+        "elementCount": 131072,
+        "maxAbsoluteError": 0.03326416015625,
+        "maxRelativeError": 238037.109375,
+        "errorElementCount": 0,
+        "nonFiniteCount": 0,
+        "worst": {
+          "index": 66575,
+          "expected": -2.50189208984375,
+          "actual": -2.53515625
+        },
+        "tolerance": {
+          "atol": 0.04,
+          "rtol": 0.04
+        }
+      }
+    }
+  ],
+  "basis": "Full fixed-seed representative input domains,actual unsigned codes/half A/scale. Canonical half accumulation vs binary64/FP32 remains within frozen bounds. Independent collective D interpreter/page mocks checked separately. This is not proof of every legal WGSL implementation or arbitrary model input.",
+  "limitations": "Some Q8 products/cancellation are subnormal;WGSL/compiler flush/rounding behavior can differ. Existing engineering thresholds remain frozen before phone execution;failures require diagnosis,not automatic relaxation."
+}

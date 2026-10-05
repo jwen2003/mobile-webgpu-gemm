@@ -1,0 +1,192 @@
+{
+  "verification": "PASS",
+  "rawSha256": "2b90dcaefe5777ff780ab85e947d05b62d8619dc8cbdc3f60e44c28b86877a4d",
+  "smallOutputsIndependentlyChecked": 6476,
+  "performance": [
+    {
+      "shape": {
+        "id": "representative-decode",
+        "M": 1,
+        "K": 1024,
+        "N": 1024,
+        "performance": true,
+        "source": "REPRESENTATIVE_NOT_CONFIRMED_LOGICAL_MODEL_SHAPE"
+      },
+      "variants": {
+        "A": {
+          "count": 30,
+          "median": 1081344.0,
+          "p95": 2359296,
+          "min": 655360,
+          "max": 2359296,
+          "zeroCount": 0,
+          "gridNs": 65536
+        },
+        "B": {
+          "count": 30,
+          "median": 4849664.0,
+          "p95": 11468800,
+          "min": 2883584,
+          "max": 11599872,
+          "zeroCount": 0,
+          "gridNs": 65536
+        },
+        "C": {
+          "count": 30,
+          "median": 1015808.0,
+          "p95": 1245184,
+          "min": 720896,
+          "max": 1310720,
+          "zeroCount": 0,
+          "gridNs": 65536
+        },
+        "D": {
+          "count": 30,
+          "median": 1245184.0,
+          "p95": 1966080,
+          "min": 917504,
+          "max": 1966080,
+          "zeroCount": 0,
+          "gridNs": 65536
+        }
+      },
+      "speedups": {
+        "AoverD": 0.868421052631579,
+        "BoverD": 3.8947368421052633,
+        "CoverD": 0.8157894736842105
+      },
+      "completePathWallMs": {
+        "A": {
+          "count": 30,
+          "median": 69.64999997615814,
+          "p95": 86.5,
+          "min": 65.09999996423721,
+          "max": 87.90000003576279,
+          "zeroCount": 0
+        },
+        "B": {
+          "count": 30,
+          "median": 76.59999996423721,
+          "p95": 82.80000001192093,
+          "min": 68.60000002384186,
+          "max": 88.30000001192093,
+          "zeroCount": 0
+        },
+        "C": {
+          "count": 30,
+          "median": 69.89999997615814,
+          "p95": 74.59999996423721,
+          "min": 67.39999997615814,
+          "max": 79.40000003576279,
+          "zeroCount": 0
+        },
+        "D": {
+          "count": 30,
+          "median": 3.9000000059604645,
+          "p95": 4.700000047683716,
+          "min": 2.600000023841858,
+          "max": 4.800000011920929,
+          "zeroCount": 0
+        }
+      },
+      "completePathRatiosToD": {
+        "AoverD": 17.85897432556676,
+        "BoverD": 19.64102560183784,
+        "CoverD": 17.923076889571355
+      }
+    },
+    {
+      "shape": {
+        "id": "representative-prefill",
+        "M": 128,
+        "K": 1024,
+        "N": 1024,
+        "performance": true,
+        "source": "REPRESENTATIVE_NOT_CONFIRMED_LOGICAL_MODEL_SHAPE"
+      },
+      "variants": {
+        "A": {
+          "count": 30,
+          "median": 8749056.0,
+          "p95": 12058624,
+          "min": 7405568,
+          "max": 15466496,
+          "zeroCount": 0,
+          "gridNs": 65536
+        },
+        "B": {
+          "count": 30,
+          "median": 13303808.0,
+          "p95": 16646144,
+          "min": 12058624,
+          "max": 17563648,
+          "zeroCount": 0,
+          "gridNs": 65536
+        },
+        "C": {
+          "count": 30,
+          "median": 2490368.0,
+          "p95": 3145728,
+          "min": 2031616,
+          "max": 3997696,
+          "zeroCount": 0,
+          "gridNs": 65536
+        },
+        "D": {
+          "count": 30,
+          "median": 3735552.0,
+          "p95": 4521984,
+          "min": 2949120,
+          "max": 5308416,
+          "zeroCount": 0,
+          "gridNs": 65536
+        }
+      },
+      "speedups": {
+        "AoverD": 2.3421052631578947,
+        "BoverD": 3.56140350877193,
+        "CoverD": 0.6666666666666666
+      },
+      "completePathWallMs": {
+        "A": {
+          "count": 30,
+          "median": 77.24999997019768,
+          "p95": 85.80000001192093,
+          "min": 72.09999996423721,
+          "max": 92.59999996423721,
+          "zeroCount": 0
+        },
+        "B": {
+          "count": 30,
+          "median": 81.19999998807907,
+          "p95": 88.5,
+          "min": 77.60000002384186,
+          "max": 100.10000002384186,
+          "zeroCount": 0
+        },
+        "C": {
+          "count": 30,
+          "median": 70.90000000596046,
+          "p95": 83.5,
+          "min": 67.79999995231628,
+          "max": 102.5,
+          "zeroCount": 0
+        },
+        "D": {
+          "count": 30,
+          "median": 6.450000017881393,
+          "p95": 8.5,
+          "min": 5,
+          "max": 8.899999976158142,
+          "zeroCount": 0
+        }
+      },
+      "completePathRatiosToD": {
+        "AoverD": 11.97674414822276,
+        "BoverD": 12.589147250072493,
+        "CoverD": 10.992248032465698
+      }
+    }
+  ],
+  "scope": "Full exported small outputs and seeded recorded worst references independently checked;large full actual arrays absent,online maxima/counts not independently reconstructed"
+}

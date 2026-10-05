@@ -1,0 +1,6 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PART2Q8ABCD · Q8 FP16 fused D</title>
+<style>body{font:16px system-ui;margin:20px;max-width:1000px}label{display:block;margin:8px}button,input,select{padding:10px}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style>
+<h1>PART2Q8ABCD · 同轮 Q8 FP16 A/B/C/D</h1><p>PART2-QROW-v1：合成 Q8 权重，A/B/C CPU 预反量化，D 在 GEMM 内解包反量化，FP16 activation/累加。代表性 M=1/128,K=N=1024，非已确认真实逻辑层。CPU reference 可能需要较长时间；保持前台等待。固定 C：vec4 输出列加载/计算，D 融合 Q8 解包/反量化；另采完整路径。无 sweep、subgroup 或自动调参。</p>
+<p>规定路径要求 shader-f16。若不支持，可打开 <a href="part2_ab.html">独立 FP32 A/B fallback 页面</a>，手动选 Q8，再点击 fallback；它不是 FP16 A–D 验收，也没有 C/D fallback。</p><label>量化格式 <select id="bits"><option value="8">Q8 unsigned</option></select></label>
+<label>Thermal <input id="thermal" value="UNKNOWN"></label><label>Charging <input id="charging" value="UNKNOWN"></label><label>DevTools <input id="devtools" value="UNKNOWN"></label><label>WebGPU Developer Features flag <input id="flag" value="UNKNOWN"></label>
+<button id="run">运行 Q8 FP16 A/B/C/D</button><button id="fallback" hidden>运行独立 FP32 fallback</button><button id="download">下载 JSON</button><p id="status">NOT_RUN</p><pre id="summary"></pre><script type="module" src="./part2_q8_abcd.js"></script></html>

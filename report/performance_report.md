@@ -291,3 +291,39 @@ Separately sampled complete-path wall median / p95(ms):
 Each scope/shape/variant10warmups+30measured;all24permutations present,position7/8,pair precedence15/15,seeded orders independently reproduced. All zero counts0;kernel endpoint GCD65536ns,PRELIMINARY under frozen resolution rule. Warmups cycle first6permutations (corrected previous first10 wording;measured balance unchanged). No raw samples changed.
 
 D/C kernel median ratios1.21875(M1),1.527778(M128):D slower than C. D faster than B in both shapes,and faster than A only atM128 (A/D2.436364 vsM1 .871795). Complete-path A/D17.9474(M1),12.1879(M128) is a resident-packed single-use CPU-preprocessing scenario,not GPU speedup or model speedup. ABC actually redo CPU decode/C layout/upload per sample;D fused decode is already in its pass. Static weights can prepare once/reuse,so kernel-only and one-time costs remain relevant. Do not add CPU ms to timestamps or add independent medians. Logical D B16 intermediate0 does not establish physical GPU memory savings;combined harness allocates ABC matrices. One run does not fulfill independent repetition/sweep/Q8/real logical shape/Adreno or Part1 breakdown gaps. No commit/push.
+
+
+## Q8 FP16 A-D pilot — phone NOT_RUN
+
+Original p2 does not specify Q8 packing/signedness:PART2-QROW-v1 project format unsigned0..255,four low-byte-first codes/u32,K rows word-aligned,group32 K per column,half scale1/512 for fractional inputs,u32 zero point around128;negative dequant comes from signed q-zp,not INT8 sign extension. FP16 activation/increasing-K fma/output contract unchanged. Same A/B/C WGSL;new fused D byte decode with same C mapping. Shared controller/decoder parameterized,Q4 entry/shaders preserved.
+
+Full CPU-domain Q8 numerical preflight PASS:canonical vs high/FP32 max fractional absolute error0.017425537109375(M1),0.03326416015625(M128),exact0. Explicitly reviewed existing thresholds retained before phone run:semantic.02/.01,high/FP32.04/.04,exact0/0;engineering policy for bounded inputs,not universal GPU guarantee. See docs/part2_q8.md and results/analysis/q8_cpu_reference_validation.json.
+
+Question/setup/acceptance:Q8 same-run A-D on representative M1/M128 K=N1024,all full outputs/probe2048 required,tails/extreme unsigned bytes/zero dequant checked. Both prepared-input GPU pass and separately sampled actual complete-path conversion/upload wall;10warmups/30measured,24permutations plus balanced six,all raw timestamps/wall/zeros/tails/order exported. Static preparation reuse caveat unchanged. Ratios use this Q8 run only;history Q4 is no denominator/cause proof. Phone result NOT_RUN;computer preflight is CPU_ONLY. Independent FP32 fallback is manual Q8 A/B on existing page,not required A-D acceptance.
+
+Phone http://localhost:8000/src/benchmark/part2_q8_abcd.html ;confirm Q8FP16,fill actual environment,run once foreground,download PART2Q8ABCD-FP16 JSON even on failure. No old Q4 performance rerun. Q8 phone acceptance,real logical model shape,targetAdreno,Part1 metrics remain gaps;sweep and>=five independent repeats next after acceptance,not implemented now. Temporary integrity snapshots stay local;no commit/push.
+
+
+## PART2Q8ABCD FP16 actual phone result — 2026-10-05 COMPLETE
+
+Original PART2Q8ABCD-FP16-2026-10-05T16-36-52-920Z.json preserved byte-for-byte,SHA256 2b90dcaefe5777ff780ab85e947d05b62d8619dc8cbdc3f60e44c28b86877a4d. Quantization8-bit unsigned0..255,not INT8/Gemma-native format;required FP16 path COMPLETE. Independent audit `python scripts/verify_part2_q8_result.py`;results/analysis/part2_q8_abcd_verified.json.19 initial correctness records and640 sampling records all PASS;errors/compilation messages empty. Canonical semantic maximum absolute error0;ordinary high/FP32 max absolute error0.03326416015625 under frozen preflight-reviewed thresholds. All four precision probes2048 vs FP32/high2050.
+
+Independently replayed6476 exported small output values,full small saved references,unsigned byte packing,seeds/explicit extreme override,recorded worst references,timestamps,orders/statistics,hashes and cleanup. Large complete actual arrays absent:large full-output correctness remains online evidence,not independent offline replay.
+
+GPU pass median / nearest-rank p95(ms),representative K=N1024:
+
+|M|A|B|C|D|
+|---|---|---|---|---|
+|1|1.081344 / 2.359296|4.849664 / 11.468800|1.015808 / 1.245184|1.245184 / 1.966080|
+|128|8.749056 / 12.058624|13.303808 / 16.646144|2.490368 / 3.145728|3.735552 / 4.521984|
+
+Separately sampled complete-path wall median / p95(ms):
+
+|M|A|B|C|D|
+|---|---|---|---|---|
+|1|69.650 / 86.500|76.600 / 82.800|69.900 / 74.600|3.900 / 4.700|
+|128|77.250 / 85.800|81.200 / 88.500|70.900 / 83.500|6.450 / 8.500|
+
+Each scope/shape/variant10warmup+30measured;24permutations+six balanced additions,position7/8,pair precedence15/15 verified. All zero counts0;observed endpoint grid65536ns,PRELIMINARY under the predefined duration criterion. M1 A/C median difference1081344-1015808=65536ns;no stable small benefit claimed. D/C kernel ratios1.225806(M1),1.5(M128),D slower than C. A/D .868421(M1),2.342105(M128). Complete path favors D because ABC repeatedly perform CPU decode/C layout/weight upload;not applicable to preprocessed-weight reuse,not GPU/model acceleration. CPU+GPU times not summed. All ratios use this run/scope;separate Q4/Q8 runs are descriptive only,not controlled format causality.
+
+Phone pilot acceptance complete;finite sweep and>=five independent repeats remain next,not performed. Real logical Gemma shape,targetAdreno and Part1 token/phase/memory/credible kernel breakdown gaps remain. No commit/push.

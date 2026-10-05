@@ -190,3 +190,6 @@ PART2ABC 2026-10-05 phone evidence: {"thermal": "未明显发热，温度未测�
 
 
 PART2ABCD 2026-10-05 actual evidence: {"thermal": "未明显发热，温度未测量", "charging": "未充电：电量100%", "devtools": "未开启", "flag": "已停用"};visibility={"initialState": "visible", "enteredBackground": false, "samplingEnteredBackground": false, "events": []};device features=["core-features-and-limits", "timestamp-query", "shader-f16"]. Observed grid65536ns;physical GPU memory NOT_MEASURED. Raw remains unchanged.
+
+
+PART2Q8ABCD actual2026-10-05: {"thermal": "未明显发热，温度未测量", "charging": "未充电：电量100%", "devtools": "未开启", "flag": "已停用"};visibility={"initialState": "visible", "enteredBackground": false, "samplingEnteredBackground": false, "events": []};device features=["core-features-and-limits", "shader-f16", "timestamp-query"];grid65536ns. Logical bytes only;physical GPU memory NOT_MEASURED. Original JSON unchanged.
