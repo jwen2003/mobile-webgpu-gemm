@@ -1,0 +1,96 @@
+{
+  "verification": "PASS",
+  "rawSha256": "a19773b430c71922308f2f938e8dd037d34b8d72c041e8c461d535265c563a30",
+  "smallOutputsIndependentlyChecked": 4425,
+  "performance": [
+    {
+      "shape": {
+        "id": "representative-decode",
+        "M": 1,
+        "K": 1024,
+        "N": 1024,
+        "performance": true,
+        "source": "REPRESENTATIVE_NOT_CONFIRMED_LOGICAL_MODEL_SHAPE"
+      },
+      "variants": {
+        "A": {
+          "count": 30,
+          "median": 1212416.0,
+          "p95": 2555904,
+          "min": 917504,
+          "max": 2555904,
+          "zeroCount": 0,
+          "gridNs": 65536
+        },
+        "B": {
+          "count": 30,
+          "median": 4816896.0,
+          "p95": 11468800,
+          "min": 3145728,
+          "max": 11534336,
+          "zeroCount": 0,
+          "gridNs": 65536
+        },
+        "C": {
+          "count": 30,
+          "median": 1048576.0,
+          "p95": 1310720,
+          "min": 786432,
+          "max": 1310720,
+          "zeroCount": 0,
+          "gridNs": 65536
+        }
+      },
+      "speedups": {
+        "AoverB": 0.25170068027210885,
+        "AoverC": 1.15625,
+        "BoverC": 4.59375
+      }
+    },
+    {
+      "shape": {
+        "id": "representative-prefill",
+        "M": 128,
+        "K": 1024,
+        "N": 1024,
+        "performance": true,
+        "source": "REPRESENTATIVE_NOT_CONFIRMED_LOGICAL_MODEL_SHAPE"
+      },
+      "variants": {
+        "A": {
+          "count": 30,
+          "median": 7995392.0,
+          "p95": 9109504,
+          "min": 6750208,
+          "max": 11206656,
+          "zeroCount": 0,
+          "gridNs": 65536
+        },
+        "B": {
+          "count": 30,
+          "median": 12550144.0,
+          "p95": 14680064,
+          "min": 10551296,
+          "max": 14680064,
+          "zeroCount": 0,
+          "gridNs": 65536
+        },
+        "C": {
+          "count": 30,
+          "median": 2097152.0,
+          "p95": 2555904,
+          "min": 1769472,
+          "max": 2555904,
+          "zeroCount": 0,
+          "gridNs": 65536
+        }
+      },
+      "speedups": {
+        "AoverB": 0.6370757180156658,
+        "AoverC": 3.8125,
+        "BoverC": 5.984375
+      }
+    }
+  ],
+  "scope": "Full exported small outputs and seeded recorded worst references independently checked;large full actual arrays absent,online maxima/counts not independently reconstructed"
+}

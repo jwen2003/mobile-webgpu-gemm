@@ -1,0 +1,14 @@
+{
+  "model": "Gemma 3n E2B instruction-tuned",
+  "filename": "gemma-3n-E2B-it-int4-Web.litertlm",
+  "localPath": "/assets/models/gemma-3n-E2B-it-int4-Web.litertlm",
+  "sourcePage": "https://huggingface.co/google/gemma-3n-E2B-it-litert-lm/blob/main/gemma-3n-E2B-it-int4-Web.litertlm",
+  "sourceRevision": "main (download revision not independently recorded)",
+  "status": "LOCAL_FILE_HASHED",
+  "actualBytes": 3038117888,
+  "sha256": "b6c8e1081ec80730f14473a5ece941b48da5d8e2a80c97c2963da153f3eff3d2",
+  "publisherSha256": null,
+  "publisherHashMatched": false,
+  "verificationScope": "Desktop file size and SHA256; exact Web filename; not a browser rehash or runtime compatibility result",
+  "verifiedIsoTime": "2026-10-04T14:07:29.501947+00:00"
+}

@@ -1,4 +1,4 @@
-# Preserve original PDF bytes, including cross-reference offsets.
-*.pdf binary
-# Preserve downloaded experiment JSON bytes without newline normalization.
-/results/raw/*.json -text
+# Experimental evidence must retain its original bytes across Windows checkouts.
+results/raw/*.json -text
+# Exact runtime shader captures: preserve source hashes and original whitespace.
+results/analysis/profile002/shaders/*.wgsl -text whitespace=-trailing-space

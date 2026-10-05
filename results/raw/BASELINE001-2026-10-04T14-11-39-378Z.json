@@ -1,0 +1,467 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "BASELINE001",
+  "status": "COMPLETE",
+  "createdIsoTime": "2026-10-04T14:08:55.551Z",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36",
+    "secureContext": true,
+    "pageUrl": "http://localhost:8000/src/baseline/",
+    "crossOriginIsolated": false,
+    "probeAdapter": {
+      "info": {
+        "vendor": "arm",
+        "architecture": "gen-5",
+        "device": "",
+        "description": ""
+      },
+      "features": [
+        "bgra8unorm-storage",
+        "core-features-and-limits",
+        "depth-clip-control",
+        "depth32float-stencil8",
+        "dual-source-blending",
+        "float32-blendable",
+        "float32-filterable",
+        "indirect-first-instance",
+        "primitive-index",
+        "rg11b10ufloat-renderable",
+        "shader-f16",
+        "subgroup-size-control",
+        "subgroups",
+        "texture-component-swizzle",
+        "texture-compression-astc",
+        "texture-compression-astc-sliced-3d",
+        "texture-compression-etc2",
+        "texture-formats-tier1",
+        "texture-formats-tier2",
+        "timestamp-query"
+      ],
+      "limits": {
+        "maxBindGroups": 4,
+        "maxBindGroupsPlusVertexBuffers": 24,
+        "maxBindingsPerBindGroup": 1000,
+        "maxBufferSize": 4294967292,
+        "maxColorAttachmentBytesPerSample": 128,
+        "maxColorAttachments": 8,
+        "maxComputeInvocationsPerWorkgroup": 1024,
+        "maxComputeWorkgroupSizeX": 1024,
+        "maxComputeWorkgroupSizeY": 1024,
+        "maxComputeWorkgroupSizeZ": 64,
+        "maxComputeWorkgroupStorageSize": 32768,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxDynamicStorageBuffersPerPipelineLayout": 8,
+        "maxDynamicUniformBuffersPerPipelineLayout": 10,
+        "maxImmediateSize": 64,
+        "maxInterStageShaderVariables": 28,
+        "maxSampledTexturesPerShaderStage": 48,
+        "maxSamplersPerShaderStage": 16,
+        "maxStorageBufferBindingSize": 2147483644,
+        "maxStorageBuffersInFragmentStage": 16,
+        "maxStorageBuffersInVertexStage": 16,
+        "maxStorageBuffersPerShaderStage": 16,
+        "maxStorageTexturesInFragmentStage": 8,
+        "maxStorageTexturesInVertexStage": 8,
+        "maxStorageTexturesPerShaderStage": 8,
+        "maxTextureArrayLayers": 2048,
+        "maxTextureDimension1D": 16384,
+        "maxTextureDimension2D": 16384,
+        "maxTextureDimension3D": 2048,
+        "maxUniformBufferBindingSize": 65536,
+        "maxUniformBuffersPerShaderStage": 12,
+        "maxVertexAttributes": 30,
+        "maxVertexBufferArrayStride": 2048,
+        "maxVertexBuffers": 8,
+        "minStorageBufferOffsetAlignment": 256,
+        "minUniformBufferOffsetAlignment": 256
+      }
+    },
+    "probeScope": "Independent requestAdapter only; not supplied to runtime",
+    "runtimeDevice": {
+      "providedBy": "LlmInference.createWebGpuDevice()",
+      "features": [
+        "core-features-and-limits",
+        "shader-f16",
+        "subgroups"
+      ],
+      "limits": {
+        "maxBindGroups": 4,
+        "maxBindGroupsPlusVertexBuffers": 24,
+        "maxBindingsPerBindGroup": 1000,
+        "maxBufferSize": 4294967292,
+        "maxColorAttachmentBytesPerSample": 32,
+        "maxColorAttachments": 8,
+        "maxComputeInvocationsPerWorkgroup": 256,
+        "maxComputeWorkgroupSizeX": 256,
+        "maxComputeWorkgroupSizeY": 256,
+        "maxComputeWorkgroupSizeZ": 64,
+        "maxComputeWorkgroupStorageSize": 16384,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxDynamicStorageBuffersPerPipelineLayout": 4,
+        "maxDynamicUniformBuffersPerPipelineLayout": 8,
+        "maxImmediateSize": 64,
+        "maxInterStageShaderVariables": 16,
+        "maxSampledTexturesPerShaderStage": 16,
+        "maxSamplersPerShaderStage": 16,
+        "maxStorageBufferBindingSize": 2147483644,
+        "maxStorageBuffersInFragmentStage": 16,
+        "maxStorageBuffersInVertexStage": 16,
+        "maxStorageBuffersPerShaderStage": 16,
+        "maxStorageTexturesInFragmentStage": 4,
+        "maxStorageTexturesInVertexStage": 4,
+        "maxStorageTexturesPerShaderStage": 4,
+        "maxTextureArrayLayers": 256,
+        "maxTextureDimension1D": 8192,
+        "maxTextureDimension2D": 8192,
+        "maxTextureDimension3D": 2048,
+        "maxUniformBufferBindingSize": 65536,
+        "maxUniformBuffersPerShaderStage": 12,
+        "maxVertexAttributes": 16,
+        "maxVertexBufferArrayStride": 2048,
+        "maxVertexBuffers": 8,
+        "minStorageBufferOffsetAlignment": 256,
+        "minUniformBufferOffsetAlignment": 256
+      },
+      "scope": "This stock runtime device is passed to createFromOptions; distinct from environment probe adapter"
+    },
+    "runtimeBackend": "UNKNOWN",
+    "runtimeBackendVerification": "Runtime internal execution backend not independently verified",
+    "visibility": {
+      "initialState": "visible",
+      "events": [
+        {
+          "isoTime": "2026-10-04T14:09:52.312Z",
+          "state": "hidden",
+          "status": "INITIALIZING"
+        },
+        {
+          "isoTime": "2026-10-04T14:09:59.498Z",
+          "state": "visible",
+          "status": "INITIALIZING"
+        }
+      ]
+    }
+  },
+  "runtime": {
+    "package": "@mediapipe/tasks-genai",
+    "version": "0.10.29",
+    "localRoot": "/assets/vendor/tasks-genai/0.10.29",
+    "preparedManifest": {
+      "package": "@mediapipe/tasks-genai",
+      "version": "0.10.29",
+      "source": "https://registry.npmjs.org/@mediapipe/tasks-genai/-/tasks-genai-0.10.29.tgz",
+      "npmIntegrity": "sha512-PRznwHOprGNoSbTbtAyHkMD1rslPLEBSidvz/Ga7qWVr86CXmPEcQpFCidLciBpWNKF8VhQMU2YA51YyBCbPKg==",
+      "license": "Apache-2.0",
+      "localRoot": "/assets/vendor/tasks-genai/0.10.29",
+      "modified": false,
+      "files": [
+        {
+          "path": "genai_bundle.mjs",
+          "bytes": 59896,
+          "sha256": "73bae6514adb91eeeb03a92968f5e97dd0d690b54aed8fbf3cea1651cdc5f50d"
+        },
+        {
+          "path": "genai.d.ts",
+          "bytes": 21558,
+          "sha256": "224edd06387553d5e193c9e0ecbd914c399106d9e57fb2b118543c53c8ec0991"
+        },
+        {
+          "path": "package.json",
+          "bytes": 1108,
+          "sha256": "769a177cb5597219ec876fdd92343ec85f6a20997d9387df6361c0e8844cbd1f"
+        },
+        {
+          "path": "README.md",
+          "bytes": 1728,
+          "sha256": "07c55d75723c35f1797e9fb953355b83fcf68dd11207579c1cbc11f5dd349a3a"
+        },
+        {
+          "path": "wasm/genai_wasm_internal.js",
+          "bytes": 334067,
+          "sha256": "dd02fb217a4aed569e504444eda9a1972a80c8017c96e4000687782690eed927"
+        },
+        {
+          "path": "wasm/genai_wasm_internal.wasm",
+          "bytes": 27220715,
+          "sha256": "87a7324d0e26e1c1d880ba9a1c9864c8b17192c5d9db996cdf3bfaeb217f5483"
+        },
+        {
+          "path": "wasm/genai_wasm_nosimd_internal.js",
+          "bytes": 333870,
+          "sha256": "de27f0cece107f131c37e27d06aaa6978fdaa23e6575b3166c262c3c0ca15581"
+        },
+        {
+          "path": "wasm/genai_wasm_nosimd_internal.wasm",
+          "bytes": 27081142,
+          "sha256": "edbb7cf04f2777c2f657b457abcfbe5a4d7f6cbeb7e4aecbac49790a45fef35b"
+        },
+        {
+          "path": "wasm/genai_wasm_module_internal.js",
+          "bytes": 334104,
+          "sha256": "383b67e29f7a84e5529170c739a31e9a618a3c58fa50571e7880eb70223b1d20"
+        },
+        {
+          "path": "wasm/genai_wasm_module_internal.wasm",
+          "bytes": 27220735,
+          "sha256": "2c741c991ab15c60485b4841c3ed4dc5e0265123ec905a99eab27148bf2a1c19"
+        }
+      ]
+    },
+    "fileset": {
+      "wasmLoaderPath": "/assets/vendor/tasks-genai/0.10.29/wasm/genai_wasm_internal.js",
+      "wasmBinaryPath": "/assets/vendor/tasks-genai/0.10.29/wasm/genai_wasm_internal.wasm"
+    },
+    "modified": false,
+    "deviceCreation": "Unmodified LlmInference.createWebGpuDevice() stock helper; no custom device limits/features"
+  },
+  "model": {
+    "filename": "gemma-3n-E2B-it-int4-Web.litertlm",
+    "localPath": "/assets/models/gemma-3n-E2B-it-int4-Web.litertlm",
+    "manifest": {
+      "model": "Gemma 3n E2B instruction-tuned",
+      "filename": "gemma-3n-E2B-it-int4-Web.litertlm",
+      "localPath": "/assets/models/gemma-3n-E2B-it-int4-Web.litertlm",
+      "sourcePage": "https://huggingface.co/google/gemma-3n-E2B-it-litert-lm/blob/main/gemma-3n-E2B-it-int4-Web.litertlm",
+      "sourceRevision": "main (download revision not independently recorded)",
+      "status": "LOCAL_FILE_HASHED",
+      "actualBytes": 3038117888,
+      "sha256": "b6c8e1081ec80730f14473a5ece941b48da5d8e2a80c97c2963da153f3eff3d2",
+      "publisherSha256": null,
+      "publisherHashMatched": false,
+      "verificationScope": "Desktop file size and SHA256; exact Web filename; not a browser rehash or runtime compatibility result",
+      "verifiedIsoTime": "2026-10-04T14:07:29.501947+00:00"
+    },
+    "browserSizeCheck": {
+      "actualServedBytes": 3038117888,
+      "matchesDesktopManifest": true,
+      "sha256Scope": "SHA256 from desktop verification manifest; browser checks length, does not rehash multi-GB weights"
+    },
+    "browserSha256": "NOT_MEASURED"
+  },
+  "prompt": {
+    "question": "Explain in two short sentences what matrix multiplication computes.",
+    "fullPrompt": "<start_of_turn>user\nExplain in two short sentences what matrix multiplication computes.<end_of_turn>\n<start_of_turn>model\n",
+    "sentPrompt": "<start_of_turn>user\nExplain in two short sentences what matrix multiplication computes.<end_of_turn>\n<start_of_turn>model\n",
+    "templateSource": "https://ai.google.dev/gemma/docs/core/prompt-structure"
+  },
+  "config": {
+    "maxTokens": 512,
+    "topK": 40,
+    "temperature": 0.8,
+    "randomSeed": 101,
+    "numResponses": 1,
+    "maxNumImages": 0,
+    "supportAudio": false,
+    "maxTokensMeaning": "combined input + output token capacity; not output-token count",
+    "textOnly": true,
+    "baseOptions": {
+      "modelAssetPath": "/assets/models/gemma-3n-E2B-it-int4-Web.litertlm",
+      "gpuOptions": {
+        "device": "Stock runtime-created GPUDevice (nonserializable object)"
+      }
+    },
+    "otherOptions": "Unchanged runtime defaults; no forceF32, LoRA, or disableRewinding override"
+  },
+  "lifecycle": {
+    "modelInitialized": true,
+    "requestStarted": true,
+    "generationPromiseResolved": true,
+    "streamDoneObserved": true,
+    "nonemptyOutput": true,
+    "completedIsoTime": "2026-10-04T14:11:33.790Z"
+  },
+  "wallMetrics": {
+    "runtimeResourcePreparationMs": 58.19999998807907,
+    "modelInitializationMs": 91756.59999999404,
+    "generationRequestToPromiseResolutionMs": 6037.9000000059605,
+    "firstCallbackFromRequestMs": 634.4000000059605
+  },
+  "unmeasured": {
+    "actualInputTokens": "NOT_MEASURED",
+    "actualOutputTokens": "NOT_MEASURED",
+    "tokensPerSecond": "NOT_MEASURED",
+    "purePrefillLatency": "NOT_MEASURED",
+    "perTokenLatency": "NOT_MEASURED",
+    "gpuKernelTime": "NOT_MEASURED",
+    "gpuMemory": "NOT_MEASURED"
+  },
+  "output": {
+    "streamedText": "Matrix multiplication computes a linear transformation from one vector space to another.  Essentially, it combines the vectors in the rows (or columns) of the first matrix to create a new vector in the space spanned by the columns of the second matrix.\n\n\n\n",
+    "returnedText": "Matrix multiplication computes a linear transformation from one vector space to another.  Essentially, it combines the vectors in the rows (or columns) of the first matrix to create a new vector in the space spanned by the columns of the second matrix.\n\n\n\n",
+    "finalText": "Matrix multiplication computes a linear transformation from one vector space to another.  Essentially, it combines the vectors in the rows (or columns) of the first matrix to create a new vector in the space spanned by the columns of the second matrix.\n\n\n\n"
+  },
+  "events": [
+    {
+      "type": "environment_probe_start",
+      "isoTime": "2026-10-04T14:08:55.552Z"
+    },
+    {
+      "type": "environment_probe_complete",
+      "isoTime": "2026-10-04T14:08:55.581Z"
+    },
+    {
+      "type": "runtime_resource_preparation_start",
+      "isoTime": "2026-10-04T14:08:55.582Z"
+    },
+    {
+      "type": "runtime_resource_preparation_complete",
+      "isoTime": "2026-10-04T14:08:55.640Z",
+      "scope": "Manifest, JS import, fileset resolution and selected asset HEAD checks; actual WASM init belongs to model initialization"
+    },
+    {
+      "type": "model_identity_check_start",
+      "isoTime": "2026-10-04T14:08:55.640Z"
+    },
+    {
+      "type": "model_identity_check_complete",
+      "isoTime": "2026-10-04T14:08:55.659Z"
+    },
+    {
+      "type": "model_initialization_start",
+      "isoTime": "2026-10-04T14:08:55.660Z"
+    },
+    {
+      "type": "model_initialization_complete",
+      "isoTime": "2026-10-04T14:10:27.416Z"
+    },
+    {
+      "type": "request_start",
+      "isoTime": "2026-10-04T14:11:27.752Z",
+      "fullPrompt": "<start_of_turn>user\nExplain in two short sentences what matrix multiplication computes.<end_of_turn>\n<start_of_turn>model\n"
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:28.386Z",
+      "relativeWallMs": 634.4000000059605,
+      "fragment": "Matrix multiplication computes",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:28.690Z",
+      "relativeWallMs": 938.6000000238419,
+      "fragment": " a linear transformation",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:29.000Z",
+      "relativeWallMs": 1247.800000011921,
+      "fragment": " from one vector",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:29.320Z",
+      "relativeWallMs": 1568.2000000178814,
+      "fragment": " space to another",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:29.617Z",
+      "relativeWallMs": 1865.2000000178814,
+      "fragment": ".  Essentially",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:29.907Z",
+      "relativeWallMs": 2155.600000023842,
+      "fragment": ", it combines",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:30.221Z",
+      "relativeWallMs": 2469.2000000178814,
+      "fragment": " the vectors in",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:30.577Z",
+      "relativeWallMs": 2824.800000011921,
+      "fragment": " the rows (",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:30.922Z",
+      "relativeWallMs": 3170.2000000178814,
+      "fragment": "or columns)",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:31.290Z",
+      "relativeWallMs": 3537.7000000178814,
+      "fragment": " of the first",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:31.678Z",
+      "relativeWallMs": 3925.7000000178814,
+      "fragment": " matrix to create",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:32.013Z",
+      "relativeWallMs": 4260.700000017881,
+      "fragment": " a new vector",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:32.375Z",
+      "relativeWallMs": 4623.700000017881,
+      "fragment": " in the space",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:32.730Z",
+      "relativeWallMs": 4978.200000017881,
+      "fragment": " spanned by the",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:33.053Z",
+      "relativeWallMs": 5301.600000023842,
+      "fragment": " columns of the",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:33.425Z",
+      "relativeWallMs": 5673.100000023842,
+      "fragment": " second matrix.",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:33.787Z",
+      "relativeWallMs": 6035,
+      "fragment": "\n\n\n\n",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-04T14:11:33.789Z",
+      "relativeWallMs": 6037.5,
+      "fragment": "",
+      "done": true
+    },
+    {
+      "type": "generation_complete",
+      "isoTime": "2026-10-04T14:11:33.790Z",
+      "relativeWallMs": 6037.9000000059605,
+      "completionSource": "generateResponse promise resolved"
+    }
+  ],
+  "errors": [],
+  "exportedIsoTime": "2026-10-04T14:11:39.373Z"
+}

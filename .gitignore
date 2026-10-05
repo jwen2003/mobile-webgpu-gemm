@@ -43,3 +43,12 @@ service-account*.json
 *.pfx
 
 # Keep results/raw, CSV samples, figures, and experiment logs tracked.
+
+# Local third-party runtime and model weights (metadata remains reviewable).
+/assets/vendor/
+/assets/models/*
+!/assets/models/model_manifest.json
+!/assets/models/README.md
+*.litertlm
+*.task
+*.safetensors

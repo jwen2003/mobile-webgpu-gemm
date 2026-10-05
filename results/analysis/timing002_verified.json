@@ -1,0 +1,231 @@
+{
+  "rawPath": "results\\raw\\TIMING002-2026-10-05T11-36-40-431Z.json",
+  "rawSha256": "83ea2722f7f60f08059ab9b5fdad9f6be5f105f532e129038f1f35a1a857f6c4",
+  "modes": [
+    {
+      "mode": "one_command_buffer",
+      "durationNs": {
+        "count": 8,
+        "median": 34799616.0,
+        "p95": 56295424,
+        "min": 13631488,
+        "max": 56295424,
+        "zeroCount": 0
+      },
+      "positiveOverlapNs": {
+        "count": 7,
+        "median": 31784960,
+        "p95": 50069504,
+        "min": 13631488,
+        "max": 50069504,
+        "zeroCount": 0
+      },
+      "positiveCount": 7,
+      "atMost65536": 0,
+      "greaterThan65536": 7,
+      "gridNs": "65536",
+      "startInversions": 0,
+      "endInversions": 0,
+      "distinctStartCount": 1,
+      "adjacent": [
+        {
+          "previousPass": "one_command_buffer:pass0",
+          "nextPass": "one_command_buffer:pass1",
+          "signedNs": "13631488",
+          "overlapNs": "13631488",
+          "category": "same_command_buffer"
+        },
+        {
+          "previousPass": "one_command_buffer:pass1",
+          "nextPass": "one_command_buffer:pass2",
+          "signedNs": "19726336",
+          "overlapNs": "19726336",
+          "category": "same_command_buffer"
+        },
+        {
+          "previousPass": "one_command_buffer:pass2",
+          "nextPass": "one_command_buffer:pass3",
+          "signedNs": "25755648",
+          "overlapNs": "25755648",
+          "category": "same_command_buffer"
+        },
+        {
+          "previousPass": "one_command_buffer:pass3",
+          "nextPass": "one_command_buffer:pass4",
+          "signedNs": "31784960",
+          "overlapNs": "31784960",
+          "category": "same_command_buffer"
+        },
+        {
+          "previousPass": "one_command_buffer:pass4",
+          "nextPass": "one_command_buffer:pass5",
+          "signedNs": "37814272",
+          "overlapNs": "37814272",
+          "category": "same_command_buffer"
+        },
+        {
+          "previousPass": "one_command_buffer:pass5",
+          "nextPass": "one_command_buffer:pass6",
+          "signedNs": "43909120",
+          "overlapNs": "43909120",
+          "category": "same_command_buffer"
+        },
+        {
+          "previousPass": "one_command_buffer:pass6",
+          "nextPass": "one_command_buffer:pass7",
+          "signedNs": "50069504",
+          "overlapNs": "50069504",
+          "category": "same_command_buffer"
+        }
+      ]
+    },
+    {
+      "mode": "continuous_submits",
+      "durationNs": {
+        "count": 8,
+        "median": 29196288.0,
+        "p95": 46268416,
+        "min": 9961472,
+        "max": 46268416,
+        "zeroCount": 0
+      },
+      "positiveOverlapNs": {
+        "count": 7,
+        "median": 25690112,
+        "p95": 40173568,
+        "min": 9895936,
+        "max": 40173568,
+        "zeroCount": 0
+      },
+      "positiveCount": 7,
+      "atMost65536": 0,
+      "greaterThan65536": 7,
+      "gridNs": "65536",
+      "startInversions": 0,
+      "endInversions": 0,
+      "distinctStartCount": 8,
+      "adjacent": [
+        {
+          "previousPass": "continuous_submits:pass0",
+          "nextPass": "continuous_submits:pass1",
+          "signedNs": "9895936",
+          "overlapNs": "9895936",
+          "category": "cross_submit"
+        },
+        {
+          "previousPass": "continuous_submits:pass1",
+          "nextPass": "continuous_submits:pass2",
+          "signedNs": "15597568",
+          "overlapNs": "15597568",
+          "category": "cross_submit"
+        },
+        {
+          "previousPass": "continuous_submits:pass2",
+          "nextPass": "continuous_submits:pass3",
+          "signedNs": "20905984",
+          "overlapNs": "20905984",
+          "category": "cross_submit"
+        },
+        {
+          "previousPass": "continuous_submits:pass3",
+          "nextPass": "continuous_submits:pass4",
+          "signedNs": "25690112",
+          "overlapNs": "25690112",
+          "category": "cross_submit"
+        },
+        {
+          "previousPass": "continuous_submits:pass4",
+          "nextPass": "continuous_submits:pass5",
+          "signedNs": "30474240",
+          "overlapNs": "30474240",
+          "category": "cross_submit"
+        },
+        {
+          "previousPass": "continuous_submits:pass5",
+          "nextPass": "continuous_submits:pass6",
+          "signedNs": "35258368",
+          "overlapNs": "35258368",
+          "category": "cross_submit"
+        },
+        {
+          "previousPass": "continuous_submits:pass6",
+          "nextPass": "continuous_submits:pass7",
+          "signedNs": "40173568",
+          "overlapNs": "40173568",
+          "category": "cross_submit"
+        }
+      ]
+    },
+    {
+      "mode": "serial_wait",
+      "durationNs": {
+        "count": 8,
+        "median": 8519680.0,
+        "p95": 9633792,
+        "min": 5963776,
+        "max": 9633792,
+        "zeroCount": 0
+      },
+      "positiveOverlapNs": null,
+      "positiveCount": 0,
+      "atMost65536": 0,
+      "greaterThan65536": 0,
+      "gridNs": "65536",
+      "startInversions": 0,
+      "endInversions": 0,
+      "distinctStartCount": 8,
+      "adjacent": [
+        {
+          "previousPass": "serial_wait:pass0",
+          "nextPass": "serial_wait:pass1",
+          "signedNs": "-1179648",
+          "overlapNs": "0",
+          "category": "cross_submit"
+        },
+        {
+          "previousPass": "serial_wait:pass1",
+          "nextPass": "serial_wait:pass2",
+          "signedNs": "-2359296",
+          "overlapNs": "0",
+          "category": "cross_submit"
+        },
+        {
+          "previousPass": "serial_wait:pass2",
+          "nextPass": "serial_wait:pass3",
+          "signedNs": "-2752512",
+          "overlapNs": "0",
+          "category": "cross_submit"
+        },
+        {
+          "previousPass": "serial_wait:pass3",
+          "nextPass": "serial_wait:pass4",
+          "signedNs": "-4456448",
+          "overlapNs": "0",
+          "category": "cross_submit"
+        },
+        {
+          "previousPass": "serial_wait:pass4",
+          "nextPass": "serial_wait:pass5",
+          "signedNs": "-5439488",
+          "overlapNs": "0",
+          "category": "cross_submit"
+        },
+        {
+          "previousPass": "serial_wait:pass5",
+          "nextPass": "serial_wait:pass6",
+          "signedNs": "-2424832",
+          "overlapNs": "0",
+          "category": "cross_submit"
+        },
+        {
+          "previousPass": "serial_wait:pass6",
+          "nextPass": "serial_wait:pass7",
+          "signedNs": "-3211264",
+          "overlapNs": "0",
+          "category": "cross_submit"
+        }
+      ]
+    }
+  ],
+  "outputVerification": "24 online summaries checked; actual arrays absent, no independent full-output recomputation claimed"
+}

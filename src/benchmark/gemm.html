@@ -1,0 +1,8 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GEMM001 naive FP32</title><style>body{font:16px system-ui;margin:20px;max-width:1000px}button,input{padding:10px;margin:5px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f3f3f3;padding:12px}label{display:block}</style>
+<h1>GEMM001 · naive FP32 GEMM</h1>
+<p>独立 dense row-major C=A×B，FP32 累加，8×8 workgroup。两类输入全量正确性检查通过后才采样。不是模型 runtime 替换或模型加速测试。</p>
+<label>Thermal <input id="thermal" value="UNKNOWN"></label><label>Charging <input id="charging" value="UNKNOWN"></label>
+<label>DevTools <input id="devtools" value="UNKNOWN"></label><label>WebGPU Developer Features flag <input id="flag" value="UNKNOWN"></label>
+<button id="run">运行 GEMM001</button><button id="download">下载结果 JSON</button><p id="status">NOT_RUN</p><pre id="summary"></pre>
+<script type="module" src="./gemm.js"></script></html>

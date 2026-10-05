@@ -1,0 +1,70 @@
+{
+  "verification": "PASS",
+  "rawSha256": "76da3dda1c721cb055ea8a6ce7bf7fb793e163761286c1f6b748be2cbcebae5a",
+  "smallOutputsIndependentlyChecked": 1690,
+  "performance": [
+    {
+      "shape": {
+        "id": "representative-decode",
+        "M": 1,
+        "K": 1024,
+        "N": 1024,
+        "performance": true,
+        "source": "REPRESENTATIVE_NOT_CONFIRMED_LOGICAL_MODEL_SHAPE"
+      },
+      "variants": {
+        "A": {
+          "count": 30,
+          "median": 983040.0,
+          "p95": 2162688,
+          "min": 786432,
+          "max": 2162688,
+          "zeroCount": 0,
+          "gridNs": 65536
+        },
+        "B": {
+          "count": 30,
+          "median": 4620288.0,
+          "p95": 11272192,
+          "min": 3080192,
+          "max": 11599872,
+          "zeroCount": 0,
+          "gridNs": 65536
+        }
+      },
+      "speedupAoverB": 0.2127659574468085
+    },
+    {
+      "shape": {
+        "id": "representative-prefill",
+        "M": 128,
+        "K": 1024,
+        "N": 1024,
+        "performance": true,
+        "source": "REPRESENTATIVE_NOT_CONFIRMED_LOGICAL_MODEL_SHAPE"
+      },
+      "variants": {
+        "A": {
+          "count": 30,
+          "median": 7667712.0,
+          "p95": 8781824,
+          "min": 6946816,
+          "max": 9240576,
+          "zeroCount": 0,
+          "gridNs": 65536
+        },
+        "B": {
+          "count": 30,
+          "median": 12255232.0,
+          "p95": 13828096,
+          "min": 10420224,
+          "max": 13828096,
+          "zeroCount": 0,
+          "gridNs": 65536
+        }
+      },
+      "speedupAoverB": 0.6256684491978609
+    }
+  ],
+  "scope": "Full exported small outputs and seeded recorded worst references independently checked;large full actual arrays absent,online maxima/counts not independently reconstructed"
+}

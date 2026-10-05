@@ -1,0 +1,14 @@
+{
+  "schemaReference": "https://github.com/tensorflow/tensorflow/blob/v2.20.0/tensorflow/compiler/mlir/lite/schema/schema.fbs",
+  "scope": "Metadata field traversal only,no Model.Buffers/weight data read;not exact runtime native schema revision proof",
+  "bytesRead": 237665,
+  "subgraphs": [
+    {
+      "id": 0,
+      "name": "GEMMA3N_2B"
+    }
+  ],
+  "tensorCount": 2356,
+  "matchingExtents": [],
+  "shaderAssociation": "UNKNOWN: no graph-op/tensor IDs linked to captured native shader"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "REVIEWED_EXECUTION_SHAPE",
+  "evidenceCategory": "EXECUTION_PADDED_ONLY",
+  "shape": {
+    "M": 8,
+    "K": 1536,
+    "N": 2048
+  },
+  "validLogicalShape": null,
+  "modelLayer": "UNKNOWN",
+  "modelAxisRoles": "UNKNOWN",
+  "selectedShaderHash": "ee9a0b2823d07f56fe2e9c50134dbc9c58f9f411dcfc11795869196870dd6036",
+  "rawPath": "results/raw/SHAPE001-2026-10-05T11-32-49-007Z.json",
+  "rawSha256": "fcece04380902827c2db59597ba9b2e01687d431ff3273a3d72d75026218d721",
+  "reviewDocument": "docs/gemm004_shape_proof.md",
+  "proofs": {
+    "M": "Eight texture x coordinates0..7 form eight distinct independent rows sharing weights; no batch/head axes folded.",
+    "K": "Uniform i0.z384 source vec4 slices,all four components accumulated;4*384=1536 execution components.",
+    "N": "Uniform i0.x512 destination vec4 slices with four stored components;4*512=2048 execution components.",
+    "padding": "Scope explicitly includes all executed packed components; valid unpadded tensor extents remain unestablished; not claimed logical shape.",
+    "batchHead": "Single submitted operator eight-lane arithmetic view; no graph batch/head interpretation or folding is asserted.",
+    "rowMajorMapping": "A[r,4s+t]=inputTexture(r,s)[t];B[4s+t,4d+c]=weights[s*512+d][t][c];C[r,4d+c]=outputTexture(r,d)[c]."
+  },
+  "scope": "Supplementary actual execution/padded shape rewritten using synthetic dense FP32; not valid logical shape,actual tensors,FP16 reduction equivalence,decode or prefill layer proof."
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; connect-src 'self'; worker-src 'self' blob:; img-src 'self' blob: data:; object-src 'none'">
+<title>BASELINE001 Gemma 3n E2B text inference</title>
+<style>
+body { font-family: system-ui, sans-serif; max-width: 1000px; margin: 24px auto; padding: 0 16px; }
+button { padding: 12px; margin: 4px; } pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #eee; padding: 12px; }
+</style>
+<h1>BASELINE001 · Gemma 3n E2B 文本推理</h1>
+<p>原版 MediaPipe tasks-genai 0.10.29，本地 JS/WASM 与指定 Web 模型；不优化 runtime 或模型。</p>
+<p>固定问题：Explain in two short sentences what matrix multiplication computes.</p>
+<p>maxTokens=512 是输入加输出总容量。流式回调不等于一个 token，首次回调不是纯 prefill 时间。</p>
+<button id="load">加载模型</button>
+<button id="generate" disabled>运行固定 prompt</button>
+<button id="download">下载 BASELINE001 JSON</button>
+<p id="status" role="status">NOT_RUN</p>
+<h2>输出</h2><pre id="output"></pre>
+<h2>错误</h2><pre id="errors"></pre>
+<details><summary>完整记录</summary><pre id="evidence"></pre></details>
+<p>加载完成后只运行一次；再次实验请重新加载模型。运行时保持页面前台。</p>
+<script type="module" src="baseline.js"></script>
+</html>

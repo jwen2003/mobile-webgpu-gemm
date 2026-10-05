@@ -1,0 +1,177 @@
+{
+  "sourceSha256": "040c5c4b667789b5ced7b5c7dd02d8abc85e3f085588b4e85f9ee9fa82e3af3d",
+  "adjacentPairs": 2004,
+  "overlap": {
+    "count": 1898,
+    "minNs": 327680,
+    "medianNs": 27459584.0,
+    "nearestRankP95Ns": 56360960,
+    "maxNs": 100073472,
+    "atMost65536Ns": 0,
+    "greaterThan65536Ns": 1898
+  },
+  "groups": {
+    "same_command_buffer": {
+      "count": 0
+    },
+    "same_submit_distinct_command_buffers": {
+      "count": 0
+    },
+    "cross_submit": {
+      "count": 1898,
+      "minNs": 327680,
+      "medianNs": 27459584.0,
+      "nearestRankP95Ns": 56360960,
+      "maxNs": 100073472,
+      "atMost65536Ns": 0,
+      "greaterThan65536Ns": 1898
+    }
+  },
+  "querySlotDuplicates": 0,
+  "repeatedTimedSubmissions": 0,
+  "endFinishSubmitOrderChecksPass": true,
+  "resolveCopyMetadataCount": 2005,
+  "resolveCopyOrderEvidence": "pass_timestamps.mjs finish wrapper checks ended, appends resolve then copy, then native finish; raw observer records end/finish/submit but not individual native resolve/copy call timestamps",
+  "rootCause": "UNKNOWN",
+  "sourceLocations": {
+    "uniqueQuerySlot": 96,
+    "resolveOutsidePass": 124,
+    "copyAfterResolve": 125,
+    "finishAfterCopies": 130,
+    "repeatSubmitDetection": 145,
+    "pageReadAfterDrain": 167
+  },
+  "startInversions": 0,
+  "endInversions": 0,
+  "signedAdjacentEndMinusNextStart": {
+    "count": 2004,
+    "minNs": -60293120,
+    "medianNs": 25952256.0,
+    "nearestRankP95Ns": 56164352,
+    "maxNs": 100073472,
+    "atMost65536Ns": 106,
+    "greaterThan65536Ns": 1898
+  },
+  "examples": [
+    {
+      "overlapNs": 327680,
+      "previous": {
+        "passId": "pass-3362",
+        "commandBufferId": "commandBuffer-3363",
+        "queryChunk": 0,
+        "queryIndices": [
+          0,
+          1
+        ],
+        "startTimestampNs": "265466362462208",
+        "endTimestampNs": "265466362789888",
+        "submissions": [
+          {
+            "observerSubmitSequence": 3365,
+            "phase": "GENERATION",
+            "commandBufferId": "commandBuffer-3363"
+          }
+        ]
+      },
+      "next": {
+        "passId": "pass-3365",
+        "commandBufferId": "commandBuffer-3366",
+        "queryChunk": 0,
+        "queryIndices": [
+          2,
+          3
+        ],
+        "startTimestampNs": "265466362462208",
+        "endTimestampNs": "265466365476864",
+        "submissions": [
+          {
+            "observerSubmitSequence": 3411,
+            "phase": "GENERATION",
+            "commandBufferId": "commandBuffer-3366"
+          }
+        ]
+      }
+    },
+    {
+      "overlapNs": 54460416,
+      "previous": {
+        "passId": "pass-3371",
+        "commandBufferId": "commandBuffer-3372",
+        "queryChunk": 0,
+        "queryIndices": [
+          6,
+          7
+        ],
+        "startTimestampNs": "265466421313536",
+        "endTimestampNs": "265466479312896",
+        "submissions": [
+          {
+            "observerSubmitSequence": 6838,
+            "phase": "GENERATION",
+            "commandBufferId": "commandBuffer-3372"
+          }
+        ]
+      },
+      "next": {
+        "passId": "pass-3374",
+        "commandBufferId": "commandBuffer-3375",
+        "queryChunk": 0,
+        "queryIndices": [
+          8,
+          9
+        ],
+        "startTimestampNs": "265466424852480",
+        "endTimestampNs": "265466480361472",
+        "submissions": [
+          {
+            "observerSubmitSequence": 6839,
+            "phase": "GENERATION",
+            "commandBufferId": "commandBuffer-3375"
+          }
+        ]
+      }
+    },
+    {
+      "overlapNs": 53215232,
+      "previous": {
+        "passId": "pass-3374",
+        "commandBufferId": "commandBuffer-3375",
+        "queryChunk": 0,
+        "queryIndices": [
+          8,
+          9
+        ],
+        "startTimestampNs": "265466424852480",
+        "endTimestampNs": "265466480361472",
+        "submissions": [
+          {
+            "observerSubmitSequence": 6839,
+            "phase": "GENERATION",
+            "commandBufferId": "commandBuffer-3375"
+          }
+        ]
+      },
+      "next": {
+        "passId": "pass-3377",
+        "commandBufferId": "commandBuffer-3378",
+        "queryChunk": 0,
+        "queryIndices": [
+          10,
+          11
+        ],
+        "startTimestampNs": "265466427146240",
+        "endTimestampNs": "265466480361472",
+        "submissions": [
+          {
+            "observerSubmitSequence": 10265,
+            "phase": "GENERATION",
+            "commandBufferId": "commandBuffer-3378"
+          }
+        ]
+      }
+    }
+  ],
+  "cpuSubmittedDispatchCount": 126402,
+  "sampleAssociatedDispatchCount": 126402,
+  "dataUse": "Conclusion3: cause UNKNOWN; model intervals do not support exclusive kernel time ranking or stacked time breakdown"
+}

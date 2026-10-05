@@ -1,0 +1,7 @@
+import {rng} from './gemm_math.mjs';
+import {CONTRACT} from './part2_math.mjs';
+export const VARIANTS={A:{workgroup:[8,8,1],sharedBytes:0,outputsPerInvocation:1},B:{workgroup:[16,16,1],sharedBytes:1024,outputsPerInvocation:1},C:{workgroup:[8,8,1],outputWorkgroupShape:[32,8,1],sharedBytes:1280,outputsPerInvocation:4,tile:[8,32,16],vectorization:'N:global/shared vec4<f16> B load,component-wise fma,4 columns/lane',layout:'K rows,padded N to4;rowStrideVectors=ceil(N/4)',sourceFact:'64 invocations,4 sum components/two cooperative loads per tile,two barriers;hardware vector instruction UNKNOWN'}};
+export const PERMUTATIONS=[['A','B','C'],['A','C','B'],['B','A','C'],['B','C','A'],['C','A','B'],['C','B','A']];
+export function tripleOrder(M){const a=PERMUTATIONS.flatMap(p=>Array.from({length:5},()=>[...p])),next=rng(CONTRACT.orderSeed^M);for(let i=a.length-1;i>0;i--){const j=Math.floor(next()/4294967296*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+export function packBVec4(data,shape){const rowHalfStride=Math.ceil(shape.N/4)*4,values=new Uint16Array(shape.K*rowHalfStride);for(let k=0;k<shape.K;k++)values.set(data.bHalf.subarray(k*shape.N,(k+1)*shape.N),k*rowHalfStride);return {values,rowHalfStride,rowStrideVectors:rowHalfStride/4};}
+export function ratios(byVariant){const pairs=[['A','B'],['A','C'],['B','C']];return Object.fromEntries(pairs.map(([a,b])=>[a+'over'+b,byVariant[a]?.status==='PRELIMINARY'&&byVariant[b]?.status==='PRELIMINARY'&&byVariant[b].gpuPassNs.median>0?byVariant[a].gpuPassNs.median/byVariant[b].gpuPassNs.median:null]));}

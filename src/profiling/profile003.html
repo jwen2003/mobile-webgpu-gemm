@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PROFILE003 pass-timestamp pilot</title>
+<style>body{font:16px system-ui;margin:20px;max-width:960px}button{padding:12px;margin:6px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f3f3f3;padding:12px}</style>
+<h1>PROFILE003 · Android WebGPU pass-timestamp pilot</h1>
+<p>固定 Gemma 3n E2B Web / MediaPipe 0.10.29。一次初始化、一次生成。兼容 device 额外启用 timestamp-query；只测整个 compute pass。采集有开销，不是正式性能结果。</p>
+<button id="run">加载并运行一次 pilot</button><button id="download">下载 PROFILE003 JSON</button>
+<p id="status">NOT_RUN</p><h2>输出</h2><pre id="output"></pre><h2>错误</h2><pre id="errors"></pre>
+<h2>结束后摘要</h2><pre id="summary"></pre>
+<script type="module" src="./profile003.js"></script></html>

@@ -1,0 +1,1446 @@
+{
+  "experimentId": "TIMING002",
+  "schemaVersion": 1,
+  "status": "COMPLETE",
+  "startIsoTime": "2026-10-05T11:36:39.510Z",
+  "endIsoTime": "2026-10-05T11:36:40.431Z",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36",
+    "secureContext": true,
+    "pageUrl": "http://localhost:8000/src/benchmark/timestamp_control.html",
+    "manualState": {
+      "thermal": "未明显发热，温度未测量",
+      "charging": "未充电：电量100%",
+      "devtools": "未开启",
+      "flag": "已停用"
+    },
+    "adapter": {
+      "info": {
+        "vendor": "arm",
+        "architecture": "gen-5",
+        "device": "",
+        "description": ""
+      },
+      "features": [
+        "depth32float-stencil8",
+        "rg11b10ufloat-renderable",
+        "bgra8unorm-storage",
+        "texture-formats-tier1",
+        "dual-source-blending",
+        "core-features-and-limits",
+        "float32-filterable",
+        "indirect-first-instance",
+        "texture-compression-astc-sliced-3d",
+        "float32-blendable",
+        "subgroup-size-control",
+        "texture-compression-astc",
+        "texture-compression-etc2",
+        "depth-clip-control",
+        "shader-f16",
+        "timestamp-query",
+        "texture-formats-tier2",
+        "primitive-index",
+        "texture-component-swizzle",
+        "subgroups"
+      ],
+      "limits": {
+        "maxBindGroups": 4,
+        "maxBindGroupsPlusVertexBuffers": 24,
+        "maxBindingsPerBindGroup": 1000,
+        "maxBufferSize": 4294967292,
+        "maxColorAttachmentBytesPerSample": 128,
+        "maxColorAttachments": 8,
+        "maxComputeInvocationsPerWorkgroup": 1024,
+        "maxComputeWorkgroupSizeX": 1024,
+        "maxComputeWorkgroupSizeY": 1024,
+        "maxComputeWorkgroupSizeZ": 64,
+        "maxComputeWorkgroupStorageSize": 32768,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxDynamicStorageBuffersPerPipelineLayout": 8,
+        "maxDynamicUniformBuffersPerPipelineLayout": 10,
+        "maxImmediateSize": 64,
+        "maxInterStageShaderVariables": 28,
+        "maxSampledTexturesPerShaderStage": 48,
+        "maxSamplersPerShaderStage": 16,
+        "maxStorageBufferBindingSize": 2147483644,
+        "maxStorageBuffersInFragmentStage": 16,
+        "maxStorageBuffersInVertexStage": 16,
+        "maxStorageBuffersPerShaderStage": 16,
+        "maxStorageTexturesInFragmentStage": 8,
+        "maxStorageTexturesInVertexStage": 8,
+        "maxStorageTexturesPerShaderStage": 8,
+        "maxTextureArrayLayers": 2048,
+        "maxTextureDimension1D": 16384,
+        "maxTextureDimension2D": 16384,
+        "maxTextureDimension3D": 2048,
+        "maxUniformBufferBindingSize": 65536,
+        "maxUniformBuffersPerShaderStage": 12,
+        "maxVertexAttributes": 30,
+        "maxVertexBufferArrayStride": 2048,
+        "maxVertexBuffers": 8,
+        "minStorageBufferOffsetAlignment": 256,
+        "minUniformBufferOffsetAlignment": 256
+      }
+    },
+    "requestDeviceDescriptor": {
+      "requiredFeatures": [
+        "timestamp-query"
+      ]
+    },
+    "device": {
+      "features": [
+        "core-features-and-limits",
+        "timestamp-query"
+      ],
+      "limits": {
+        "maxBindGroups": 4,
+        "maxBindGroupsPlusVertexBuffers": 24,
+        "maxBindingsPerBindGroup": 1000,
+        "maxBufferSize": 268435456,
+        "maxColorAttachmentBytesPerSample": 32,
+        "maxColorAttachments": 8,
+        "maxComputeInvocationsPerWorkgroup": 256,
+        "maxComputeWorkgroupSizeX": 256,
+        "maxComputeWorkgroupSizeY": 256,
+        "maxComputeWorkgroupSizeZ": 64,
+        "maxComputeWorkgroupStorageSize": 16384,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxDynamicStorageBuffersPerPipelineLayout": 4,
+        "maxDynamicUniformBuffersPerPipelineLayout": 8,
+        "maxImmediateSize": 64,
+        "maxInterStageShaderVariables": 16,
+        "maxSampledTexturesPerShaderStage": 16,
+        "maxSamplersPerShaderStage": 16,
+        "maxStorageBufferBindingSize": 134217728,
+        "maxStorageBuffersInFragmentStage": 8,
+        "maxStorageBuffersInVertexStage": 8,
+        "maxStorageBuffersPerShaderStage": 8,
+        "maxStorageTexturesInFragmentStage": 4,
+        "maxStorageTexturesInVertexStage": 4,
+        "maxStorageTexturesPerShaderStage": 4,
+        "maxTextureArrayLayers": 256,
+        "maxTextureDimension1D": 8192,
+        "maxTextureDimension2D": 8192,
+        "maxTextureDimension3D": 2048,
+        "maxUniformBufferBindingSize": 65536,
+        "maxUniformBuffersPerShaderStage": 12,
+        "maxVertexAttributes": 16,
+        "maxVertexBufferArrayStride": 2048,
+        "maxVertexBuffers": 8,
+        "minStorageBufferOffsetAlignment": 256,
+        "minUniformBufferOffsetAlignment": 256
+      }
+    }
+  },
+  "visibility": {
+    "initialState": "visible",
+    "events": []
+  },
+  "config": {
+    "N": 1048576,
+    "passes": 8,
+    "dispatchesPerPass": 32,
+    "workgroup": 64,
+    "operation": "Existing vector-add shader, ping-pong A/C; B=1. Next dispatch/pass consumes previous output.",
+    "input": "A[i]=(i%31)-15; all FP32 integer additions exact; expected after pass j = initial +32*(j+1)",
+    "modes": [
+      "one_command_buffer",
+      "continuous_submits",
+      "serial_wait"
+    ],
+    "query": "Unique indices2*j,2*j+1 per mode; new querySet/mode, no reuse",
+    "readback": "GPU output snapshot after each pass, outside timestamp interval; all query/output map after final completion",
+    "scope": "8 heterogeneous-in-sequence dependent pass intervals per mode, not repeated benchmark statistics",
+    "limitations": [
+      "32 dispatch pass NOT independent kernel latency; never divide by32",
+      "Serial waits and per-pass output copy alter conditions; not stock model performance",
+      "No pass duration sum/busy time/attribution breakdown; finite-sample grid only"
+    ]
+  },
+  "modes": [
+    {
+      "mode": "one_command_buffer",
+      "status": "COMPLETE",
+      "samples": [
+        {
+          "passId": "one_command_buffer:pass0",
+          "commandBufferId": "one_command_buffer:command0",
+          "submitId": "one_command_buffer:submit0",
+          "querySetId": "one_command_buffer:query",
+          "queryIndices": [
+            0,
+            1
+          ],
+          "passIndex": 0,
+          "dispatches": 32,
+          "startTimestamp": "295238653181952",
+          "endTimestamp": "295238666813440",
+          "gpuPassDurationNs": 13631488,
+          "gpuPassDurationMs": 13.631488
+        },
+        {
+          "passId": "one_command_buffer:pass1",
+          "commandBufferId": "one_command_buffer:command0",
+          "submitId": "one_command_buffer:submit0",
+          "querySetId": "one_command_buffer:query",
+          "queryIndices": [
+            2,
+            3
+          ],
+          "passIndex": 1,
+          "dispatches": 32,
+          "startTimestamp": "295238653181952",
+          "endTimestamp": "295238672908288",
+          "gpuPassDurationNs": 19726336,
+          "gpuPassDurationMs": 19.726336
+        },
+        {
+          "passId": "one_command_buffer:pass2",
+          "commandBufferId": "one_command_buffer:command0",
+          "submitId": "one_command_buffer:submit0",
+          "querySetId": "one_command_buffer:query",
+          "queryIndices": [
+            4,
+            5
+          ],
+          "passIndex": 2,
+          "dispatches": 32,
+          "startTimestamp": "295238653181952",
+          "endTimestamp": "295238678937600",
+          "gpuPassDurationNs": 25755648,
+          "gpuPassDurationMs": 25.755648
+        },
+        {
+          "passId": "one_command_buffer:pass3",
+          "commandBufferId": "one_command_buffer:command0",
+          "submitId": "one_command_buffer:submit0",
+          "querySetId": "one_command_buffer:query",
+          "queryIndices": [
+            6,
+            7
+          ],
+          "passIndex": 3,
+          "dispatches": 32,
+          "startTimestamp": "295238653181952",
+          "endTimestamp": "295238684966912",
+          "gpuPassDurationNs": 31784960,
+          "gpuPassDurationMs": 31.78496
+        },
+        {
+          "passId": "one_command_buffer:pass4",
+          "commandBufferId": "one_command_buffer:command0",
+          "submitId": "one_command_buffer:submit0",
+          "querySetId": "one_command_buffer:query",
+          "queryIndices": [
+            8,
+            9
+          ],
+          "passIndex": 4,
+          "dispatches": 32,
+          "startTimestamp": "295238653181952",
+          "endTimestamp": "295238690996224",
+          "gpuPassDurationNs": 37814272,
+          "gpuPassDurationMs": 37.814272
+        },
+        {
+          "passId": "one_command_buffer:pass5",
+          "commandBufferId": "one_command_buffer:command0",
+          "submitId": "one_command_buffer:submit0",
+          "querySetId": "one_command_buffer:query",
+          "queryIndices": [
+            10,
+            11
+          ],
+          "passIndex": 5,
+          "dispatches": 32,
+          "startTimestamp": "295238653181952",
+          "endTimestamp": "295238697091072",
+          "gpuPassDurationNs": 43909120,
+          "gpuPassDurationMs": 43.90912
+        },
+        {
+          "passId": "one_command_buffer:pass6",
+          "commandBufferId": "one_command_buffer:command0",
+          "submitId": "one_command_buffer:submit0",
+          "querySetId": "one_command_buffer:query",
+          "queryIndices": [
+            12,
+            13
+          ],
+          "passIndex": 6,
+          "dispatches": 32,
+          "startTimestamp": "295238653181952",
+          "endTimestamp": "295238703251456",
+          "gpuPassDurationNs": 50069504,
+          "gpuPassDurationMs": 50.069504
+        },
+        {
+          "passId": "one_command_buffer:pass7",
+          "commandBufferId": "one_command_buffer:command0",
+          "submitId": "one_command_buffer:submit0",
+          "querySetId": "one_command_buffer:query",
+          "queryIndices": [
+            14,
+            15
+          ],
+          "passIndex": 7,
+          "dispatches": 32,
+          "startTimestamp": "295238653181952",
+          "endTimestamp": "295238709477376",
+          "gpuPassDurationNs": 56295424,
+          "gpuPassDurationMs": 56.295424
+        }
+      ],
+      "correctness": [
+        {
+          "passIndex": 0,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 1,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 2,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 3,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 4,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 5,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 6,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 7,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        }
+      ],
+      "submissions": [
+        {
+          "submitId": "one_command_buffer:submit0",
+          "waited": false,
+          "wallMs": null
+        },
+        {
+          "submitId": "one_command_buffer:submit1",
+          "waited": false,
+          "wallMs": null
+        }
+      ],
+      "diagnostics": {
+        "passDurationNs": {
+          "count": 8,
+          "median": 34799616,
+          "p95": 56295424,
+          "min": 13631488,
+          "max": 56295424,
+          "zeroCount": 0
+        },
+        "observedTimestampDifferenceGcdNs": "65536",
+        "startInversions": 0,
+        "endInversions": 0,
+        "adjacent": [
+          {
+            "previousPass": "one_command_buffer:pass0",
+            "nextPass": "one_command_buffer:pass1",
+            "previousCommand": "one_command_buffer:command0",
+            "nextCommand": "one_command_buffer:command0",
+            "previousSubmit": "one_command_buffer:submit0",
+            "nextSubmit": "one_command_buffer:submit0",
+            "signedEndMinusNextStartNs": "13631488",
+            "overlapNs": "13631488",
+            "category": "same_command_buffer"
+          },
+          {
+            "previousPass": "one_command_buffer:pass1",
+            "nextPass": "one_command_buffer:pass2",
+            "previousCommand": "one_command_buffer:command0",
+            "nextCommand": "one_command_buffer:command0",
+            "previousSubmit": "one_command_buffer:submit0",
+            "nextSubmit": "one_command_buffer:submit0",
+            "signedEndMinusNextStartNs": "19726336",
+            "overlapNs": "19726336",
+            "category": "same_command_buffer"
+          },
+          {
+            "previousPass": "one_command_buffer:pass2",
+            "nextPass": "one_command_buffer:pass3",
+            "previousCommand": "one_command_buffer:command0",
+            "nextCommand": "one_command_buffer:command0",
+            "previousSubmit": "one_command_buffer:submit0",
+            "nextSubmit": "one_command_buffer:submit0",
+            "signedEndMinusNextStartNs": "25755648",
+            "overlapNs": "25755648",
+            "category": "same_command_buffer"
+          },
+          {
+            "previousPass": "one_command_buffer:pass3",
+            "nextPass": "one_command_buffer:pass4",
+            "previousCommand": "one_command_buffer:command0",
+            "nextCommand": "one_command_buffer:command0",
+            "previousSubmit": "one_command_buffer:submit0",
+            "nextSubmit": "one_command_buffer:submit0",
+            "signedEndMinusNextStartNs": "31784960",
+            "overlapNs": "31784960",
+            "category": "same_command_buffer"
+          },
+          {
+            "previousPass": "one_command_buffer:pass4",
+            "nextPass": "one_command_buffer:pass5",
+            "previousCommand": "one_command_buffer:command0",
+            "nextCommand": "one_command_buffer:command0",
+            "previousSubmit": "one_command_buffer:submit0",
+            "nextSubmit": "one_command_buffer:submit0",
+            "signedEndMinusNextStartNs": "37814272",
+            "overlapNs": "37814272",
+            "category": "same_command_buffer"
+          },
+          {
+            "previousPass": "one_command_buffer:pass5",
+            "nextPass": "one_command_buffer:pass6",
+            "previousCommand": "one_command_buffer:command0",
+            "nextCommand": "one_command_buffer:command0",
+            "previousSubmit": "one_command_buffer:submit0",
+            "nextSubmit": "one_command_buffer:submit0",
+            "signedEndMinusNextStartNs": "43909120",
+            "overlapNs": "43909120",
+            "category": "same_command_buffer"
+          },
+          {
+            "previousPass": "one_command_buffer:pass6",
+            "nextPass": "one_command_buffer:pass7",
+            "previousCommand": "one_command_buffer:command0",
+            "nextCommand": "one_command_buffer:command0",
+            "previousSubmit": "one_command_buffer:submit0",
+            "nextSubmit": "one_command_buffer:submit0",
+            "signedEndMinusNextStartNs": "50069504",
+            "overlapNs": "50069504",
+            "category": "same_command_buffer"
+          }
+        ],
+        "positiveOverlapNs": {
+          "count": 7,
+          "median": 31784960,
+          "p95": 50069504,
+          "min": 13631488,
+          "max": 50069504,
+          "zeroCount": 0
+        },
+        "atMost65536Ns": 0,
+        "greaterThan65536Ns": 7,
+        "resolutionLimited": false,
+        "cause": "UNKNOWN pending controlled observations; no overlap deletion or attribution repair",
+        "totalEndToEndGpuTime": "NOT_MEASURED"
+      },
+      "enqueueToFinalCompletionWallMs": 60.60000002384186,
+      "readbackAndCpuCheckWallMs": 179.5999999642372
+    },
+    {
+      "mode": "continuous_submits",
+      "status": "COMPLETE",
+      "samples": [
+        {
+          "passId": "continuous_submits:pass0",
+          "commandBufferId": "continuous_submits:command0",
+          "submitId": "continuous_submits:submit0",
+          "querySetId": "continuous_submits:query",
+          "queryIndices": [
+            0,
+            1
+          ],
+          "passIndex": 0,
+          "dispatches": 32,
+          "startTimestamp": "295238934986752",
+          "endTimestamp": "295238944948224",
+          "gpuPassDurationNs": 9961472,
+          "gpuPassDurationMs": 9.961472
+        },
+        {
+          "passId": "continuous_submits:pass1",
+          "commandBufferId": "continuous_submits:command1",
+          "submitId": "continuous_submits:submit1",
+          "querySetId": "continuous_submits:query",
+          "queryIndices": [
+            2,
+            3
+          ],
+          "passIndex": 1,
+          "dispatches": 32,
+          "startTimestamp": "295238935052288",
+          "endTimestamp": "295238950846464",
+          "gpuPassDurationNs": 15794176,
+          "gpuPassDurationMs": 15.794176
+        },
+        {
+          "passId": "continuous_submits:pass2",
+          "commandBufferId": "continuous_submits:command2",
+          "submitId": "continuous_submits:submit2",
+          "querySetId": "continuous_submits:query",
+          "queryIndices": [
+            4,
+            5
+          ],
+          "passIndex": 2,
+          "dispatches": 32,
+          "startTimestamp": "295238935248896",
+          "endTimestamp": "295238956744704",
+          "gpuPassDurationNs": 21495808,
+          "gpuPassDurationMs": 21.495808
+        },
+        {
+          "passId": "continuous_submits:pass3",
+          "commandBufferId": "continuous_submits:command3",
+          "submitId": "continuous_submits:submit3",
+          "querySetId": "continuous_submits:query",
+          "queryIndices": [
+            6,
+            7
+          ],
+          "passIndex": 3,
+          "dispatches": 32,
+          "startTimestamp": "295238935838720",
+          "endTimestamp": "295238962642944",
+          "gpuPassDurationNs": 26804224,
+          "gpuPassDurationMs": 26.804224
+        },
+        {
+          "passId": "continuous_submits:pass4",
+          "commandBufferId": "continuous_submits:command4",
+          "submitId": "continuous_submits:submit4",
+          "querySetId": "continuous_submits:query",
+          "queryIndices": [
+            8,
+            9
+          ],
+          "passIndex": 4,
+          "dispatches": 32,
+          "startTimestamp": "295238936952832",
+          "endTimestamp": "295238968541184",
+          "gpuPassDurationNs": 31588352,
+          "gpuPassDurationMs": 31.588352
+        },
+        {
+          "passId": "continuous_submits:pass5",
+          "commandBufferId": "continuous_submits:command5",
+          "submitId": "continuous_submits:submit5",
+          "querySetId": "continuous_submits:query",
+          "queryIndices": [
+            10,
+            11
+          ],
+          "passIndex": 5,
+          "dispatches": 32,
+          "startTimestamp": "295238938066944",
+          "endTimestamp": "295238974636032",
+          "gpuPassDurationNs": 36569088,
+          "gpuPassDurationMs": 36.569088
+        },
+        {
+          "passId": "continuous_submits:pass6",
+          "commandBufferId": "continuous_submits:command6",
+          "submitId": "continuous_submits:submit6",
+          "querySetId": "continuous_submits:query",
+          "queryIndices": [
+            12,
+            13
+          ],
+          "passIndex": 6,
+          "dispatches": 32,
+          "startTimestamp": "295238939377664",
+          "endTimestamp": "295238980730880",
+          "gpuPassDurationNs": 41353216,
+          "gpuPassDurationMs": 41.353216
+        },
+        {
+          "passId": "continuous_submits:pass7",
+          "commandBufferId": "continuous_submits:command7",
+          "submitId": "continuous_submits:submit7",
+          "querySetId": "continuous_submits:query",
+          "queryIndices": [
+            14,
+            15
+          ],
+          "passIndex": 7,
+          "dispatches": 32,
+          "startTimestamp": "295238940557312",
+          "endTimestamp": "295238986825728",
+          "gpuPassDurationNs": 46268416,
+          "gpuPassDurationMs": 46.268416
+        }
+      ],
+      "correctness": [
+        {
+          "passIndex": 0,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 1,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 2,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 3,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 4,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 5,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 6,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 7,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        }
+      ],
+      "submissions": [
+        {
+          "submitId": "continuous_submits:submit0",
+          "waited": false,
+          "wallMs": null
+        },
+        {
+          "submitId": "continuous_submits:submit1",
+          "waited": false,
+          "wallMs": null
+        },
+        {
+          "submitId": "continuous_submits:submit2",
+          "waited": false,
+          "wallMs": null
+        },
+        {
+          "submitId": "continuous_submits:submit3",
+          "waited": false,
+          "wallMs": null
+        },
+        {
+          "submitId": "continuous_submits:submit4",
+          "waited": false,
+          "wallMs": null
+        },
+        {
+          "submitId": "continuous_submits:submit5",
+          "waited": false,
+          "wallMs": null
+        },
+        {
+          "submitId": "continuous_submits:submit6",
+          "waited": false,
+          "wallMs": null
+        },
+        {
+          "submitId": "continuous_submits:submit7",
+          "waited": false,
+          "wallMs": null
+        },
+        {
+          "submitId": "continuous_submits:submit8",
+          "waited": false,
+          "wallMs": null
+        }
+      ],
+      "diagnostics": {
+        "passDurationNs": {
+          "count": 8,
+          "median": 29196288,
+          "p95": 46268416,
+          "min": 9961472,
+          "max": 46268416,
+          "zeroCount": 0
+        },
+        "observedTimestampDifferenceGcdNs": "65536",
+        "startInversions": 0,
+        "endInversions": 0,
+        "adjacent": [
+          {
+            "previousPass": "continuous_submits:pass0",
+            "nextPass": "continuous_submits:pass1",
+            "previousCommand": "continuous_submits:command0",
+            "nextCommand": "continuous_submits:command1",
+            "previousSubmit": "continuous_submits:submit0",
+            "nextSubmit": "continuous_submits:submit1",
+            "signedEndMinusNextStartNs": "9895936",
+            "overlapNs": "9895936",
+            "category": "cross_submit"
+          },
+          {
+            "previousPass": "continuous_submits:pass1",
+            "nextPass": "continuous_submits:pass2",
+            "previousCommand": "continuous_submits:command1",
+            "nextCommand": "continuous_submits:command2",
+            "previousSubmit": "continuous_submits:submit1",
+            "nextSubmit": "continuous_submits:submit2",
+            "signedEndMinusNextStartNs": "15597568",
+            "overlapNs": "15597568",
+            "category": "cross_submit"
+          },
+          {
+            "previousPass": "continuous_submits:pass2",
+            "nextPass": "continuous_submits:pass3",
+            "previousCommand": "continuous_submits:command2",
+            "nextCommand": "continuous_submits:command3",
+            "previousSubmit": "continuous_submits:submit2",
+            "nextSubmit": "continuous_submits:submit3",
+            "signedEndMinusNextStartNs": "20905984",
+            "overlapNs": "20905984",
+            "category": "cross_submit"
+          },
+          {
+            "previousPass": "continuous_submits:pass3",
+            "nextPass": "continuous_submits:pass4",
+            "previousCommand": "continuous_submits:command3",
+            "nextCommand": "continuous_submits:command4",
+            "previousSubmit": "continuous_submits:submit3",
+            "nextSubmit": "continuous_submits:submit4",
+            "signedEndMinusNextStartNs": "25690112",
+            "overlapNs": "25690112",
+            "category": "cross_submit"
+          },
+          {
+            "previousPass": "continuous_submits:pass4",
+            "nextPass": "continuous_submits:pass5",
+            "previousCommand": "continuous_submits:command4",
+            "nextCommand": "continuous_submits:command5",
+            "previousSubmit": "continuous_submits:submit4",
+            "nextSubmit": "continuous_submits:submit5",
+            "signedEndMinusNextStartNs": "30474240",
+            "overlapNs": "30474240",
+            "category": "cross_submit"
+          },
+          {
+            "previousPass": "continuous_submits:pass5",
+            "nextPass": "continuous_submits:pass6",
+            "previousCommand": "continuous_submits:command5",
+            "nextCommand": "continuous_submits:command6",
+            "previousSubmit": "continuous_submits:submit5",
+            "nextSubmit": "continuous_submits:submit6",
+            "signedEndMinusNextStartNs": "35258368",
+            "overlapNs": "35258368",
+            "category": "cross_submit"
+          },
+          {
+            "previousPass": "continuous_submits:pass6",
+            "nextPass": "continuous_submits:pass7",
+            "previousCommand": "continuous_submits:command6",
+            "nextCommand": "continuous_submits:command7",
+            "previousSubmit": "continuous_submits:submit6",
+            "nextSubmit": "continuous_submits:submit7",
+            "signedEndMinusNextStartNs": "40173568",
+            "overlapNs": "40173568",
+            "category": "cross_submit"
+          }
+        ],
+        "positiveOverlapNs": {
+          "count": 7,
+          "median": 25690112,
+          "p95": 40173568,
+          "min": 9895936,
+          "max": 40173568,
+          "zeroCount": 0
+        },
+        "atMost65536Ns": 0,
+        "greaterThan65536Ns": 7,
+        "resolutionLimited": false,
+        "cause": "UNKNOWN pending controlled observations; no overlap deletion or attribution repair",
+        "totalEndToEndGpuTime": "NOT_MEASURED"
+      },
+      "enqueueToFinalCompletionWallMs": 57,
+      "readbackAndCpuCheckWallMs": 173.10000002384186
+    },
+    {
+      "mode": "serial_wait",
+      "status": "COMPLETE",
+      "samples": [
+        {
+          "passId": "serial_wait:pass0",
+          "commandBufferId": "serial_wait:command0",
+          "submitId": "serial_wait:submit0",
+          "querySetId": "serial_wait:query",
+          "queryIndices": [
+            0,
+            1
+          ],
+          "passIndex": 0,
+          "dispatches": 32,
+          "startTimestamp": "295239179370496",
+          "endTimestamp": "295239187365888",
+          "gpuPassDurationNs": 7995392,
+          "gpuPassDurationMs": 7.995392
+        },
+        {
+          "passId": "serial_wait:pass1",
+          "commandBufferId": "serial_wait:command1",
+          "submitId": "serial_wait:submit1",
+          "querySetId": "serial_wait:query",
+          "queryIndices": [
+            2,
+            3
+          ],
+          "passIndex": 1,
+          "dispatches": 32,
+          "startTimestamp": "295239188545536",
+          "endTimestamp": "295239194509312",
+          "gpuPassDurationNs": 5963776,
+          "gpuPassDurationMs": 5.963776
+        },
+        {
+          "passId": "serial_wait:pass2",
+          "commandBufferId": "serial_wait:command2",
+          "submitId": "serial_wait:submit2",
+          "querySetId": "serial_wait:query",
+          "queryIndices": [
+            4,
+            5
+          ],
+          "passIndex": 2,
+          "dispatches": 32,
+          "startTimestamp": "295239196868608",
+          "endTimestamp": "295239205388288",
+          "gpuPassDurationNs": 8519680,
+          "gpuPassDurationMs": 8.51968
+        },
+        {
+          "passId": "serial_wait:pass3",
+          "commandBufferId": "serial_wait:command3",
+          "submitId": "serial_wait:submit3",
+          "querySetId": "serial_wait:query",
+          "queryIndices": [
+            6,
+            7
+          ],
+          "passIndex": 3,
+          "dispatches": 32,
+          "startTimestamp": "295239208140800",
+          "endTimestamp": "295239216660480",
+          "gpuPassDurationNs": 8519680,
+          "gpuPassDurationMs": 8.51968
+        },
+        {
+          "passId": "serial_wait:pass4",
+          "commandBufferId": "serial_wait:command4",
+          "submitId": "serial_wait:submit4",
+          "querySetId": "serial_wait:query",
+          "queryIndices": [
+            8,
+            9
+          ],
+          "passIndex": 4,
+          "dispatches": 32,
+          "startTimestamp": "295239221116928",
+          "endTimestamp": "295239230488576",
+          "gpuPassDurationNs": 9371648,
+          "gpuPassDurationMs": 9.371648
+        },
+        {
+          "passId": "serial_wait:pass5",
+          "commandBufferId": "serial_wait:command5",
+          "submitId": "serial_wait:submit5",
+          "querySetId": "serial_wait:query",
+          "queryIndices": [
+            10,
+            11
+          ],
+          "passIndex": 5,
+          "dispatches": 32,
+          "startTimestamp": "295239235928064",
+          "endTimestamp": "295239245561856",
+          "gpuPassDurationNs": 9633792,
+          "gpuPassDurationMs": 9.633792
+        },
+        {
+          "passId": "serial_wait:pass6",
+          "commandBufferId": "serial_wait:command6",
+          "submitId": "serial_wait:submit6",
+          "querySetId": "serial_wait:query",
+          "queryIndices": [
+            12,
+            13
+          ],
+          "passIndex": 6,
+          "dispatches": 32,
+          "startTimestamp": "295239247986688",
+          "endTimestamp": "295239254278144",
+          "gpuPassDurationNs": 6291456,
+          "gpuPassDurationMs": 6.291456
+        },
+        {
+          "passId": "serial_wait:pass7",
+          "commandBufferId": "serial_wait:command7",
+          "submitId": "serial_wait:submit7",
+          "querySetId": "serial_wait:query",
+          "queryIndices": [
+            14,
+            15
+          ],
+          "passIndex": 7,
+          "dispatches": 32,
+          "startTimestamp": "295239257489408",
+          "endTimestamp": "295239266664448",
+          "gpuPassDurationNs": 9175040,
+          "gpuPassDurationMs": 9.17504
+        }
+      ],
+      "correctness": [
+        {
+          "passIndex": 0,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 1,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 2,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 3,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 4,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 5,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 6,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "passIndex": 7,
+          "elementCount": 1048576,
+          "status": "PASS",
+          "errorElementCount": 0,
+          "nonFiniteCount": 0,
+          "maxAbsoluteError": 0
+        }
+      ],
+      "submissions": [
+        {
+          "submitId": "serial_wait:submit0",
+          "waited": true,
+          "wallMs": 10.600000023841858
+        },
+        {
+          "submitId": "serial_wait:submit1",
+          "waited": true,
+          "wallMs": 8.399999976158142
+        },
+        {
+          "submitId": "serial_wait:submit2",
+          "waited": true,
+          "wallMs": 10.600000023841858
+        },
+        {
+          "submitId": "serial_wait:submit3",
+          "waited": true,
+          "wallMs": 12.400000035762787
+        },
+        {
+          "submitId": "serial_wait:submit4",
+          "waited": true,
+          "wallMs": 14.5
+        },
+        {
+          "submitId": "serial_wait:submit5",
+          "waited": true,
+          "wallMs": 13.5
+        },
+        {
+          "submitId": "serial_wait:submit6",
+          "waited": true,
+          "wallMs": 9
+        },
+        {
+          "submitId": "serial_wait:submit7",
+          "waited": true,
+          "wallMs": 12.800000011920929
+        },
+        {
+          "submitId": "serial_wait:submit8",
+          "waited": false,
+          "wallMs": null
+        }
+      ],
+      "diagnostics": {
+        "passDurationNs": {
+          "count": 8,
+          "median": 8519680,
+          "p95": 9633792,
+          "min": 5963776,
+          "max": 9633792,
+          "zeroCount": 0
+        },
+        "observedTimestampDifferenceGcdNs": "65536",
+        "startInversions": 0,
+        "endInversions": 0,
+        "adjacent": [
+          {
+            "previousPass": "serial_wait:pass0",
+            "nextPass": "serial_wait:pass1",
+            "previousCommand": "serial_wait:command0",
+            "nextCommand": "serial_wait:command1",
+            "previousSubmit": "serial_wait:submit0",
+            "nextSubmit": "serial_wait:submit1",
+            "signedEndMinusNextStartNs": "-1179648",
+            "overlapNs": "0",
+            "category": "cross_submit"
+          },
+          {
+            "previousPass": "serial_wait:pass1",
+            "nextPass": "serial_wait:pass2",
+            "previousCommand": "serial_wait:command1",
+            "nextCommand": "serial_wait:command2",
+            "previousSubmit": "serial_wait:submit1",
+            "nextSubmit": "serial_wait:submit2",
+            "signedEndMinusNextStartNs": "-2359296",
+            "overlapNs": "0",
+            "category": "cross_submit"
+          },
+          {
+            "previousPass": "serial_wait:pass2",
+            "nextPass": "serial_wait:pass3",
+            "previousCommand": "serial_wait:command2",
+            "nextCommand": "serial_wait:command3",
+            "previousSubmit": "serial_wait:submit2",
+            "nextSubmit": "serial_wait:submit3",
+            "signedEndMinusNextStartNs": "-2752512",
+            "overlapNs": "0",
+            "category": "cross_submit"
+          },
+          {
+            "previousPass": "serial_wait:pass3",
+            "nextPass": "serial_wait:pass4",
+            "previousCommand": "serial_wait:command3",
+            "nextCommand": "serial_wait:command4",
+            "previousSubmit": "serial_wait:submit3",
+            "nextSubmit": "serial_wait:submit4",
+            "signedEndMinusNextStartNs": "-4456448",
+            "overlapNs": "0",
+            "category": "cross_submit"
+          },
+          {
+            "previousPass": "serial_wait:pass4",
+            "nextPass": "serial_wait:pass5",
+            "previousCommand": "serial_wait:command4",
+            "nextCommand": "serial_wait:command5",
+            "previousSubmit": "serial_wait:submit4",
+            "nextSubmit": "serial_wait:submit5",
+            "signedEndMinusNextStartNs": "-5439488",
+            "overlapNs": "0",
+            "category": "cross_submit"
+          },
+          {
+            "previousPass": "serial_wait:pass5",
+            "nextPass": "serial_wait:pass6",
+            "previousCommand": "serial_wait:command5",
+            "nextCommand": "serial_wait:command6",
+            "previousSubmit": "serial_wait:submit5",
+            "nextSubmit": "serial_wait:submit6",
+            "signedEndMinusNextStartNs": "-2424832",
+            "overlapNs": "0",
+            "category": "cross_submit"
+          },
+          {
+            "previousPass": "serial_wait:pass6",
+            "nextPass": "serial_wait:pass7",
+            "previousCommand": "serial_wait:command6",
+            "nextCommand": "serial_wait:command7",
+            "previousSubmit": "serial_wait:submit6",
+            "nextSubmit": "serial_wait:submit7",
+            "signedEndMinusNextStartNs": "-3211264",
+            "overlapNs": "0",
+            "category": "cross_submit"
+          }
+        ],
+        "positiveOverlapNs": null,
+        "atMost65536Ns": 0,
+        "greaterThan65536Ns": 0,
+        "resolutionLimited": false,
+        "cause": "UNKNOWN pending controlled observations; no overlap deletion or attribution repair",
+        "totalEndToEndGpuTime": "NOT_MEASURED"
+      },
+      "enqueueToFinalCompletionWallMs": 95.80000001192093,
+      "readbackAndCpuCheckWallMs": 161.30000001192093
+    }
+  ],
+  "resources": [
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 140,
+      "label": "ping0",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 140,
+      "label": "ping1",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 136,
+      "label": "B ones",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 16,
+      "usage": 72,
+      "label": "N",
+      "destroyed": true
+    },
+    {
+      "kind": "querySet",
+      "label": "one_command_buffer",
+      "count": 16,
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 128,
+      "usage": 516,
+      "label": "one_command_buffer resolve",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 128,
+      "usage": 9,
+      "label": "one_command_buffer timestamps",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "one_command_buffer output0",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "one_command_buffer output1",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "one_command_buffer output2",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "one_command_buffer output3",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "one_command_buffer output4",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "one_command_buffer output5",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "one_command_buffer output6",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "one_command_buffer output7",
+      "destroyed": true
+    },
+    {
+      "kind": "querySet",
+      "label": "continuous_submits",
+      "count": 16,
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 128,
+      "usage": 516,
+      "label": "continuous_submits resolve",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 128,
+      "usage": 9,
+      "label": "continuous_submits timestamps",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "continuous_submits output0",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "continuous_submits output1",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "continuous_submits output2",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "continuous_submits output3",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "continuous_submits output4",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "continuous_submits output5",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "continuous_submits output6",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "continuous_submits output7",
+      "destroyed": true
+    },
+    {
+      "kind": "querySet",
+      "label": "serial_wait",
+      "count": 16,
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 128,
+      "usage": 516,
+      "label": "serial_wait resolve",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 128,
+      "usage": 9,
+      "label": "serial_wait timestamps",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "serial_wait output0",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "serial_wait output1",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "serial_wait output2",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "serial_wait output3",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "serial_wait output4",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "serial_wait output5",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "serial_wait output6",
+      "destroyed": true
+    },
+    {
+      "kind": "buffer",
+      "size": 4194304,
+      "usage": 9,
+      "label": "serial_wait output7",
+      "destroyed": true
+    }
+  ],
+  "errors": [],
+  "shader": {
+    "source": "struct Params { n: u32, }\n@group(0) @binding(0) var<storage, read> a: array<f32>;\n@group(0) @binding(1) var<storage, read> b: array<f32>;\n@group(0) @binding(2) var<storage, read_write> c: array<f32>;\n@group(0) @binding(3) var<uniform> params: Params;\n\n@compute @workgroup_size(64)\nfn main(@builtin(global_invocation_id) id: vec3<u32>) {\n    let i = id.x;\n    if (i >= params.n) { return; }\n    c[i] = a[i] + b[i];\n}\n",
+    "sha256": "7e51ee5add7c62a0208e6f135fed5edc3adadc405c3c086d7ca061eef07cb3b7",
+    "compilationMessages": []
+  }
+}

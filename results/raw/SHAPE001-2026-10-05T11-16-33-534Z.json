@@ -1,0 +1,937 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "SHAPE001",
+  "status": "INCOMPLETE",
+  "startedIsoTime": "2026-10-05T11:14:55.022Z",
+  "endedIsoTime": "2026-10-05T11:16:33.534Z",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36",
+    "secureContext": true,
+    "pageUrl": "http://localhost:8000/src/profiling/shape001.html",
+    "crossOriginIsolated": false,
+    "manualState": {
+      "thermal": "未明显发热，温度未测量",
+      "charging": "未充电：电量100%",
+      "devtools": "未开启",
+      "flag": "已停用"
+    },
+    "probeAdapter": {
+      "info": {
+        "vendor": "arm",
+        "architecture": "gen-5",
+        "device": "",
+        "description": ""
+      },
+      "features": [
+        "bgra8unorm-storage",
+        "core-features-and-limits",
+        "depth-clip-control",
+        "depth32float-stencil8",
+        "dual-source-blending",
+        "float32-blendable",
+        "float32-filterable",
+        "indirect-first-instance",
+        "primitive-index",
+        "rg11b10ufloat-renderable",
+        "shader-f16",
+        "subgroup-size-control",
+        "subgroups",
+        "texture-component-swizzle",
+        "texture-compression-astc",
+        "texture-compression-astc-sliced-3d",
+        "texture-compression-etc2",
+        "texture-formats-tier1",
+        "texture-formats-tier2",
+        "timestamp-query"
+      ],
+      "limits": {
+        "maxBindGroups": 4,
+        "maxBindGroupsPlusVertexBuffers": 24,
+        "maxBindingsPerBindGroup": 1000,
+        "maxBufferSize": 4294967292,
+        "maxColorAttachmentBytesPerSample": 128,
+        "maxColorAttachments": 8,
+        "maxComputeInvocationsPerWorkgroup": 1024,
+        "maxComputeWorkgroupSizeX": 1024,
+        "maxComputeWorkgroupSizeY": 1024,
+        "maxComputeWorkgroupSizeZ": 64,
+        "maxComputeWorkgroupStorageSize": 32768,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxDynamicStorageBuffersPerPipelineLayout": 8,
+        "maxDynamicUniformBuffersPerPipelineLayout": 10,
+        "maxImmediateSize": 64,
+        "maxInterStageShaderVariables": 28,
+        "maxSampledTexturesPerShaderStage": 48,
+        "maxSamplersPerShaderStage": 16,
+        "maxStorageBufferBindingSize": 2147483644,
+        "maxStorageBuffersInFragmentStage": 16,
+        "maxStorageBuffersInVertexStage": 16,
+        "maxStorageBuffersPerShaderStage": 16,
+        "maxStorageTexturesInFragmentStage": 8,
+        "maxStorageTexturesInVertexStage": 8,
+        "maxStorageTexturesPerShaderStage": 8,
+        "maxTextureArrayLayers": 2048,
+        "maxTextureDimension1D": 16384,
+        "maxTextureDimension2D": 16384,
+        "maxTextureDimension3D": 2048,
+        "maxUniformBufferBindingSize": 65536,
+        "maxUniformBuffersPerShaderStage": 12,
+        "maxVertexAttributes": 30,
+        "maxVertexBufferArrayStride": 2048,
+        "maxVertexBuffers": 8,
+        "minStorageBufferOffsetAlignment": 256,
+        "minUniformBufferOffsetAlignment": 256
+      }
+    },
+    "runtimeDevice": {
+      "features": [
+        "core-features-and-limits",
+        "shader-f16",
+        "subgroups"
+      ],
+      "limits": {
+        "maxBindGroups": 4,
+        "maxBindGroupsPlusVertexBuffers": 24,
+        "maxBindingsPerBindGroup": 1000,
+        "maxBufferSize": 4294967292,
+        "maxColorAttachmentBytesPerSample": 32,
+        "maxColorAttachments": 8,
+        "maxComputeInvocationsPerWorkgroup": 256,
+        "maxComputeWorkgroupSizeX": 256,
+        "maxComputeWorkgroupSizeY": 256,
+        "maxComputeWorkgroupSizeZ": 64,
+        "maxComputeWorkgroupStorageSize": 16384,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxDynamicStorageBuffersPerPipelineLayout": 4,
+        "maxDynamicUniformBuffersPerPipelineLayout": 8,
+        "maxImmediateSize": 64,
+        "maxInterStageShaderVariables": 16,
+        "maxSampledTexturesPerShaderStage": 16,
+        "maxSamplersPerShaderStage": 16,
+        "maxStorageBufferBindingSize": 2147483644,
+        "maxStorageBuffersInFragmentStage": 16,
+        "maxStorageBuffersInVertexStage": 16,
+        "maxStorageBuffersPerShaderStage": 16,
+        "maxStorageTexturesInFragmentStage": 4,
+        "maxStorageTexturesInVertexStage": 4,
+        "maxStorageTexturesPerShaderStage": 4,
+        "maxTextureArrayLayers": 256,
+        "maxTextureDimension1D": 8192,
+        "maxTextureDimension2D": 8192,
+        "maxTextureDimension3D": 2048,
+        "maxUniformBufferBindingSize": 65536,
+        "maxUniformBuffersPerShaderStage": 12,
+        "maxVertexAttributes": 16,
+        "maxVertexBufferArrayStride": 2048,
+        "maxVertexBuffers": 8,
+        "minStorageBufferOffsetAlignment": 256,
+        "minUniformBufferOffsetAlignment": 256
+      }
+    },
+    "runtimeBackend": "UNKNOWN",
+    "probeScope": "Independent adapter probe; not runtime device",
+    "visibility": {
+      "initialState": "visible",
+      "events": [],
+      "droppedEvents": 0
+    }
+  },
+  "runtime": {
+    "package": "@mediapipe/tasks-genai",
+    "version": "0.10.29",
+    "modified": false,
+    "deviceCreation": "Unmodified createWebGpuDevice stock helper; timestamp-query not requested",
+    "manifest": {
+      "package": "@mediapipe/tasks-genai",
+      "version": "0.10.29",
+      "source": "https://registry.npmjs.org/@mediapipe/tasks-genai/-/tasks-genai-0.10.29.tgz",
+      "npmIntegrity": "sha512-PRznwHOprGNoSbTbtAyHkMD1rslPLEBSidvz/Ga7qWVr86CXmPEcQpFCidLciBpWNKF8VhQMU2YA51YyBCbPKg==",
+      "license": "Apache-2.0",
+      "localRoot": "/assets/vendor/tasks-genai/0.10.29",
+      "modified": false,
+      "files": [
+        {
+          "path": "genai_bundle.mjs",
+          "bytes": 59896,
+          "sha256": "73bae6514adb91eeeb03a92968f5e97dd0d690b54aed8fbf3cea1651cdc5f50d"
+        },
+        {
+          "path": "genai.d.ts",
+          "bytes": 21558,
+          "sha256": "224edd06387553d5e193c9e0ecbd914c399106d9e57fb2b118543c53c8ec0991"
+        },
+        {
+          "path": "package.json",
+          "bytes": 1108,
+          "sha256": "769a177cb5597219ec876fdd92343ec85f6a20997d9387df6361c0e8844cbd1f"
+        },
+        {
+          "path": "README.md",
+          "bytes": 1728,
+          "sha256": "07c55d75723c35f1797e9fb953355b83fcf68dd11207579c1cbc11f5dd349a3a"
+        },
+        {
+          "path": "wasm/genai_wasm_internal.js",
+          "bytes": 334067,
+          "sha256": "dd02fb217a4aed569e504444eda9a1972a80c8017c96e4000687782690eed927"
+        },
+        {
+          "path": "wasm/genai_wasm_internal.wasm",
+          "bytes": 27220715,
+          "sha256": "87a7324d0e26e1c1d880ba9a1c9864c8b17192c5d9db996cdf3bfaeb217f5483"
+        },
+        {
+          "path": "wasm/genai_wasm_nosimd_internal.js",
+          "bytes": 333870,
+          "sha256": "de27f0cece107f131c37e27d06aaa6978fdaa23e6575b3166c262c3c0ca15581"
+        },
+        {
+          "path": "wasm/genai_wasm_nosimd_internal.wasm",
+          "bytes": 27081142,
+          "sha256": "edbb7cf04f2777c2f657b457abcfbe5a4d7f6cbeb7e4aecbac49790a45fef35b"
+        },
+        {
+          "path": "wasm/genai_wasm_module_internal.js",
+          "bytes": 334104,
+          "sha256": "383b67e29f7a84e5529170c739a31e9a618a3c58fa50571e7880eb70223b1d20"
+        },
+        {
+          "path": "wasm/genai_wasm_module_internal.wasm",
+          "bytes": 27220735,
+          "sha256": "2c741c991ab15c60485b4841c3ed4dc5e0265123ec905a99eab27148bf2a1c19"
+        }
+      ]
+    },
+    "fileset": {
+      "wasmLoaderPath": "/assets/vendor/tasks-genai/0.10.29/wasm/genai_wasm_internal.js",
+      "wasmBinaryPath": "/assets/vendor/tasks-genai/0.10.29/wasm/genai_wasm_internal.wasm"
+    }
+  },
+  "model": {
+    "filename": "gemma-3n-E2B-it-int4-Web.litertlm",
+    "localPath": "/assets/models/gemma-3n-E2B-it-int4-Web.litertlm",
+    "manifest": {
+      "model": "Gemma 3n E2B instruction-tuned",
+      "filename": "gemma-3n-E2B-it-int4-Web.litertlm",
+      "localPath": "/assets/models/gemma-3n-E2B-it-int4-Web.litertlm",
+      "sourcePage": "https://huggingface.co/google/gemma-3n-E2B-it-litert-lm/blob/main/gemma-3n-E2B-it-int4-Web.litertlm",
+      "sourceRevision": "main (download revision not independently recorded)",
+      "status": "LOCAL_FILE_HASHED",
+      "actualBytes": 3038117888,
+      "sha256": "b6c8e1081ec80730f14473a5ece941b48da5d8e2a80c97c2963da153f3eff3d2",
+      "publisherSha256": null,
+      "publisherHashMatched": false,
+      "verificationScope": "Desktop file size and SHA256; exact Web filename; not a browser rehash or runtime compatibility result",
+      "verifiedIsoTime": "2026-10-04T14:07:29.501947+00:00"
+    },
+    "browserSha256": "NOT_MEASURED",
+    "hashProvenance": "Desktop verification manifest, browser HEAD size check only",
+    "browserSizeCheck": {
+      "httpStatus": 200,
+      "bytes": 3038117888
+    }
+  },
+  "prompt": {
+    "question": "Explain in two short sentences what matrix multiplication computes.",
+    "fullPrompt": "<start_of_turn>user\nExplain in two short sentences what matrix multiplication computes.<end_of_turn>\n<start_of_turn>model\n",
+    "sentPrompt": "<start_of_turn>user\nExplain in two short sentences what matrix multiplication computes.<end_of_turn>\n<start_of_turn>model\n"
+  },
+  "config": {
+    "maxTokens": 512,
+    "topK": 40,
+    "temperature": 0.8,
+    "randomSeed": 101,
+    "numResponses": 1,
+    "maxNumImages": 0,
+    "supportAudio": false,
+    "textOnly": true,
+    "maxTokensMeaning": "Combined input + output capacity; not output token count",
+    "gpuOptions": "Stock runtime device; no forceF32/cache/algorithm overrides"
+  },
+  "inputTokenCount": {
+    "phase": "TOKEN_COUNT",
+    "fullPrompt": "<start_of_turn>user\nExplain in two short sentences what matrix multiplication computes.<end_of_turn>\n<start_of_turn>model\n",
+    "value": 18,
+    "error": null,
+    "meaning": "sizeInTokens(fullPrompt) runtime tokenizer return; not generated tokens or verified internal prefill tensor length",
+    "returnType": "number"
+  },
+  "lifecycle": {
+    "modelInitialized": true,
+    "generationStarted": true,
+    "generationPromiseResolved": true,
+    "streamDoneObserved": true,
+    "nonemptyOutput": true,
+    "gpuDrainCompleted": true
+  },
+  "output": {
+    "streamedText": "Matrix multiplication computes a linear transformation from one vector space to another.  Essentially, it combines the vectors in the rows (or columns) of the first matrix to create a new vector in the space spanned by the columns of the second matrix.\n\n\n\n",
+    "returnedText": "Matrix multiplication computes a linear transformation from one vector space to another.  Essentially, it combines the vectors in the rows (or columns) of the first matrix to create a new vector in the space spanned by the columns of the second matrix.\n\n\n\n",
+    "finalText": "Matrix multiplication computes a linear transformation from one vector space to another.  Essentially, it combines the vectors in the rows (or columns) of the first matrix to create a new vector in the space spanned by the columns of the second matrix.\n\n\n\n"
+  },
+  "wallMetrics": {
+    "modelInitializationMs": 91301.60000002384,
+    "tokenCountMs": 7.400000035762787,
+    "tokenCountDrainMs": 211.5,
+    "generationRequestToPromiseResolutionMs": 6444,
+    "postGenerationDrainMs": 103.19999998807907
+  },
+  "events": [
+    {
+      "type": "instrumentation_installed",
+      "isoTime": "2026-10-05T11:14:55.285Z"
+    },
+    {
+      "type": "model_init_start",
+      "isoTime": "2026-10-05T11:14:55.285Z"
+    },
+    {
+      "type": "model_init_complete",
+      "isoTime": "2026-10-05T11:16:26.587Z"
+    },
+    {
+      "type": "token_count_start",
+      "isoTime": "2026-10-05T11:16:26.587Z"
+    },
+    {
+      "type": "token_count_complete",
+      "isoTime": "2026-10-05T11:16:26.595Z"
+    },
+    {
+      "type": "token_count_gpu_drain_complete",
+      "isoTime": "2026-10-05T11:16:26.806Z"
+    },
+    {
+      "type": "generation_request_start",
+      "isoTime": "2026-10-05T11:16:26.807Z"
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:27.351Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 543.8999999761581,
+      "fragment": "Matrix multiplication computes",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:27.669Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 862,
+      "fragment": " a linear transformation",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:28.017Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 1210.5999999642372,
+      "fragment": " from one vector",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:28.338Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 1531.199999988079,
+      "fragment": " space to another",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:28.675Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 1868,
+      "fragment": ".  Essentially",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:29.017Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 2210.300000011921,
+      "fragment": ", it combines",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:29.397Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 2590.5,
+      "fragment": " the vectors in",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:29.778Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 2971.5,
+      "fragment": " the rows (",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:30.148Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 3341.800000011921,
+      "fragment": "or columns)",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:30.479Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 3672.300000011921,
+      "fragment": " of the first",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:30.867Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 4060.199999988079,
+      "fragment": " matrix to create",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:31.288Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 4481.399999976158,
+      "fragment": " a new vector",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:31.644Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 4837.199999988079,
+      "fragment": " in the space",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:32.078Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 5271.800000011921,
+      "fragment": " spanned by the",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:32.448Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 5641.300000011921,
+      "fragment": " columns of the",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:32.840Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 6033.300000011921,
+      "fragment": " second matrix.",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:33.249Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 6442.099999964237,
+      "fragment": "\n\n\n\n",
+      "done": false
+    },
+    {
+      "type": "stream_callback",
+      "isoTime": "2026-10-05T11:16:33.250Z",
+      "phase": "GENERATION",
+      "fromRequestWallMs": 6443.800000011921,
+      "fragment": "",
+      "done": true
+    },
+    {
+      "type": "generation_promise_resolved",
+      "isoTime": "2026-10-05T11:16:33.251Z"
+    },
+    {
+      "type": "gpu_drain_start",
+      "isoTime": "2026-10-05T11:16:33.251Z"
+    },
+    {
+      "type": "gpu_drain_complete",
+      "isoTime": "2026-10-05T11:16:33.354Z"
+    }
+  ],
+  "errors": [],
+  "observer": {
+    "status": "COMPLETE",
+    "scope": "Phase/lifecycle tracker only; no full CountObserver trace or per-token counts"
+  },
+  "shapeCapture": {
+    "status": "INCOMPLETE",
+    "parameterBytesStatus": "INCOMPLETE",
+    "missingUniformSnapshots": 3,
+    "logicalShapeStatus": "UNKNOWN_UNTIL_AXIS_PADDING_REVIEW",
+    "selectedEncoded": 3,
+    "selectedSubmitted": 3,
+    "snapshots": [
+      {
+        "submitSequence": 51672,
+        "commandBufferId": "shape-commandBuffer-17452",
+        "passId": "shape-pass-17451",
+        "encodeSequence": 46613,
+        "pipeline": {
+          "id": "shape-pipeline-11990",
+          "shaderId": "shape-shader-11989",
+          "target": true,
+          "entryPoint": "main",
+          "constants": {
+            "0": 8,
+            "1": 4,
+            "2": 1
+          }
+        },
+        "dispatch": {
+          "x": 64,
+          "y": 1,
+          "z": 1
+        },
+        "bindings": [
+          {
+            "index": 0,
+            "setBindGroupSequence": 46612,
+            "dynamicOffsets": [],
+            "id": "shape-bindGroup-12043",
+            "entries": [
+              {
+                "binding": 2,
+                "buffer": {
+                  "id": "shape-buffer-48",
+                  "kind": "buffer",
+                  "label": "",
+                  "size": 6291456,
+                  "usage": 140
+                },
+                "offset": 0,
+                "size": 6291456,
+                "dynamic": false,
+                "dynamicOffset": 0,
+                "effectiveOffset": 0
+              },
+              {
+                "binding": 0,
+                "resource": {
+                  "id": "shape-textureView-1960",
+                  "kind": "textureView",
+                  "label": "",
+                  "texture": {
+                    "id": "shape-texture-1959",
+                    "kind": "texture",
+                    "label": "",
+                    "width": 512,
+                    "height": 512,
+                    "depthOrArrayLayers": 1,
+                    "format": "rgba16float",
+                    "dimension": "2d",
+                    "usage": 15
+                  },
+                  "descriptor": {
+                    "format": "rgba16float",
+                    "dimension": "2d",
+                    "baseMipLevel": 0,
+                    "mipLevelCount": 1,
+                    "baseArrayLayer": 0,
+                    "arrayLayerCount": 1,
+                    "aspect": "all",
+                    "usage": 0
+                  }
+                },
+                "dynamic": false,
+                "dynamicOffset": 0,
+                "effectiveOffset": 0
+              },
+              {
+                "binding": 1,
+                "resource": {
+                  "id": "shape-textureView-1878",
+                  "kind": "textureView",
+                  "label": "",
+                  "texture": {
+                    "id": "shape-texture-1877",
+                    "kind": "texture",
+                    "label": "",
+                    "width": 512,
+                    "height": 384,
+                    "depthOrArrayLayers": 1,
+                    "format": "rgba16float",
+                    "dimension": "2d",
+                    "usage": 15
+                  },
+                  "descriptor": {
+                    "format": "rgba16float",
+                    "dimension": "2d",
+                    "baseMipLevel": 0,
+                    "mipLevelCount": 1,
+                    "baseArrayLayer": 0,
+                    "arrayLayerCount": 1,
+                    "aspect": "all",
+                    "usage": 0
+                  }
+                },
+                "dynamic": false,
+                "dynamicOffset": 0,
+                "effectiveOffset": 0
+              },
+              {
+                "binding": 3,
+                "buffer": {
+                  "id": "shape-buffer-8446",
+                  "kind": "buffer",
+                  "label": "",
+                  "size": 1048576,
+                  "usage": 72
+                },
+                "offset": 722176,
+                "size": 16,
+                "dynamic": false,
+                "dynamicOffset": 0,
+                "effectiveOffset": 722176,
+                "uniform": {
+                  "status": "UNKNOWN",
+                  "reason": "No safe small uniform shadow/range"
+                }
+              }
+            ]
+          }
+        ],
+        "parameterBoundary": "Queue-order shadow after preceding writes/copies at this submission occurrence, not final buffer contents"
+      },
+      {
+        "submitSequence": 56984,
+        "commandBufferId": "shape-commandBuffer-17463",
+        "passId": "shape-pass-17462",
+        "encodeSequence": 51925,
+        "pipeline": {
+          "id": "shape-pipeline-11990",
+          "shaderId": "shape-shader-11989",
+          "target": true,
+          "entryPoint": "main",
+          "constants": {
+            "0": 8,
+            "1": 4,
+            "2": 1
+          }
+        },
+        "dispatch": {
+          "x": 64,
+          "y": 1,
+          "z": 1
+        },
+        "bindings": [
+          {
+            "index": 0,
+            "setBindGroupSequence": 51924,
+            "dynamicOffsets": [],
+            "id": "shape-bindGroup-12043",
+            "entries": [
+              {
+                "binding": 2,
+                "buffer": {
+                  "id": "shape-buffer-48",
+                  "kind": "buffer",
+                  "label": "",
+                  "size": 6291456,
+                  "usage": 140
+                },
+                "offset": 0,
+                "size": 6291456,
+                "dynamic": false,
+                "dynamicOffset": 0,
+                "effectiveOffset": 0
+              },
+              {
+                "binding": 0,
+                "resource": {
+                  "id": "shape-textureView-1960",
+                  "kind": "textureView",
+                  "label": "",
+                  "texture": {
+                    "id": "shape-texture-1959",
+                    "kind": "texture",
+                    "label": "",
+                    "width": 512,
+                    "height": 512,
+                    "depthOrArrayLayers": 1,
+                    "format": "rgba16float",
+                    "dimension": "2d",
+                    "usage": 15
+                  },
+                  "descriptor": {
+                    "format": "rgba16float",
+                    "dimension": "2d",
+                    "baseMipLevel": 0,
+                    "mipLevelCount": 1,
+                    "baseArrayLayer": 0,
+                    "arrayLayerCount": 1,
+                    "aspect": "all",
+                    "usage": 0
+                  }
+                },
+                "dynamic": false,
+                "dynamicOffset": 0,
+                "effectiveOffset": 0
+              },
+              {
+                "binding": 1,
+                "resource": {
+                  "id": "shape-textureView-1878",
+                  "kind": "textureView",
+                  "label": "",
+                  "texture": {
+                    "id": "shape-texture-1877",
+                    "kind": "texture",
+                    "label": "",
+                    "width": 512,
+                    "height": 384,
+                    "depthOrArrayLayers": 1,
+                    "format": "rgba16float",
+                    "dimension": "2d",
+                    "usage": 15
+                  },
+                  "descriptor": {
+                    "format": "rgba16float",
+                    "dimension": "2d",
+                    "baseMipLevel": 0,
+                    "mipLevelCount": 1,
+                    "baseArrayLayer": 0,
+                    "arrayLayerCount": 1,
+                    "aspect": "all",
+                    "usage": 0
+                  }
+                },
+                "dynamic": false,
+                "dynamicOffset": 0,
+                "effectiveOffset": 0
+              },
+              {
+                "binding": 3,
+                "buffer": {
+                  "id": "shape-buffer-8446",
+                  "kind": "buffer",
+                  "label": "",
+                  "size": 1048576,
+                  "usage": 72
+                },
+                "offset": 722176,
+                "size": 16,
+                "dynamic": false,
+                "dynamicOffset": 0,
+                "effectiveOffset": 722176,
+                "uniform": {
+                  "status": "UNKNOWN",
+                  "reason": "No safe small uniform shadow/range"
+                }
+              }
+            ]
+          }
+        ],
+        "parameterBoundary": "Queue-order shadow after preceding writes/copies at this submission occurrence, not final buffer contents"
+      },
+      {
+        "submitSequence": 62296,
+        "commandBufferId": "shape-commandBuffer-17474",
+        "passId": "shape-pass-17473",
+        "encodeSequence": 57237,
+        "pipeline": {
+          "id": "shape-pipeline-11990",
+          "shaderId": "shape-shader-11989",
+          "target": true,
+          "entryPoint": "main",
+          "constants": {
+            "0": 8,
+            "1": 4,
+            "2": 1
+          }
+        },
+        "dispatch": {
+          "x": 64,
+          "y": 1,
+          "z": 1
+        },
+        "bindings": [
+          {
+            "index": 0,
+            "setBindGroupSequence": 57236,
+            "dynamicOffsets": [],
+            "id": "shape-bindGroup-12043",
+            "entries": [
+              {
+                "binding": 2,
+                "buffer": {
+                  "id": "shape-buffer-48",
+                  "kind": "buffer",
+                  "label": "",
+                  "size": 6291456,
+                  "usage": 140
+                },
+                "offset": 0,
+                "size": 6291456,
+                "dynamic": false,
+                "dynamicOffset": 0,
+                "effectiveOffset": 0
+              },
+              {
+                "binding": 0,
+                "resource": {
+                  "id": "shape-textureView-1960",
+                  "kind": "textureView",
+                  "label": "",
+                  "texture": {
+                    "id": "shape-texture-1959",
+                    "kind": "texture",
+                    "label": "",
+                    "width": 512,
+                    "height": 512,
+                    "depthOrArrayLayers": 1,
+                    "format": "rgba16float",
+                    "dimension": "2d",
+                    "usage": 15
+                  },
+                  "descriptor": {
+                    "format": "rgba16float",
+                    "dimension": "2d",
+                    "baseMipLevel": 0,
+                    "mipLevelCount": 1,
+                    "baseArrayLayer": 0,
+                    "arrayLayerCount": 1,
+                    "aspect": "all",
+                    "usage": 0
+                  }
+                },
+                "dynamic": false,
+                "dynamicOffset": 0,
+                "effectiveOffset": 0
+              },
+              {
+                "binding": 1,
+                "resource": {
+                  "id": "shape-textureView-1878",
+                  "kind": "textureView",
+                  "label": "",
+                  "texture": {
+                    "id": "shape-texture-1877",
+                    "kind": "texture",
+                    "label": "",
+                    "width": 512,
+                    "height": 384,
+                    "depthOrArrayLayers": 1,
+                    "format": "rgba16float",
+                    "dimension": "2d",
+                    "usage": 15
+                  },
+                  "descriptor": {
+                    "format": "rgba16float",
+                    "dimension": "2d",
+                    "baseMipLevel": 0,
+                    "mipLevelCount": 1,
+                    "baseArrayLayer": 0,
+                    "arrayLayerCount": 1,
+                    "aspect": "all",
+                    "usage": 0
+                  }
+                },
+                "dynamic": false,
+                "dynamicOffset": 0,
+                "effectiveOffset": 0
+              },
+              {
+                "binding": 3,
+                "buffer": {
+                  "id": "shape-buffer-8446",
+                  "kind": "buffer",
+                  "label": "",
+                  "size": 1048576,
+                  "usage": 72
+                },
+                "offset": 722176,
+                "size": 16,
+                "dynamic": false,
+                "dynamicOffset": 0,
+                "effectiveOffset": 722176,
+                "uniform": {
+                  "status": "UNKNOWN",
+                  "reason": "No safe small uniform shadow/range"
+                }
+              }
+            ]
+          }
+        ],
+        "parameterBoundary": "Queue-order shadow after preceding writes/copies at this submission occurrence, not final buffer contents"
+      }
+    ],
+    "compilationMessages": [],
+    "limits": {
+      "maxSamples": 8,
+      "maxObjects": 30000,
+      "maxUpdates": 100000,
+      "maxOperations": 30000,
+      "maxShadowBytes": 8388608,
+      "maxUniformBufferBytes": 65536
+    },
+    "dropped": 0,
+    "coverageFailures": [
+      "Uniform/staging shadow capacity unavailable",
+      "Uniform/staging shadow capacity unavailable",
+      "Uniform/staging shadow capacity unavailable"
+    ],
+    "shadowBytes": 16752,
+    "encodedRelevantOperations": 8864,
+    "calls": {
+      "createBuffer": 2783,
+      "writeBuffer": 23563,
+      "createBindGroupLayout": 8799,
+      "createShaderModule": 313,
+      "createComputePipeline": 313,
+      "createTexture": 497,
+      "createView": 497,
+      "createBindGroup": 13198,
+      "createCommandEncoder": 2056,
+      "beginComputePass": 2005,
+      "setPipeline": 126402,
+      "setBindGroup": 126402,
+      "dispatchWorkgroups": 126402,
+      "finish": 2056,
+      "submit": 2056,
+      "copyBufferToBuffer": 51
+    },
+    "collectorCpuWallMs": 671.8000020980835,
+    "limitations": [
+      "Only selected exact shader source; metadata and small uniforms only, no weights/activations read",
+      "GPU-generated bytes unavailable unless queue-order provenance proves known; no final-content substitution/no usage mutation/no extra GPU readback",
+      "No render-pass/worker/external device capture; bounded loss or wrapper failures INCOMPLETE",
+      "Physical GPU completion, valid tensor axes and padding remain independent evidence requirements"
+    ]
+  },
+  "shapeStatus": "UNKNOWN",
+  "instrumentationOverhead": true,
+  "unmeasured": {
+    "outputTokens": "NOT_MEASURED",
+    "tokensPerSecond": "NOT_MEASURED",
+    "dispatchPerToken": "NOT_MEASURED",
+    "perTokenLatency": "NOT_MEASURED",
+    "purePrefillLatency": "NOT_MEASURED",
+    "gpuKernelTime": "NOT_MEASURED",
+    "physicalGpuResidentMemory": "NOT_MEASURED",
+    "jsHeap": "NOT_MEASURED",
+    "processRssPss": "NOT_MEASURED"
+  },
+  "selectedShader": {
+    "sha256": "ee9a0b2823d07f56fe2e9c50134dbc9c58f9f411dcfc11795869196870dd6036",
+    "source": "enable f16;\n@id(0) override WORKGROUP_SIZE_X: i32;\n@id(1) override WORKGROUP_SIZE_Y: i32;\n@id(2) override WORKGROUP_SIZE_Z: i32;\n\nfn Pack4x16float(v : vec4<f32>) -> vec2<u32> {\n  return vec2<u32>(pack2x16float(v.xy), pack2x16float(v.zw));\n}\n\nfn Unpack4x16float(v : vec2<u32>) -> vec4<f32> {\n  return vec4<f32>(unpack2x16float(v.x), unpack2x16float(v.y));\n}\n@group(0) @binding(0) var dst_tensor_image2d : texture_storage_2d<rgba16float, write>;\n@group(0) @binding(1) var src_tensor_image2d : texture_2d<f32>;\nstruct weights_buffer_vector {\n  data: array<mat4x4<f16>>,\n};\n@group(0) @binding(2) var<storage, read> weights_buffer : weights_buffer_vector;\nstruct Scalars {\n  i0 : vec4<i32>,\n};\n@group(0) @binding(3) var<uniform> U: Scalars;\nvar<workgroup> temp : array<vec4<f16>, 32>;\n@compute @workgroup_size(WORKGROUP_SIZE_X, WORKGROUP_SIZE_Y, WORKGROUP_SIZE_Z)\nfn main(@builtin(global_invocation_id) reserved_gid : vec3<u32>,\n@builtin(local_invocation_id) reserved_lid : vec3<u32>,\n@builtin(workgroup_id) reserved_group_id : vec3<u32>) {\n  var dst_s : i32= i32(reserved_gid.x);\n  var dst_end_slice : i32= U.i0.x;\n  var dst_s_wg_offset : i32= i32(reserved_group_id.x) * WORKGROUP_SIZE_X;\n  if (dst_s_wg_offset >= dst_end_slice) {return;}\n  var s0 : vec4<f16>= vec4<f16>(0.0);\n  var s1 : vec4<f16>= vec4<f16>(0.0);\n  var s2 : vec4<f16>= vec4<f16>(0.0);\n  var s3 : vec4<f16>= vec4<f16>(0.0);\n  var s4 : vec4<f16>= vec4<f16>(0.0);\n  var s5 : vec4<f16>= vec4<f16>(0.0);\n  var s6 : vec4<f16>= vec4<f16>(0.0);\n  var s7 : vec4<f16>= vec4<f16>(0.0);\n  var tid : vec2<i32>;\n  tid.x = i32(reserved_lid.x);\n  tid.y = i32(reserved_lid.y);\n  if (dst_s < U.i0.x) {\n  for (var src_s : i32= tid.y; src_s < U.i0.z; src_s += 4) {\n    var v0 : vec4<f16>= vec4<f16>(textureLoad(src_tensor_image2d, vec2<i32>((0), ((0) * U.i0.z + (src_s))), 0));\n    var v1 : vec4<f16>= vec4<f16>(textureLoad(src_tensor_image2d, vec2<i32>((1), ((0) * U.i0.z + (src_s))), 0));\n    var v2 : vec4<f16>= vec4<f16>(textureLoad(src_tensor_image2d, vec2<i32>((2), ((0) * U.i0.z + (src_s))), 0));\n    var v3 : vec4<f16>= vec4<f16>(textureLoad(src_tensor_image2d, vec2<i32>((3), ((0) * U.i0.z + (src_s))), 0));\n    var v4 : vec4<f16>= vec4<f16>(textureLoad(src_tensor_image2d, vec2<i32>((4), ((0) * U.i0.z + (src_s))), 0));\n    var v5 : vec4<f16>= vec4<f16>(textureLoad(src_tensor_image2d, vec2<i32>((5), ((0) * U.i0.z + (src_s))), 0));\n    var v6 : vec4<f16>= vec4<f16>(textureLoad(src_tensor_image2d, vec2<i32>((6), ((0) * U.i0.z + (src_s))), 0));\n    var v7 : vec4<f16>= vec4<f16>(textureLoad(src_tensor_image2d, vec2<i32>((7), ((0) * U.i0.z + (src_s))), 0));\n    var w0 : vec4<f16>;var w1 : vec4<f16>;var w2 : vec4<f16>;var w3 : vec4<f16>;\n    var linear_i4o4 : i32= src_s * U.i0.x + dst_s;\n      {\n  var w : mat4x4<f16>= weights_buffer.data[linear_i4o4];\n  w0 = vec4<f16>(w[0]);\n  w1 = vec4<f16>(w[1]);\n  w2 = vec4<f16>(w[2]);\n  w3 = vec4<f16>(w[3]);\n  };\n    s0 = fma(vec4<f16>(v0.x), w0, s0);\n    s0 = fma(vec4<f16>(v0.y), w1, s0);\n    s0 = fma(vec4<f16>(v0.z), w2, s0);\n    s0 = fma(vec4<f16>(v0.w), w3, s0);\n    s1 = fma(vec4<f16>(v1.x), w0, s1);\n    s1 = fma(vec4<f16>(v1.y), w1, s1);\n    s1 = fma(vec4<f16>(v1.z), w2, s1);\n    s1 = fma(vec4<f16>(v1.w), w3, s1);\n    s2 = fma(vec4<f16>(v2.x), w0, s2);\n    s2 = fma(vec4<f16>(v2.y), w1, s2);\n    s2 = fma(vec4<f16>(v2.z), w2, s2);\n    s2 = fma(vec4<f16>(v2.w), w3, s2);\n    s3 = fma(vec4<f16>(v3.x), w0, s3);\n    s3 = fma(vec4<f16>(v3.y), w1, s3);\n    s3 = fma(vec4<f16>(v3.z), w2, s3);\n    s3 = fma(vec4<f16>(v3.w), w3, s3);\n    s4 = fma(vec4<f16>(v4.x), w0, s4);\n    s4 = fma(vec4<f16>(v4.y), w1, s4);\n    s4 = fma(vec4<f16>(v4.z), w2, s4);\n    s4 = fma(vec4<f16>(v4.w), w3, s4);\n    s5 = fma(vec4<f16>(v5.x), w0, s5);\n    s5 = fma(vec4<f16>(v5.y), w1, s5);\n    s5 = fma(vec4<f16>(v5.z), w2, s5);\n    s5 = fma(vec4<f16>(v5.w), w3, s5);\n    s6 = fma(vec4<f16>(v6.x), w0, s6);\n    s6 = fma(vec4<f16>(v6.y), w1, s6);\n    s6 = fma(vec4<f16>(v6.z), w2, s6);\n    s6 = fma(vec4<f16>(v6.w), w3, s6);\n    s7 = fma(vec4<f16>(v7.x), w0, s7);\n    s7 = fma(vec4<f16>(v7.y), w1, s7);\n    s7 = fma(vec4<f16>(v7.z), w2, s7);\n    s7 = fma(vec4<f16>(v7.w), w3, s7);\n  } \n  } \n  temp[tid.x * 4 + tid.y] = s0;\n  for (var ystride : i32= 4 / 2; ystride > 0; ystride /= 2) {\n    workgroupBarrier();\n    if (tid.y < ystride) {\n      s0 += temp[tid.x * 4 + tid.y + ystride];\n      temp[tid.x * 4 + tid.y] = s0;\n    }\n  }\n  workgroupBarrier();\n  temp[tid.x * 4 + tid.y] = s1;\n  for (var ystride : i32= 4 / 2; ystride > 0; ystride /= 2) {\n    workgroupBarrier();\n    if (tid.y < ystride) {\n      s1 += temp[tid.x * 4 + tid.y + ystride];\n      temp[tid.x * 4 + tid.y] = s1;\n    }\n  }\n  workgroupBarrier();\n  temp[tid.x * 4 + tid.y] = s2;\n  for (var ystride : i32= 4 / 2; ystride > 0; ystride /= 2) {\n    workgroupBarrier();\n    if (tid.y < ystride) {\n      s2 += temp[tid.x * 4 + tid.y + ystride];\n      temp[tid.x * 4 + tid.y] = s2;\n    }\n  }\n  workgroupBarrier();\n  temp[tid.x * 4 + tid.y] = s3;\n  for (var ystride : i32= 4 / 2; ystride > 0; ystride /= 2) {\n    workgroupBarrier();\n    if (tid.y < ystride) {\n      s3 += temp[tid.x * 4 + tid.y + ystride];\n      temp[tid.x * 4 + tid.y] = s3;\n    }\n  }\n  workgroupBarrier();\n  temp[tid.x * 4 + tid.y] = s4;\n  for (var ystride : i32= 4 / 2; ystride > 0; ystride /= 2) {\n    workgroupBarrier();\n    if (tid.y < ystride) {\n      s4 += temp[tid.x * 4 + tid.y + ystride];\n      temp[tid.x * 4 + tid.y] = s4;\n    }\n  }\n  workgroupBarrier();\n  temp[tid.x * 4 + tid.y] = s5;\n  for (var ystride : i32= 4 / 2; ystride > 0; ystride /= 2) {\n    workgroupBarrier();\n    if (tid.y < ystride) {\n      s5 += temp[tid.x * 4 + tid.y + ystride];\n      temp[tid.x * 4 + tid.y] = s5;\n    }\n  }\n  workgroupBarrier();\n  temp[tid.x * 4 + tid.y] = s6;\n  for (var ystride : i32= 4 / 2; ystride > 0; ystride /= 2) {\n    workgroupBarrier();\n    if (tid.y < ystride) {\n      s6 += temp[tid.x * 4 + tid.y + ystride];\n      temp[tid.x * 4 + tid.y] = s6;\n    }\n  }\n  workgroupBarrier();\n  temp[tid.x * 4 + tid.y] = s7;\n  for (var ystride : i32= 4 / 2; ystride > 0; ystride /= 2) {\n    workgroupBarrier();\n    if (tid.y < ystride) {\n      s7 += temp[tid.x * 4 + tid.y + ystride];\n      temp[tid.x * 4 + tid.y] = s7;\n    }\n  }\n  if (dst_s >= U.i0.x) {return;}\n  if (tid.y != 0) {return;}\n  if (0 < U.i0.y) {\n  var res_value : vec4<f16>= vec4<f16>(s0);\n  textureStore(dst_tensor_image2d, vec2<i32>((0), ((0) * U.i0.x + (dst_s))), vec4<f32>(res_value));\n  }\n  if (-1 < U.i0.y) {\n  var res_value : vec4<f16>= vec4<f16>(s1);\n  textureStore(dst_tensor_image2d, vec2<i32>((1), ((0) * U.i0.x + (dst_s))), vec4<f32>(res_value));\n  }\n  if (-2 < U.i0.y) {\n  var res_value : vec4<f16>= vec4<f16>(s2);\n  textureStore(dst_tensor_image2d, vec2<i32>((2), ((0) * U.i0.x + (dst_s))), vec4<f32>(res_value));\n  }\n  if (-3 < U.i0.y) {\n  var res_value : vec4<f16>= vec4<f16>(s3);\n  textureStore(dst_tensor_image2d, vec2<i32>((3), ((0) * U.i0.x + (dst_s))), vec4<f32>(res_value));\n  }\n  if (-4 < U.i0.y) {\n  var res_value : vec4<f16>= vec4<f16>(s4);\n  textureStore(dst_tensor_image2d, vec2<i32>((4), ((0) * U.i0.x + (dst_s))), vec4<f32>(res_value));\n  }\n  if (-5 < U.i0.y) {\n  var res_value : vec4<f16>= vec4<f16>(s5);\n  textureStore(dst_tensor_image2d, vec2<i32>((5), ((0) * U.i0.x + (dst_s))), vec4<f32>(res_value));\n  }\n  if (-6 < U.i0.y) {\n  var res_value : vec4<f16>= vec4<f16>(s6);\n  textureStore(dst_tensor_image2d, vec2<i32>((6), ((0) * U.i0.x + (dst_s))), vec4<f32>(res_value));\n  }\n  if (-7 < U.i0.y) {\n  var res_value : vec4<f16>= vec4<f16>(s7);\n  textureStore(dst_tensor_image2d, vec2<i32>((7), ((0) * U.i0.x + (dst_s))), vec4<f32>(res_value));\n  }\n}\n",
+    "entryPoint": "main"
+  },
+  "captureCleanup": {
+    "taskClosed": true,
+    "deviceDestroyed": true
+  }
+}
