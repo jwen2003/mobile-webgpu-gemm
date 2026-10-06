@@ -314,3 +314,8 @@ BASELINE002 progress13/15:128 4/5,512 5/5,1024 4/5 COMPLETE/audited. L512 five c
 BASELINE002 progress14/15:128 5/5,512 5/5,1024 4/5 COMPLETE/audited. L128/L512 five combined-wall/available-memory repeats done;purephase/outputtoken,RSS andAdreno not closed.
 
 Latest BASELINE002 acceptance:FIFTEEN_SESSIONS_VERIFIED,exact128/512/1024 full prompts and5 independent COMPLETE/audited sessions each. Earlier NOT_RUN/partial states are historical. Observable walls/scoped memory repeats accepted;purephase/true outputtokens/deviceRSS/physical GPU memory/Adreno remain unavailable. Final results:docs/baseline_sessions_results.md;Work summary:docs/baseline002_work_summary.md (root-relative).
+
+
+## MEMORY001: offline texture accounting (2026-10-06)
+
+All 15 BASELINE002 sessions independently audited: 7,500 recorded texture creations, all six formats now accounted for in derived files. See [texture payload accounting](../docs/memory001_texture_accounting.md) for per-session cumulative creation, active explicit-lifecycle peak and every stage snapshot. Original partial-map counters and all 41 historical raw hashes retained unchanged. This closes the recorded-format payload gap, not physical GPU residency, native/WASM heap or Chrome RSS/PSS. JS heap, buffer logical bytes and texture logical payload remain separate. No phone/model rerun, adb or trace collection; assignment memory remains PARTIAL.

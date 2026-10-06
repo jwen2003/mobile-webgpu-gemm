@@ -1,0 +1,113 @@
+{
+  "experimentId": "MEMORY001",
+  "status": "PASS",
+  "checks": [
+    {
+      "rawFile": "results/raw/BASELINE002-L1024-R1-2026-10-06T07-28-08-096Z.json",
+      "status": "PASS",
+      "textures": 500,
+      "cumulativeBytes": 1707579096,
+      "peakBytes": 1707566808
+    },
+    {
+      "rawFile": "results/raw/BASELINE002-L1024-R2-2026-10-06T07-37-31-596Z.json",
+      "status": "PASS",
+      "textures": 500,
+      "cumulativeBytes": 1707579096,
+      "peakBytes": 1707566808
+    },
+    {
+      "rawFile": "results/raw/BASELINE002-L1024-R3-2026-10-06T07-46-43-691Z.json",
+      "status": "PASS",
+      "textures": 500,
+      "cumulativeBytes": 1707579096,
+      "peakBytes": 1707566808
+    },
+    {
+      "rawFile": "results/raw/BASELINE002-L1024-R4-2026-10-06T08-02-23-026Z.json",
+      "status": "PASS",
+      "textures": 500,
+      "cumulativeBytes": 1707579096,
+      "peakBytes": 1707566808
+    },
+    {
+      "rawFile": "results/raw/BASELINE002-L1024-R5-2026-10-06T08-14-18-851Z.json",
+      "status": "PASS",
+      "textures": 500,
+      "cumulativeBytes": 1707579096,
+      "peakBytes": 1707566808
+    },
+    {
+      "rawFile": "results/raw/BASELINE002-L128-R1-2026-10-06T07-19-26-784Z.json",
+      "status": "PASS",
+      "textures": 500,
+      "cumulativeBytes": 1707579096,
+      "peakBytes": 1707566808
+    },
+    {
+      "rawFile": "results/raw/BASELINE002-L128-R2-2026-10-06T07-41-20-289Z.json",
+      "status": "PASS",
+      "textures": 500,
+      "cumulativeBytes": 1707579096,
+      "peakBytes": 1707566808
+    },
+    {
+      "rawFile": "results/raw/BASELINE002-L128-R3-2026-10-06T07-51-45-180Z.json",
+      "status": "PASS",
+      "textures": 500,
+      "cumulativeBytes": 1707579096,
+      "peakBytes": 1707566808
+    },
+    {
+      "rawFile": "results/raw/BASELINE002-L128-R4-2026-10-06T07-59-17-219Z.json",
+      "status": "PASS",
+      "textures": 500,
+      "cumulativeBytes": 1707579096,
+      "peakBytes": 1707566808
+    },
+    {
+      "rawFile": "results/raw/BASELINE002-L128-R5-2026-10-06T08-10-57-422Z.json",
+      "status": "PASS",
+      "textures": 500,
+      "cumulativeBytes": 1707579096,
+      "peakBytes": 1707566808
+    },
+    {
+      "rawFile": "results/raw/BASELINE002-L512-R1-2026-10-06T07-23-10-169Z.json",
+      "status": "PASS",
+      "textures": 500,
+      "cumulativeBytes": 1707579096,
+      "peakBytes": 1707566808
+    },
+    {
+      "rawFile": "results/raw/BASELINE002-L512-R2-2026-10-06T07-32-56-502Z.json",
+      "status": "PASS",
+      "textures": 500,
+      "cumulativeBytes": 1707579096,
+      "peakBytes": 1707566808
+    },
+    {
+      "rawFile": "results/raw/BASELINE002-L512-R3-2026-10-06T07-56-22-753Z.json",
+      "status": "PASS",
+      "textures": 500,
+      "cumulativeBytes": 1707579096,
+      "peakBytes": 1707566808
+    },
+    {
+      "rawFile": "results/raw/BASELINE002-L512-R4-2026-10-06T08-05-22-837Z.json",
+      "status": "PASS",
+      "textures": 500,
+      "cumulativeBytes": 1707579096,
+      "peakBytes": 1707566808
+    },
+    {
+      "rawFile": "results/raw/BASELINE002-L512-R5-2026-10-06T08-08-08-584Z.json",
+      "status": "PASS",
+      "textures": 500,
+      "cumulativeBytes": 1707579096,
+      "peakBytes": 1707566808
+    }
+  ],
+  "tests": "Independent channel-bit widths, right-shift mip volume, live-ID-set peak, snapshot timing bounds; array/3d/nonpower/multisample/1d/missing fields/unknown format/missing lifecycle tests",
+  "historicalHashesVerified": 41
+}
