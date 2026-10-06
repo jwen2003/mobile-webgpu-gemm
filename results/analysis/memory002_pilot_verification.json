@@ -1,0 +1,1244 @@
+{
+  "experimentId": "MEMORY002",
+  "status": "PARTIAL_PILOT_VERIFIED",
+  "pageStatus": "COMPLETE",
+  "pageRawFile": "results/raw/MEMORY002-BASELINE002-L128-R1-2026-10-06T09-28-20-120Z.json",
+  "pageSha256": "a19b5871c2d4124a7c8e15382af82dd6baa0ef2e02f7076185bbf6107f4c4de3",
+  "session": {
+    "id": "095d0acd-448f-4108-b04e-0b4fd04e9b65",
+    "ordinal": 1,
+    "targetTokens": 128,
+    "repetition": 1,
+    "freshPageTaskDevice": true
+  },
+  "wallMetrics": {
+    "runtimePreparationMs": 265.5999999642372,
+    "modelInitializationMs": 86527.39999997616,
+    "tokenPreparationMs": 76.69999998807907,
+    "tokenPreparationDrainMs": 2,
+    "generationCallToCompletionMs": 7997.199999988079,
+    "firstCallbackMs": 2318.199999988079,
+    "postGenerationDrainMs": 103
+  },
+  "holdDurations": [
+    {
+      "stage": "AFTER_INIT",
+      "durationMs": 220477.70000004768
+    },
+    {
+      "stage": "BEFORE_GENERATION",
+      "durationMs": 512820.09999996424
+    },
+    {
+      "stage": "AFTER_DRAIN",
+      "durationMs": 127760.69999998808
+    }
+  ],
+  "snapshots": [
+    {
+      "archive": "20261006T091541534903Z",
+      "requestedPhase": "AFTER_INIT",
+      "operatorConfirmed": true,
+      "verifiedPhase": "UNAVAILABLE",
+      "durationMs": 28394.879500032403,
+      "generationArm": null,
+      "processes": [
+        {
+          "pid": 11256,
+          "ppid": 1390,
+          "name": "com.android.chrome_zygote",
+          "status": "UNAVAILABLE",
+          "pssKiB": null,
+          "rssKiB": null,
+          "identityConsistent": false,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": "Missing totals or PID/name identity mismatch",
+          "startTicksBefore": 55628481,
+          "role": "UNKNOWN",
+          "roleEvidence": "No consistent fresh before/after CDP process evidence",
+          "procStatusVmRssKiB": 85608,
+          "startTicksAfter": 55628481,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 11292,
+          "ppid": 11256,
+          "name": "com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0",
+          "status": "AVAILABLE",
+          "pssKiB": 1502592,
+          "rssKiB": 1782916,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 55628491,
+          "role": "RENDERER_TARGET_UNKNOWN",
+          "roleEvidence": "CDP renderer role known; target-to-OS-PID mapping unproven",
+          "procStatusVmRssKiB": 1795380,
+          "startTicksAfter": 55628491,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 11306,
+          "ppid": 1390,
+          "name": "com.android.chrome:privileged_process0",
+          "status": "AVAILABLE",
+          "pssKiB": 2168943,
+          "rssKiB": 2469162,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 55628494,
+          "role": "GPU",
+          "roleEvidence": "Fresh before/after SystemInfo.getProcessInfo",
+          "procStatusVmRssKiB": 2468580,
+          "startTicksAfter": 55628494,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 14567,
+          "ppid": 1390,
+          "name": "com.android.chrome",
+          "status": "AVAILABLE",
+          "pssKiB": 255329,
+          "rssKiB": 466618,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 54427853,
+          "role": "BROWSER_MAIN",
+          "roleEvidence": "Fresh before/after SystemInfo.getProcessInfo",
+          "procStatusVmRssKiB": 433980,
+          "startTicksAfter": 54427853,
+          "stablePidLifetime": true
+        }
+      ],
+      "pidChanges": {
+        "added": [],
+        "removed": [],
+        "renamed": []
+      },
+      "metadataErrors": [],
+      "commandWindows": [
+        {
+          "command": "meminfo_11256",
+          "utcStart": "2026-10-06T09:15:54.992137+00:00",
+          "utcEnd": "2026-10-06T09:15:55.122037+00:00",
+          "durationMs": 129.9085000064224,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -96100.96313476562,
+            124247.13696289062
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        },
+        {
+          "command": "meminfo_11292",
+          "utcStart": "2026-10-06T09:15:55.300323+00:00",
+          "utcEnd": "2026-10-06T09:15:55.510706+00:00",
+          "durationMs": 210.38689999841154,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -95712.2939453125,
+            124555.32299804688
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        },
+        {
+          "command": "meminfo_11306",
+          "utcStart": "2026-10-06T09:15:55.704477+00:00",
+          "utcEnd": "2026-10-06T09:15:55.899399+00:00",
+          "durationMs": 194.93180001154542,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -95323.60107421875,
+            124959.47705078125
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        },
+        {
+          "command": "meminfo_14567",
+          "utcStart": "2026-10-06T09:15:56.089476+00:00",
+          "utcEnd": "2026-10-06T09:15:56.301289+00:00",
+          "durationMs": 211.82259998749942,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -94921.7109375,
+            125344.47607421875
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        }
+      ]
+    },
+    {
+      "archive": "20261006T091837000441Z",
+      "requestedPhase": "BEFORE_GENERATION",
+      "operatorConfirmed": true,
+      "verifiedPhase": "UNAVAILABLE",
+      "durationMs": 28598.224199959077,
+      "generationArm": null,
+      "processes": [
+        {
+          "pid": 11256,
+          "ppid": 1390,
+          "name": "com.android.chrome_zygote",
+          "status": "UNAVAILABLE",
+          "pssKiB": null,
+          "rssKiB": null,
+          "identityConsistent": false,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": "Missing totals or PID/name identity mismatch",
+          "startTicksBefore": 55628481,
+          "role": "UNKNOWN",
+          "roleEvidence": "No consistent fresh before/after CDP process evidence",
+          "procStatusVmRssKiB": 85608,
+          "startTicksAfter": 55628481,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 11292,
+          "ppid": 11256,
+          "name": "com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0",
+          "status": "AVAILABLE",
+          "pssKiB": 1507668,
+          "rssKiB": 1797508,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 55628491,
+          "role": "RENDERER_TARGET_UNKNOWN",
+          "roleEvidence": "CDP renderer role known; target-to-OS-PID mapping unproven",
+          "procStatusVmRssKiB": 1797516,
+          "startTicksAfter": 55628491,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 11306,
+          "ppid": 1390,
+          "name": "com.android.chrome:privileged_process0",
+          "status": "AVAILABLE",
+          "pssKiB": 2143031,
+          "rssKiB": 2452014,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 55628494,
+          "role": "GPU",
+          "roleEvidence": "Fresh before/after SystemInfo.getProcessInfo",
+          "procStatusVmRssKiB": 2439692,
+          "startTicksAfter": 55628494,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 14567,
+          "ppid": 1390,
+          "name": "com.android.chrome",
+          "status": "AVAILABLE",
+          "pssKiB": 231371,
+          "rssKiB": 449698,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 54427853,
+          "role": "BROWSER_MAIN",
+          "roleEvidence": "Fresh before/after SystemInfo.getProcessInfo",
+          "procStatusVmRssKiB": 422568,
+          "startTicksAfter": 54427853,
+          "stablePidLifetime": true
+        }
+      ],
+      "pidChanges": {
+        "added": [],
+        "removed": [],
+        "renamed": []
+      },
+      "metadataErrors": [],
+      "commandWindows": [
+        {
+          "command": "meminfo_11256",
+          "utcStart": "2026-10-06T09:18:50.592278+00:00",
+          "utcEnd": "2026-10-06T09:18:50.717361+00:00",
+          "durationMs": 125.09200000204146,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -433408.6389160156,
+            79286.27807617188
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        },
+        {
+          "command": "meminfo_11292",
+          "utcStart": "2026-10-06T09:18:50.889603+00:00",
+          "utcEnd": "2026-10-06T09:18:51.051636+00:00",
+          "durationMs": 162.0403000852093,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -433074.3640136719,
+            79583.60278320312
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        },
+        {
+          "command": "meminfo_11306",
+          "utcStart": "2026-10-06T09:18:51.230241+00:00",
+          "utcEnd": "2026-10-06T09:18:51.423554+00:00",
+          "durationMs": 193.32249998115003,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -432702.4460449219,
+            79924.24096679688
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        },
+        {
+          "command": "meminfo_14567",
+          "utcStart": "2026-10-06T09:18:51.604537+00:00",
+          "utcEnd": "2026-10-06T09:18:51.797085+00:00",
+          "durationMs": 192.55859998520464,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -432328.9150390625,
+            80298.537109375
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        }
+      ]
+    },
+    {
+      "archive": "20261006T092257173854Z",
+      "requestedPhase": "BEFORE_GENERATION",
+      "operatorConfirmed": true,
+      "verifiedPhase": "UNAVAILABLE",
+      "durationMs": 8651.166899944656,
+      "generationArm": null,
+      "processes": [
+        {
+          "pid": 11256,
+          "ppid": 1390,
+          "name": "com.android.chrome_zygote",
+          "status": "UNAVAILABLE",
+          "pssKiB": null,
+          "rssKiB": null,
+          "identityConsistent": false,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": "Missing totals or PID/name identity mismatch",
+          "startTicksBefore": 55628481,
+          "role": "UNKNOWN",
+          "roleEvidence": "No consistent fresh before/after CDP process evidence",
+          "procStatusVmRssKiB": 85608,
+          "startTicksAfter": 55628481,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 11292,
+          "ppid": 11256,
+          "name": "com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0",
+          "status": "AVAILABLE",
+          "pssKiB": 1506931,
+          "rssKiB": 1796888,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 55628491,
+          "role": "RENDERER_TARGET_UNKNOWN",
+          "roleEvidence": "CDP renderer role known; target-to-OS-PID mapping unproven",
+          "procStatusVmRssKiB": 1796888,
+          "startTicksAfter": 55628491,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 11306,
+          "ppid": 1390,
+          "name": "com.android.chrome:privileged_process0",
+          "status": "AVAILABLE",
+          "pssKiB": 2146972,
+          "rssKiB": 2455974,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 55628494,
+          "role": "GPU",
+          "roleEvidence": "Fresh before/after SystemInfo.getProcessInfo",
+          "procStatusVmRssKiB": 2443668,
+          "startTicksAfter": 55628494,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 14567,
+          "ppid": 1390,
+          "name": "com.android.chrome",
+          "status": "AVAILABLE",
+          "pssKiB": 226119,
+          "rssKiB": 444562,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 54427853,
+          "role": "BROWSER_MAIN",
+          "roleEvidence": "Fresh before/after SystemInfo.getProcessInfo",
+          "procStatusVmRssKiB": 422232,
+          "startTicksAfter": 54427853,
+          "stablePidLifetime": true
+        }
+      ],
+      "pidChanges": {
+        "added": [],
+        "removed": [],
+        "renamed": []
+      },
+      "metadataErrors": [],
+      "commandWindows": [
+        {
+          "command": "meminfo_11256",
+          "utcStart": "2026-10-06T09:23:00.849134+00:00",
+          "utcEnd": "2026-10-06T09:23:00.970380+00:00",
+          "durationMs": 121.25660001765937,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -183155.61987304688,
+            329543.1340332031
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        },
+        {
+          "command": "meminfo_11292",
+          "utcStart": "2026-10-06T09:23:01.155945+00:00",
+          "utcEnd": "2026-10-06T09:23:01.308017+00:00",
+          "durationMs": 152.08159992471337,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -182817.98291015625,
+            329849.9450683594
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        },
+        {
+          "command": "meminfo_11306",
+          "utcStart": "2026-10-06T09:23:01.515393+00:00",
+          "utcEnd": "2026-10-06T09:23:01.714156+00:00",
+          "durationMs": 198.77089990768582,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -182411.84399414062,
+            330209.39306640625
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        },
+        {
+          "command": "meminfo_14567",
+          "utcStart": "2026-10-06T09:23:01.897172+00:00",
+          "utcEnd": "2026-10-06T09:23:02.070294+00:00",
+          "durationMs": 173.13440004363656,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -182055.7060546875,
+            330591.171875
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        }
+      ]
+    },
+    {
+      "archive": "20261006T092552415914Z",
+      "requestedPhase": "GENERATION",
+      "operatorConfirmed": true,
+      "verifiedPhase": "UNAVAILABLE",
+      "durationMs": 16039.411299978383,
+      "generationArm": {
+        "waitDurationMs": 8274.778200080618,
+        "releasedUtc": "2026-10-06T09:26:04.057093+00:00",
+        "evidence": "Operator action only; no independently verified generation start"
+      },
+      "processes": [
+        {
+          "pid": 11256,
+          "ppid": 1390,
+          "name": "com.android.chrome_zygote",
+          "status": "UNAVAILABLE",
+          "pssKiB": null,
+          "rssKiB": null,
+          "identityConsistent": false,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": "Missing totals or PID/name identity mismatch",
+          "startTicksBefore": 55628481,
+          "role": "UNKNOWN",
+          "roleEvidence": "No consistent fresh before/after CDP process evidence",
+          "procStatusVmRssKiB": 85608,
+          "startTicksAfter": 55628481,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 11292,
+          "ppid": 11256,
+          "name": "com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0",
+          "status": "AVAILABLE",
+          "pssKiB": 1509685,
+          "rssKiB": 1799736,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 55628491,
+          "role": "UNKNOWN",
+          "roleEvidence": "No consistent fresh before/after CDP process evidence",
+          "procStatusVmRssKiB": 1799736,
+          "startTicksAfter": 55628491,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 11306,
+          "ppid": 1390,
+          "name": "com.android.chrome:privileged_process0",
+          "status": "AVAILABLE",
+          "pssKiB": 2667624,
+          "rssKiB": 2976818,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 55628494,
+          "role": "UNKNOWN",
+          "roleEvidence": "No consistent fresh before/after CDP process evidence",
+          "procStatusVmRssKiB": 2973120,
+          "startTicksAfter": 55628494,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 14567,
+          "ppid": 1390,
+          "name": "com.android.chrome",
+          "status": "AVAILABLE",
+          "pssKiB": 225735,
+          "rssKiB": 444226,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 54427853,
+          "role": "UNKNOWN",
+          "roleEvidence": "No consistent fresh before/after CDP process evidence",
+          "procStatusVmRssKiB": 422204,
+          "startTicksAfter": 54427853,
+          "stablePidLifetime": true
+        }
+      ],
+      "pidChanges": {
+        "added": [],
+        "removed": [],
+        "renamed": []
+      },
+      "metadataErrors": [
+        {
+          "label": "metadata_before",
+          "error": "[WinError 2] The system cannot find the file specified"
+        },
+        {
+          "label": "metadata_after",
+          "error": "[WinError 2] The system cannot find the file specified"
+        }
+      ],
+      "commandWindows": [
+        {
+          "command": "meminfo_11256",
+          "utcStart": "2026-10-06T09:26:04.112070+00:00",
+          "utcEnd": "2026-10-06T09:26:04.246299+00:00",
+          "durationMs": 134.23770002555102,
+          "nominalUtcClassification": "MIXED_BOUNDARY",
+          "allowableHostMinusPhoneOffsetMs": [
+            -7877.700927734375,
+            -14.929931640625
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        },
+        {
+          "command": "meminfo_11292",
+          "utcStart": "2026-10-06T09:26:04.390443+00:00",
+          "utcEnd": "2026-10-06T09:26:04.524178+00:00",
+          "durationMs": 133.7446999968961,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -7599.822021484375,
+            263.443115234375
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        },
+        {
+          "command": "meminfo_11306",
+          "utcStart": "2026-10-06T09:26:04.676323+00:00",
+          "utcEnd": "2026-10-06T09:26:04.848124+00:00",
+          "durationMs": 171.8133999966085,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -7275.8759765625,
+            549.322998046875
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        },
+        {
+          "command": "meminfo_14567",
+          "utcStart": "2026-10-06T09:26:05.006585+00:00",
+          "utcEnd": "2026-10-06T09:26:05.152947+00:00",
+          "durationMs": 146.37089997995645,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -6971.052978515625,
+            879.5849609375
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        }
+      ]
+    },
+    {
+      "archive": "20261006T092657598991Z",
+      "requestedPhase": "AFTER_DRAIN",
+      "operatorConfirmed": true,
+      "verifiedPhase": "UNAVAILABLE",
+      "durationMs": 8166.718099964783,
+      "generationArm": null,
+      "processes": [
+        {
+          "pid": 11256,
+          "ppid": 1390,
+          "name": "com.android.chrome_zygote",
+          "status": "UNAVAILABLE",
+          "pssKiB": null,
+          "rssKiB": null,
+          "identityConsistent": false,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": "Missing totals or PID/name identity mismatch",
+          "startTicksBefore": 55628481,
+          "role": "UNKNOWN",
+          "roleEvidence": "No consistent fresh before/after CDP process evidence",
+          "procStatusVmRssKiB": 85608,
+          "startTicksAfter": 55628481,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 11292,
+          "ppid": 11256,
+          "name": "com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0",
+          "status": "AVAILABLE",
+          "pssKiB": 1510083,
+          "rssKiB": 1800188,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 55628491,
+          "role": "RENDERER_TARGET_UNKNOWN",
+          "roleEvidence": "CDP renderer role known; target-to-OS-PID mapping unproven",
+          "procStatusVmRssKiB": 1800208,
+          "startTicksAfter": 55628491,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 11306,
+          "ppid": 1390,
+          "name": "com.android.chrome:privileged_process0",
+          "status": "AVAILABLE",
+          "pssKiB": 2157214,
+          "rssKiB": 2466438,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 55628494,
+          "role": "GPU",
+          "roleEvidence": "Fresh before/after SystemInfo.getProcessInfo",
+          "procStatusVmRssKiB": 2460612,
+          "startTicksAfter": 55628494,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 14567,
+          "ppid": 1390,
+          "name": "com.android.chrome",
+          "status": "AVAILABLE",
+          "pssKiB": 225054,
+          "rssKiB": 443634,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 54427853,
+          "role": "BROWSER_MAIN",
+          "roleEvidence": "Fresh before/after SystemInfo.getProcessInfo",
+          "procStatusVmRssKiB": 421696,
+          "startTicksAfter": 54427853,
+          "stablePidLifetime": true
+        }
+      ],
+      "pidChanges": {
+        "added": [],
+        "removed": [],
+        "renamed": []
+      },
+      "metadataErrors": [],
+      "commandWindows": [
+        {
+          "command": "meminfo_11256",
+          "utcStart": "2026-10-06T09:27:01.009732+00:00",
+          "utcEnd": "2026-10-06T09:27:01.119947+00:00",
+          "durationMs": 110.22390006110072,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -78869.05297851562,
+            48781.73193359375
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        },
+        {
+          "command": "meminfo_11292",
+          "utcStart": "2026-10-06T09:27:01.291313+00:00",
+          "utcEnd": "2026-10-06T09:27:01.442474+00:00",
+          "durationMs": 151.1711000930518,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -78546.52612304688,
+            49063.31298828125
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        },
+        {
+          "command": "meminfo_11306",
+          "utcStart": "2026-10-06T09:27:01.615677+00:00",
+          "utcEnd": "2026-10-06T09:27:01.764144+00:00",
+          "durationMs": 148.47749995533377,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -78224.85595703125,
+            49387.677001953125
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        },
+        {
+          "command": "meminfo_14567",
+          "utcStart": "2026-10-06T09:27:01.939506+00:00",
+          "utcEnd": "2026-10-06T09:27:02.084445+00:00",
+          "durationMs": 144.94860009290278,
+          "nominalUtcClassification": "WITHIN",
+          "allowableHostMinusPhoneOffsetMs": [
+            -77904.55493164062,
+            49711.506103515625
+          ],
+          "verifiedClassification": "UNAVAILABLE: host/phone clock offset not independently bounded"
+        }
+      ]
+    }
+  ],
+  "pageLogicalTexture": {
+    "session": {
+      "id": "095d0acd-448f-4108-b04e-0b4fd04e9b65",
+      "ordinal": 1,
+      "targetTokens": 128,
+      "repetition": 1,
+      "freshPageTaskDevice": true
+    },
+    "formatCounts": {
+      "rgba16float": 165,
+      "rgba16uint": 91,
+      "rgba32uint": 227,
+      "rgba8uint": 6,
+      "rgba32sint": 9,
+      "rgba32float": 2
+    },
+    "textureCount": 500,
+    "coveredTextureCount": 500,
+    "uncovered": [],
+    "lifecycleErrors": [],
+    "status": "AVAILABLE",
+    "cumulativeCreatedKnownSubtotalBytes": 1707579096,
+    "cumulativeCreatedPayloadBytes": 1707579096,
+    "activeLedgerPeakKnownSubtotalBytes": 1707566808,
+    "activeLedgerPeakPayloadBytes": 1707566808,
+    "peakPhase": "MODEL_INIT",
+    "snapshots": [
+      {
+        "stage": "BEFORE_RUNTIME",
+        "status": "UNAVAILABLE",
+        "reason": "Observer not installed / no resource snapshot"
+      },
+      {
+        "stage": "BEFORE_INIT",
+        "status": "UNAVAILABLE",
+        "reason": "Observer not installed / no resource snapshot"
+      },
+      {
+        "stage": "AFTER_INIT",
+        "status": "AVAILABLE",
+        "knownSubtotalBytes": 1707566808,
+        "payloadBytes": 1707566808,
+        "candidatePayloads": [
+          1707566808
+        ],
+        "reason": null,
+        "scope": "Explicit destroy ledger; device-close/implicit release not represented"
+      },
+      {
+        "stage": "AFTER_TOKEN_PREPARATION",
+        "status": "AVAILABLE",
+        "knownSubtotalBytes": 1707566808,
+        "payloadBytes": 1707566808,
+        "candidatePayloads": [
+          1707566808
+        ],
+        "reason": null,
+        "scope": "Explicit destroy ledger; device-close/implicit release not represented"
+      },
+      {
+        "stage": "BEFORE_GENERATION",
+        "status": "AVAILABLE",
+        "knownSubtotalBytes": 1707566808,
+        "payloadBytes": 1707566808,
+        "candidatePayloads": [
+          1707566808
+        ],
+        "reason": null,
+        "scope": "Explicit destroy ledger; device-close/implicit release not represented"
+      },
+      {
+        "stage": "FIRST_CALLBACK",
+        "status": "AVAILABLE",
+        "knownSubtotalBytes": 1707566808,
+        "payloadBytes": 1707566808,
+        "candidatePayloads": [
+          1707566808
+        ],
+        "reason": null,
+        "scope": "Explicit destroy ledger; device-close/implicit release not represented"
+      },
+      {
+        "stage": "AFTER_GENERATION",
+        "status": "AVAILABLE",
+        "knownSubtotalBytes": 1707566808,
+        "payloadBytes": 1707566808,
+        "candidatePayloads": [
+          1707566808
+        ],
+        "reason": null,
+        "scope": "Explicit destroy ledger; device-close/implicit release not represented"
+      },
+      {
+        "stage": "AFTER_DRAIN",
+        "status": "AVAILABLE",
+        "knownSubtotalBytes": 1707566808,
+        "payloadBytes": 1707566808,
+        "candidatePayloads": [
+          1707566808
+        ],
+        "reason": null,
+        "scope": "Explicit destroy ledger; device-close/implicit release not represented"
+      },
+      {
+        "stage": "AFTER_TASK_CLOSE",
+        "status": "AVAILABLE",
+        "knownSubtotalBytes": 0,
+        "payloadBytes": 0,
+        "candidatePayloads": [
+          0
+        ],
+        "reason": null,
+        "scope": "Explicit destroy ledger; device-close/implicit release not represented"
+      },
+      {
+        "stage": "AFTER_DEVICE_DESTROY",
+        "status": "AVAILABLE",
+        "knownSubtotalBytes": 0,
+        "payloadBytes": 0,
+        "candidatePayloads": [
+          0
+        ],
+        "reason": null,
+        "scope": "Explicit destroy ledger; device-close/implicit release not represented"
+      },
+      {
+        "stage": "AFTER_CLEANUP",
+        "status": "AVAILABLE",
+        "knownSubtotalBytes": 0,
+        "payloadBytes": 0,
+        "candidatePayloads": [
+          0
+        ],
+        "reason": null,
+        "scope": "Explicit destroy ledger; device-close/implicit release not represented"
+      }
+    ]
+  },
+  "pageMemorySnapshots": [
+    {
+      "stage": "BEFORE_RUNTIME",
+      "isoTime": "2026-10-06T09:12:23.857Z",
+      "wallMs": 126034.89999997616,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "NOT_INSTALLED"
+      }
+    },
+    {
+      "stage": "BEFORE_INIT",
+      "isoTime": "2026-10-06T09:12:24.217Z",
+      "wallMs": 126395.60000002384,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "NOT_INSTALLED"
+      }
+    },
+    {
+      "stage": "AFTER_INIT",
+      "isoTime": "2026-10-06T09:13:50.745Z",
+      "wallMs": 212923.30000001192,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 83077648,
+          "peakLogicalBytes": 83077648,
+          "createdBytes": 83077648,
+          "explicitDestroyedBytes": 0
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 308026776,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 12288,
+          "unknownFormatLiveCount": 333,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": null,
+          "status": "PARTIAL_UNKNOWN_FORMAT"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    },
+    {
+      "stage": "AFTER_TOKEN_PREPARATION",
+      "isoTime": "2026-10-06T09:17:31.306Z",
+      "wallMs": 433484,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 83077648,
+          "peakLogicalBytes": 83077648,
+          "createdBytes": 83077648,
+          "explicitDestroyedBytes": 0
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 308026776,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 12288,
+          "unknownFormatLiveCount": 333,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": null,
+          "status": "PARTIAL_UNKNOWN_FORMAT"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    },
+    {
+      "stage": "BEFORE_GENERATION",
+      "isoTime": "2026-10-06T09:26:04.126Z",
+      "wallMs": 946304.3000000119,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 83077648,
+          "peakLogicalBytes": 83077648,
+          "createdBytes": 83077648,
+          "explicitDestroyedBytes": 0
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 308026776,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 12288,
+          "unknownFormatLiveCount": 333,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": null,
+          "status": "PARTIAL_UNKNOWN_FORMAT"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    },
+    {
+      "stage": "FIRST_CALLBACK",
+      "isoTime": "2026-10-06T09:26:06.445Z",
+      "wallMs": 948623.5,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 83104624,
+          "peakLogicalBytes": 83104624,
+          "createdBytes": 83104624,
+          "explicitDestroyedBytes": 0
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 308026776,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 12288,
+          "unknownFormatLiveCount": 333,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": null,
+          "status": "PARTIAL_UNKNOWN_FORMAT"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    },
+    {
+      "stage": "AFTER_GENERATION",
+      "isoTime": "2026-10-06T09:26:12.124Z",
+      "wallMs": 954302.6000000238,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 83509264,
+          "peakLogicalBytes": 83509264,
+          "createdBytes": 83509264,
+          "explicitDestroyedBytes": 0
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 308026776,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 12288,
+          "unknownFormatLiveCount": 333,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": null,
+          "status": "PARTIAL_UNKNOWN_FORMAT"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    },
+    {
+      "stage": "AFTER_DRAIN",
+      "isoTime": "2026-10-06T09:26:12.228Z",
+      "wallMs": 954406.1000000238,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 83509264,
+          "peakLogicalBytes": 83509264,
+          "createdBytes": 83509264,
+          "explicitDestroyedBytes": 0
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 308026776,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 12288,
+          "unknownFormatLiveCount": 333,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": null,
+          "status": "PARTIAL_UNKNOWN_FORMAT"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    },
+    {
+      "stage": "AFTER_TASK_CLOSE",
+      "isoTime": "2026-10-06T09:28:20.114Z",
+      "wallMs": 1082292.1000000238,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 16501424,
+          "peakLogicalBytes": 83509264,
+          "createdBytes": 83509264,
+          "explicitDestroyedBytes": 67007840
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 0,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 308039064,
+          "unknownFormatLiveCount": 0,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": 0,
+          "status": "KNOWN_FORMAT_LOGICAL_PAYLOAD"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    },
+    {
+      "stage": "AFTER_DEVICE_DESTROY",
+      "isoTime": "2026-10-06T09:28:20.114Z",
+      "wallMs": 1082292.300000012,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 16501424,
+          "peakLogicalBytes": 83509264,
+          "createdBytes": 83509264,
+          "explicitDestroyedBytes": 67007840
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 0,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 308039064,
+          "unknownFormatLiveCount": 0,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": 0,
+          "status": "KNOWN_FORMAT_LOGICAL_PAYLOAD"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    },
+    {
+      "stage": "AFTER_CLEANUP",
+      "isoTime": "2026-10-06T09:28:20.120Z",
+      "wallMs": 1082298,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 16501424,
+          "peakLogicalBytes": 83509264,
+          "createdBytes": 83509264,
+          "explicitDestroyedBytes": 67007840
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 0,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 308039064,
+          "unknownFormatLiveCount": 0,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": 0,
+          "status": "KNOWN_FORMAT_LOGICAL_PAYLOAD"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    }
+  ],
+  "missing": [
+    "PAGE_IDLE process snapshot",
+    "Direct target-to-renderer OS PID mapping",
+    "Generation fresh roles (local metadata helper executable not found)",
+    "Independent phone/host clock-offset bound",
+    "Continuous memory peak,model-exclusive memory,physical GPU residency"
+  ],
+  "cleanupCount": 10,
+  "historicalHashesVerified": 42,
+  "scope": "Separate process PSS/RSS, JS heap and logical buffer/texture channels; no sum as GPU/model memory. One instrumented session,not stock repeated performance."
+}

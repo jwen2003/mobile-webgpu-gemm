@@ -402,3 +402,13 @@ Question:How do observable initialization/combined generation/first callback/dra
 Coverage matrix:exact full-prompt length and five independent combined-wall/available-memory sessions READY_FOR_PHONE,not closed. Pure prefill/decode,real generated-token throughput/per-token or dispatch-token metrics remain UNAVAILABLE;physical GPU memory/deviceRSS not collected. Resource logical bytes and JS heap never replace residency/RSS. Current device remains Mali;Adreno and true logical layer shape gaps remain. After actual evidence arrives preserve originals,independently audit per-session boundaries/resource lifecycles and grouped median/nearest-rankp95/min/max;five-samplep95=max with weak tail evidence. Separate commit/push only after mobile acceptance.
 
 Latest BASELINE002 acceptance:FIFTEEN_SESSIONS_VERIFIED,exact128/512/1024 full prompts and5 independent COMPLETE/audited sessions each. Earlier NOT_RUN/partial states are historical. Observable walls/scoped memory repeats accepted;purephase/true outputtokens/deviceRSS/physical GPU memory/Adreno remain unavailable. Final results:docs/baseline_sessions_results.md;Work summary:docs/baseline002_work_summary.md (root-relative).
+
+
+## MEMORY002 process sampling preparation — READY_FOR_CAPTURE
+
+Opt-in page: http://localhost:8000/src/baseline/sessions.html?memory002=1&v=memory002-v1 . Page idle → AFTER_INIT → BEFORE_GENERATION → AFTER_DRAIN have controlled sampling holds; model starts only on Run. Original BASELINE002 mode remains available without memory002=1. Use [sampling instructions and limits](docs/adb_memory_sampling_plan.md). Raw adb/CDP system outputs are local/ignored. Fresh CDP browser/GPU roles do not establish target renderer PID; absent page mapping remains UNKNOWN. Process RSS/PSS are not model-exclusive or physical GPU memory. No phone model sampling completed in this preparation round.
+
+
+## MEMORY002 protocol v2 — offline correction
+
+Historical pilot remains PARTIAL. Latest authoritative method: [mandatory idle/handshake/clock protocol](docs/memory002_capture_protocol.md). Old operator-only v1 instructions are historical and do not grant formal capture. Run serve_memory002.py on loopback8000; phone entry /src/baseline/sessions.html?memory002=1&v=memory002-v2. Initialization blocked until role-qualified idle receipt. Scope narrowed to browser/GPU process PSS/RSS; target renderer UNKNOWN. Generation windows require bracketing offset/uncertainty audit; no model-exclusive/physical GPU memory or continuous peak. CPU checks completed, v2 phone check NOT_RUN; assignment memory remains PARTIAL.

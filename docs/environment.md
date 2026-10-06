@@ -205,3 +205,13 @@ Coverage matrix:exact full-prompt length and five independent combined-wall/avai
 BASELINE002 L128R1 COMPLETE/audited;full runtime-tokenizer count128,capacity2048 initialized on this input. Campaign1/15,not full repetition/phase/memory requirement closure. Actual scoped memory and walls:baseline_sessions_results.md.
 
 Latest BASELINE002 acceptance:FIFTEEN_SESSIONS_VERIFIED,exact128/512/1024 full prompts and5 independent COMPLETE/audited sessions each. Earlier NOT_RUN/partial states are historical. Observable walls/scoped memory repeats accepted;purephase/true outputtokens/deviceRSS/physical GPU memory/Adreno remain unavailable. Final results:docs/baseline_sessions_results.md;Work summary:docs/baseline002_work_summary.md (root-relative).
+
+
+## MEMORY002 archived partial pilot
+
+One128-token page session COMPLETE and independently audited; initialization86.527s, generation7.997s, first callback2.318s, drain103ms. Five process snapshots retained with separate PSS/RSS and JS/buffer/texture scopes. Held-stage browser/GPU roles verified; target renderer UNKNOWN. Armed generation role metadata failed locally, phase/clock alignment not independently proven; PAGE_IDLE process baseline missing. See [pilot results](../docs/memory002_pilot_results.md). Memory requirement remains PARTIAL, not physical/model-exclusive memory or continuous peak. No replacement run or fabricated role/phase.
+
+
+## MEMORY002 protocol v2 — offline correction
+
+Historical pilot remains PARTIAL. Latest authoritative method: [mandatory idle/handshake/clock protocol](../docs/memory002_capture_protocol.md). Old operator-only v1 instructions are historical and do not grant formal capture. Run serve_memory002.py on loopback8000; phone entry /src/baseline/sessions.html?memory002=1&v=memory002-v2. Initialization blocked until role-qualified idle receipt. Scope narrowed to browser/GPU process PSS/RSS; target renderer UNKNOWN. Generation windows require bracketing offset/uncertainty audit; no model-exclusive/physical GPU memory or continuous peak. CPU checks completed, v2 phone check NOT_RUN; assignment memory remains PARTIAL.

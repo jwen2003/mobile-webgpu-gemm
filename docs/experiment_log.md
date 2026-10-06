@@ -1873,3 +1873,13 @@ First callback is not pure prefill;generation-to-promise is combined request wal
 ## MEMORY001: offline texture accounting (2026-10-06)
 
 All 15 BASELINE002 sessions independently audited: 7,500 recorded texture creations, all six formats now accounted for in derived files. See [texture payload accounting](../docs/memory001_texture_accounting.md) for per-session cumulative creation, active explicit-lifecycle peak and every stage snapshot. Original partial-map counters and all 41 historical raw hashes retained unchanged. This closes the recorded-format payload gap, not physical GPU residency, native/WASM heap or Chrome RSS/PSS. JS heap, buffer logical bytes and texture logical payload remain separate. No phone/model rerun, adb or trace collection; assignment memory remains PARTIAL.
+
+
+## MEMORY002 archived partial pilot
+
+One128-token page session COMPLETE and independently audited; initialization86.527s, generation7.997s, first callback2.318s, drain103ms. Five process snapshots retained with separate PSS/RSS and JS/buffer/texture scopes. Held-stage browser/GPU roles verified; target renderer UNKNOWN. Armed generation role metadata failed locally, phase/clock alignment not independently proven; PAGE_IDLE process baseline missing. See [pilot results](../docs/memory002_pilot_results.md). Memory requirement remains PARTIAL, not physical/model-exclusive memory or continuous peak. No replacement run or fabricated role/phase.
+
+
+## MEMORY002 protocol v2 — offline correction
+
+Historical pilot remains PARTIAL. Latest authoritative method: [mandatory idle/handshake/clock protocol](../docs/memory002_capture_protocol.md). Old operator-only v1 instructions are historical and do not grant formal capture. Run serve_memory002.py on loopback8000; phone entry /src/baseline/sessions.html?memory002=1&v=memory002-v2. Initialization blocked until role-qualified idle receipt. Scope narrowed to browser/GPU process PSS/RSS; target renderer UNKNOWN. Generation windows require bracketing offset/uncertainty audit; no model-exclusive/physical GPU memory or continuous peak. CPU checks completed, v2 phone check NOT_RUN; assignment memory remains PARTIAL.

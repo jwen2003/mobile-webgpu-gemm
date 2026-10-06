@@ -55,3 +55,6 @@ service-account*.json
 
 # Private local email correspondence
 /updates/
+
+# Private adb process inventories (device IDs and unrelated app names).
+/results/local/adb_memory/
