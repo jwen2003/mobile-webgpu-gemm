@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BASELINE002 · Part 1 独立模型会话</title>
+<style>body{font:16px system-ui;margin:20px;max-width:1000px}label{display:block;margin:10px}button,input,select{padding:10px}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style>
+<h1>BASELINE002 · baseline-session-v1 · READY_FOR_PHONE</h1>
+<p>128/512/1024 个完整 prompt tokens 各五次，按冻结编号执行。每次重新加载、新建 device/task，仅一次生成，无额外生成 warm-up；容量 2048。首次 callback 不是纯 prefill，callback 数不是输出 token 数。观察资源生命周期有开销。</p>
+<label>会话编号（共 15 次）<select id="ordinal"></select></label><p id="target"></p>
+<label>Thermal / 固定轮间间隔 <input id="thermal" value="UNKNOWN"></label>
+<label>Charging / 电量 <input id="charging" value="UNKNOWN"></label>
+<label>DevTools <input id="devtools" value="UNKNOWN"></label>
+<label>WebGPU Developer Features flag <input id="flag" value="UNKNOWN"></label>
+<label>后台应用 / 控制条件 <input id="backgroundApps" value="UNKNOWN"></label>
+<button id="run">运行本次模型会话</button><button id="cancel">请求停止并保留</button><button id="download">下载 JSON（失败/进行中也可）</button>
+<p id="status">NOT_RUN</p><pre id="output"></pre><pre id="summary"></pre>
+<script type="module" src="./sessions.js?v=baseline-session-v1"></script></html>

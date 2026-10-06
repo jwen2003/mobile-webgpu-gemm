@@ -1,0 +1,532 @@
+{
+  "verification": "PASS",
+  "status": "COMPLETE",
+  "session": {
+    "id": "72c11448-3bfb-4742-b0a2-d0fb8c74d57a",
+    "ordinal": 15,
+    "targetTokens": 1024,
+    "repetition": 5,
+    "freshPageTaskDevice": true
+  },
+  "wallMetrics": {
+    "runtimePreparationMs": 31.899999976158142,
+    "modelInitializationMs": 83471.30000001192,
+    "tokenPreparationMs": 102.59999996423721,
+    "tokenPreparationDrainMs": 88.89999997615814,
+    "generationCallToCompletionMs": 20111,
+    "firstCallbackMs": 14834.199999988079,
+    "postGenerationDrainMs": 99.89999997615814
+  },
+  "promptHash": "e6656573730409ec92852caeb317f8ff2dee0468ad44b10297779a803834e8a9",
+  "inputCountScope": "Recorded actual runtime tokenizer returns checked;offline audit does not independently retokenize actual model",
+  "resourceAudit": "PASS",
+  "memorySnapshots": [
+    {
+      "stage": "BEFORE_RUNTIME",
+      "isoTime": "2026-10-06T08:12:34.749Z",
+      "wallMs": 27575.799999952316,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "NOT_INSTALLED"
+      }
+    },
+    {
+      "stage": "BEFORE_INIT",
+      "isoTime": "2026-10-06T08:12:34.813Z",
+      "wallMs": 27639.299999952316,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "NOT_INSTALLED"
+      }
+    },
+    {
+      "stage": "AFTER_INIT",
+      "isoTime": "2026-10-06T08:13:58.284Z",
+      "wallMs": 111110.69999998808,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 83077648,
+          "peakLogicalBytes": 83077648,
+          "createdBytes": 83077648,
+          "explicitDestroyedBytes": 0
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 308026776,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 12288,
+          "unknownFormatLiveCount": 333,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": null,
+          "status": "PARTIAL_UNKNOWN_FORMAT"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    },
+    {
+      "stage": "AFTER_TOKEN_PREPARATION",
+      "isoTime": "2026-10-06T08:13:58.478Z",
+      "wallMs": 111304.29999995232,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 83077648,
+          "peakLogicalBytes": 83077648,
+          "createdBytes": 83077648,
+          "explicitDestroyedBytes": 0
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 308026776,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 12288,
+          "unknownFormatLiveCount": 333,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": null,
+          "status": "PARTIAL_UNKNOWN_FORMAT"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    },
+    {
+      "stage": "BEFORE_GENERATION",
+      "isoTime": "2026-10-06T08:13:58.478Z",
+      "wallMs": 111304.39999997616,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 83077648,
+          "peakLogicalBytes": 83077648,
+          "createdBytes": 83077648,
+          "explicitDestroyedBytes": 0
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 308026776,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 12288,
+          "unknownFormatLiveCount": 333,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": null,
+          "status": "PARTIAL_UNKNOWN_FORMAT"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    },
+    {
+      "stage": "FIRST_CALLBACK",
+      "isoTime": "2026-10-06T08:14:13.312Z",
+      "wallMs": 126138.89999997616,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 83104624,
+          "peakLogicalBytes": 83104624,
+          "createdBytes": 83104624,
+          "explicitDestroyedBytes": 0
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 308026776,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 12288,
+          "unknownFormatLiveCount": 333,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": null,
+          "status": "PARTIAL_UNKNOWN_FORMAT"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    },
+    {
+      "stage": "AFTER_GENERATION",
+      "isoTime": "2026-10-06T08:14:18.589Z",
+      "wallMs": 131415.69999998808,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 83482288,
+          "peakLogicalBytes": 83482288,
+          "createdBytes": 83482288,
+          "explicitDestroyedBytes": 0
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 308026776,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 12288,
+          "unknownFormatLiveCount": 333,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": null,
+          "status": "PARTIAL_UNKNOWN_FORMAT"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    },
+    {
+      "stage": "AFTER_DRAIN",
+      "isoTime": "2026-10-06T08:14:18.689Z",
+      "wallMs": 131516,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 83482288,
+          "peakLogicalBytes": 83482288,
+          "createdBytes": 83482288,
+          "explicitDestroyedBytes": 0
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 308026776,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 12288,
+          "unknownFormatLiveCount": 333,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": null,
+          "status": "PARTIAL_UNKNOWN_FORMAT"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    },
+    {
+      "stage": "AFTER_TASK_CLOSE",
+      "isoTime": "2026-10-06T08:14:18.849Z",
+      "wallMs": 131675.29999995232,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 16474448,
+          "peakLogicalBytes": 83482288,
+          "createdBytes": 83482288,
+          "explicitDestroyedBytes": 67007840
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 0,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 308039064,
+          "unknownFormatLiveCount": 0,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": 0,
+          "status": "KNOWN_FORMAT_LOGICAL_PAYLOAD"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    },
+    {
+      "stage": "AFTER_DEVICE_DESTROY",
+      "isoTime": "2026-10-06T08:14:18.849Z",
+      "wallMs": 131675.39999997616,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 16474448,
+          "peakLogicalBytes": 83482288,
+          "createdBytes": 83482288,
+          "explicitDestroyedBytes": 67007840
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 0,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 308039064,
+          "unknownFormatLiveCount": 0,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": 0,
+          "status": "KNOWN_FORMAT_LOGICAL_PAYLOAD"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    },
+    {
+      "stage": "AFTER_CLEANUP",
+      "isoTime": "2026-10-06T08:14:18.851Z",
+      "wallMs": 131678,
+      "jsHeap": {
+        "status": "AVAILABLE",
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000,
+        "scope": "performance.memory reported JS heap,may be rounded/shared;not all native/WASM allocations,not GPU memory or RSS"
+      },
+      "logical": {
+        "status": "OBSERVED",
+        "buffers": {
+          "currentLogicalBytes": 16474448,
+          "peakLogicalBytes": 83482288,
+          "createdBytes": 83482288,
+          "explicitDestroyedBytes": 67007840
+        },
+        "textures": {
+          "knownFormatCurrentLogicalBytes": 0,
+          "knownFormatPeakLogicalBytes": 308026776,
+          "createdKnownFormatBytes": 308039064,
+          "explicitDestroyedKnownFormatBytes": 308039064,
+          "unknownFormatLiveCount": 0,
+          "unknownFormatCreatedCount": 333,
+          "totalLogicalBytes": 0,
+          "status": "KNOWN_FORMAT_LOGICAL_PAYLOAD"
+        },
+        "limits": {
+          "maxObjects": 100000
+        },
+        "droppedMetadata": 0,
+        "droppedDiagnostics": 0,
+        "coverageFailures": [],
+        "scope": "Observed stock device after installation;buffer.size and known uncompressed texture texel payload incl mips/layers/samples,not driver allocation/residency. Unknown formats not guessed. GC/registry release not explicit destroy;no other-device/worker coverage. Profiler GPU allocations zero."
+      }
+    }
+  ],
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36",
+    "secureContext": true,
+    "crossOriginIsolated": false,
+    "pageUrl": "http://localhost:8000/src/baseline/sessions.html?v=baseline-session-v1",
+    "manualState": {
+      "thermal": "\u672a\u660e\u663e\u53d1\u70ed\uff0c\u6e29\u5ea6\u672a\u6d4b\u91cf",
+      "charging": "\u6b63\u5728\u5145\u7535\uff0c\u7535\u91cf85%",
+      "devtools": "\u672a\u5f00\u542f",
+      "flag": "\u5df2\u505c\u7528",
+      "backgroundApps": "\u65e0\u5176\u5b83\u4e3b\u52a8\u8fd0\u884c\u7684\u540e\u53f0\u5e94\u7528\uff1bVPN\u5f00\u542f"
+    },
+    "probeAdapter": {
+      "info": {
+        "vendor": "arm",
+        "architecture": "gen-5",
+        "device": "",
+        "description": ""
+      },
+      "features": [
+        "depth32float-stencil8",
+        "rg11b10ufloat-renderable",
+        "bgra8unorm-storage",
+        "texture-formats-tier1",
+        "dual-source-blending",
+        "core-features-and-limits",
+        "float32-filterable",
+        "indirect-first-instance",
+        "texture-compression-astc-sliced-3d",
+        "float32-blendable",
+        "subgroup-size-control",
+        "texture-compression-astc",
+        "texture-compression-etc2",
+        "depth-clip-control",
+        "timestamp-query",
+        "texture-formats-tier2",
+        "shader-f16",
+        "primitive-index",
+        "texture-component-swizzle",
+        "subgroups"
+      ],
+      "limits": {
+        "maxBindGroups": 4,
+        "maxBindGroupsPlusVertexBuffers": 24,
+        "maxBindingsPerBindGroup": 1000,
+        "maxBufferSize": 4294967292,
+        "maxColorAttachmentBytesPerSample": 128,
+        "maxColorAttachments": 8,
+        "maxComputeInvocationsPerWorkgroup": 1024,
+        "maxComputeWorkgroupSizeX": 1024,
+        "maxComputeWorkgroupSizeY": 1024,
+        "maxComputeWorkgroupSizeZ": 64,
+        "maxComputeWorkgroupStorageSize": 32768,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxDynamicStorageBuffersPerPipelineLayout": 8,
+        "maxDynamicUniformBuffersPerPipelineLayout": 10,
+        "maxImmediateSize": 64,
+        "maxInterStageShaderVariables": 28,
+        "maxSampledTexturesPerShaderStage": 48,
+        "maxSamplersPerShaderStage": 16,
+        "maxStorageBufferBindingSize": 2147483644,
+        "maxStorageBuffersInFragmentStage": 16,
+        "maxStorageBuffersInVertexStage": 16,
+        "maxStorageBuffersPerShaderStage": 16,
+        "maxStorageTexturesInFragmentStage": 8,
+        "maxStorageTexturesInVertexStage": 8,
+        "maxStorageTexturesPerShaderStage": 8,
+        "maxTextureArrayLayers": 2048,
+        "maxTextureDimension1D": 16384,
+        "maxTextureDimension2D": 16384,
+        "maxTextureDimension3D": 2048,
+        "maxUniformBufferBindingSize": 65536,
+        "maxUniformBuffersPerShaderStage": 12,
+        "maxVertexAttributes": 30,
+        "maxVertexBufferArrayStride": 2048,
+        "maxVertexBuffers": 8,
+        "minStorageBufferOffsetAlignment": 256,
+        "minUniformBufferOffsetAlignment": 256
+      },
+      "scope": "Independent probe,not runtime device"
+    },
+    "runtimeDevice": {
+      "features": [
+        "core-features-and-limits",
+        "subgroups",
+        "shader-f16"
+      ],
+      "limits": {
+        "maxBindGroups": 4,
+        "maxBindGroupsPlusVertexBuffers": 24,
+        "maxBindingsPerBindGroup": 1000,
+        "maxBufferSize": 4294967292,
+        "maxColorAttachmentBytesPerSample": 32,
+        "maxColorAttachments": 8,
+        "maxComputeInvocationsPerWorkgroup": 256,
+        "maxComputeWorkgroupSizeX": 256,
+        "maxComputeWorkgroupSizeY": 256,
+        "maxComputeWorkgroupSizeZ": 64,
+        "maxComputeWorkgroupStorageSize": 16384,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxDynamicStorageBuffersPerPipelineLayout": 4,
+        "maxDynamicUniformBuffersPerPipelineLayout": 8,
+        "maxImmediateSize": 64,
+        "maxInterStageShaderVariables": 16,
+        "maxSampledTexturesPerShaderStage": 16,
+        "maxSamplersPerShaderStage": 16,
+        "maxStorageBufferBindingSize": 2147483644,
+        "maxStorageBuffersInFragmentStage": 16,
+        "maxStorageBuffersInVertexStage": 16,
+        "maxStorageBuffersPerShaderStage": 16,
+        "maxStorageTexturesInFragmentStage": 4,
+        "maxStorageTexturesInVertexStage": 4,
+        "maxStorageTexturesPerShaderStage": 4,
+        "maxTextureArrayLayers": 256,
+        "maxTextureDimension1D": 8192,
+        "maxTextureDimension2D": 8192,
+        "maxTextureDimension3D": 2048,
+        "maxUniformBufferBindingSize": 65536,
+        "maxUniformBuffersPerShaderStage": 12,
+        "maxVertexAttributes": 16,
+        "maxVertexBufferArrayStride": 2048,
+        "maxVertexBuffers": 8,
+        "minStorageBufferOffsetAlignment": 256,
+        "minUniformBufferOffsetAlignment": 256
+      },
+      "scope": "Actual stock helper device supplied to runtime;backend UNKNOWN"
+    },
+    "runtimeBackend": "UNKNOWN"
+  },
+  "visibility": {
+    "initialState": "visible",
+    "enteredBackground": false,
+    "events": []
+  },
+  "rawSha256": "f9de79fb4c6d416b159cc42ad075a7ac91d1de94b4bd6cfb0cd827e7b0531236"
+}

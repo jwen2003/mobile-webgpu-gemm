@@ -193,3 +193,15 @@ PART2ABCD 2026-10-05 actual evidence: {"thermal": "未明显发热，温度未�
 
 
 PART2Q8ABCD actual2026-10-05: {"thermal": "未明显发热，温度未测量", "charging": "未充电：电量100%", "devtools": "未开启", "flag": "已停用"};visibility={"initialState": "visible", "enteredBackground": false, "samplingEnteredBackground": false, "events": []};device features=["core-features-and-limits", "shader-f16", "timestamp-query"];grid65536ns. Logical bytes only;physical GPU memory NOT_MEASURED. Original JSON unchanged.
+
+## BASELINE002 exact-length model sessions — READY_FOR_PHONE
+
+Original assignment page 1 directly re-read:full prompts 128/512/1024 tokens,each metric >=5 runs with median/p95. New entry http://localhost:8000/src/baseline/sessions.html?v=baseline-session-v1 ;15 independent page/task/device attempts,one generation each,0 generation warm-up,requested combined capacity2048. Actual sizeInTokens(fullPrompt) must exactly match the target with template included;body/template counts and full text/hash exported. Stock runtime0.10.29 and existing Web model preserved. No profiler command/pass extensions or timestamp diagnosis. Only resource lifecycle wrappers reused plus directly available JS heap snapshots.
+
+Question:How do observable initialization/combined generation/first callback/drain walls and scoped reported heap/logical allocations vary at prescribed input lengths? Setup and acceptance:docs/baseline_sessions_plan.md. Results NOT_RUN;CPU mock checks are not mobile/model evidence. Generation is first-use after separate tokenizer setup/drain;no output-token or pure prefill claim. Prompt/long-capacity compatibility awaits phone ordinal1 and longer configurations.
+
+Coverage matrix:exact full-prompt length and five independent combined-wall/available-memory sessions READY_FOR_PHONE,not closed. Pure prefill/decode,real generated-token throughput/per-token or dispatch-token metrics remain UNAVAILABLE;physical GPU memory/deviceRSS not collected. Resource logical bytes and JS heap never replace residency/RSS. Current device remains Mali;Adreno and true logical layer shape gaps remain. After actual evidence arrives preserve originals,independently audit per-session boundaries/resource lifecycles and grouped median/nearest-rankp95/min/max;five-samplep95=max with weak tail evidence. Separate commit/push only after mobile acceptance.
+
+BASELINE002 L128R1 COMPLETE/audited;full runtime-tokenizer count128,capacity2048 initialized on this input. Campaign1/15,not full repetition/phase/memory requirement closure. Actual scoped memory and walls:baseline_sessions_results.md.
+
+Latest BASELINE002 acceptance:FIFTEEN_SESSIONS_VERIFIED,exact128/512/1024 full prompts and5 independent COMPLETE/audited sessions each. Earlier NOT_RUN/partial states are historical. Observable walls/scoped memory repeats accepted;purephase/true outputtokens/deviceRSS/physical GPU memory/Adreno remain unavailable. Final results:docs/baseline_sessions_results.md;Work summary:docs/baseline002_work_summary.md (root-relative).

@@ -276,3 +276,41 @@ Part 2 independent repetitions: S1–S3 COMPLETE and independently verified, 3/5
 Part 2 independent repetitions: S1–S4 COMPLETE and independently verified, 4/5. One session outstanding; no reselection or stable benefit acceptance. Part 1 model repeats, logical shape and Adreno remain open.
 
 Latest acceptance: five independent PART2REPEAT sessions COMPLETE and verified; earlier NOT_RUN/partial progress entries are historical. Frozen configs retained, no pooled median. See docs/part2_repeat_results.md (project root relative) for per-session values, ranges and reversals. Part 1, logical shapes and Adreno gaps remain open.
+
+## BASELINE002 exact-length model sessions — READY_FOR_PHONE
+
+Original assignment page 1 directly re-read:full prompts 128/512/1024 tokens,each metric >=5 runs with median/p95. New entry http://localhost:8000/src/baseline/sessions.html?v=baseline-session-v1 ;15 independent page/task/device attempts,one generation each,0 generation warm-up,requested combined capacity2048. Actual sizeInTokens(fullPrompt) must exactly match the target with template included;body/template counts and full text/hash exported. Stock runtime0.10.29 and existing Web model preserved. No profiler command/pass extensions or timestamp diagnosis. Only resource lifecycle wrappers reused plus directly available JS heap snapshots.
+
+Question:How do observable initialization/combined generation/first callback/drain walls and scoped reported heap/logical allocations vary at prescribed input lengths? Setup and acceptance:docs/baseline_sessions_plan.md. Results NOT_RUN;CPU mock checks are not mobile/model evidence. Generation is first-use after separate tokenizer setup/drain;no output-token or pure prefill claim. Prompt/long-capacity compatibility awaits phone ordinal1 and longer configurations.
+
+Coverage matrix:exact full-prompt length and five independent combined-wall/available-memory sessions READY_FOR_PHONE,not closed. Pure prefill/decode,real generated-token throughput/per-token or dispatch-token metrics remain UNAVAILABLE;physical GPU memory/deviceRSS not collected. Resource logical bytes and JS heap never replace residency/RSS. Current device remains Mali;Adreno and true logical layer shape gaps remain. After actual evidence arrives preserve originals,independently audit per-session boundaries/resource lifecycles and grouped median/nearest-rankp95/min/max;five-samplep95=max with weak tail evidence. Separate commit/push only after mobile acceptance.
+
+BASELINE002 L128R1 COMPLETE/audited;full runtime-tokenizer count128,capacity2048 initialized on this input. Campaign1/15,not full repetition/phase/memory requirement closure. Actual scoped memory and walls:baseline_sessions_results.md.
+
+BASELINE002 progress2/15:128R1 and512R1 COMPLETE/verified. 1024 input andfive independent sessions perlength outstanding;phase,outputtoken,RSS,Adreno gaps unchanged.
+
+BASELINE002 progress3/15:all prescribed full-prompt lengths128/512/1024 have first independent COMPLETE/audited attempt with requestedcapacity2048. Four more sessions perlength remain;purephase/outputtoken,RSS andAdreno not closed.
+
+BASELINE002 progress4/15:128 1/5,512 2/5,1024 1/5 COMPLETE/audited;L512 full prompt/hash unchanged. Five-repeat requirement remains pending;phase/outputtoken,RSS andAdreno gaps unchanged.
+
+BASELINE002 progress5/15:128 1/5,512 2/5,1024 2/5 COMPLETE/audited;fixed perlength prompts unchanged. Five-repeat requirements pending;purephase/outputtoken,RSS andAdreno gaps retained.
+
+BASELINE002 progress6/15:each prescribed length2/5 COMPLETE/audited;perlength exact prompts unchanged. Three further sessions perlength required;phase/outputtoken,RSS andAdreno gaps retained.
+
+BASELINE002 progress7/15:128 2/5,512 2/5,1024 3/5 COMPLETE/audited;perlength exact prompts unchanged. Repetition requirements pending;phase/outputtoken,RSS andAdreno gaps retained.
+
+BASELINE002 progress8/15:128 3/5,512 2/5,1024 3/5 COMPLETE/audited;perlength exact prompts unchanged. Repetition requirements pending;phase/outputtoken,RSS andAdreno gaps retained.
+
+BASELINE002 progress9/15:each prescribed length3/5 COMPLETE/audited;perlength exact prompts unchanged. Two further sessions perlength required;phase/outputtoken,RSS andAdreno gaps retained.
+
+BASELINE002 progress10/15:128 4/5,512 3/5,1024 3/5 COMPLETE/audited;perlength exact prompts unchanged. Repetition acceptance pending;phase/outputtoken,RSS andAdreno gaps retained.
+
+BASELINE002 progress11/15:128 4/5,512 3/5,1024 4/5 COMPLETE/audited;perlength exact prompts unchanged. Repetition acceptance pending;phase/outputtoken,RSS andAdreno gaps retained.
+
+BASELINE002 progress12/15:each prescribed length4/5 COMPLETE/audited;perlength exact prompts unchanged. One further session perlength required;phase/outputtoken,RSS andAdreno gaps retained.
+
+BASELINE002 progress13/15:128 4/5,512 5/5,1024 4/5 COMPLETE/audited. L512 five combined-wall/available-memory repeats done;purephase/outputtoken,RSS andAdreno not closed.
+
+BASELINE002 progress14/15:128 5/5,512 5/5,1024 4/5 COMPLETE/audited. L128/L512 five combined-wall/available-memory repeats done;purephase/outputtoken,RSS andAdreno not closed.
+
+Latest BASELINE002 acceptance:FIFTEEN_SESSIONS_VERIFIED,exact128/512/1024 full prompts and5 independent COMPLETE/audited sessions each. Earlier NOT_RUN/partial states are historical. Observable walls/scoped memory repeats accepted;purephase/true outputtokens/deviceRSS/physical GPU memory/Adreno remain unavailable. Final results:docs/baseline_sessions_results.md;Work summary:docs/baseline002_work_summary.md (root-relative).
