@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PART2REPEAT · 有限 FP16 tile/workgroup sweep</title>
+<style>body{font:16px system-ui;margin:20px;max-width:1100px}label{display:block;margin:8px}button,input{padding:10px}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style>
+<p>实现版本：repeat-v1（五次独立会话，冻结配置）</p><h1>PART2REPEAT · Q4/Q8 FP16 · READY_FOR_PHONE</h1>
+<p>冻结 QROW-REPEAT-v1：Q4、Q8；代表性 M=1、128，K=N=1024。A 固定，B/C/D 原配置与冻结选择去重。仅 prepared-input kernel-only GPU pass；D 含融合反量化，A/B/C 不含 CPU 准备。满额 1000 个采样 pass，另最多 378 个正确性 pass；保持前台并耐心等待。</p>
+<p>所有候选先通过小用例、边界、精度探针和性能 shape 的全量校验。每候选 10 warm-up / 30 measured。只选择待复验配置，不宣称稳定收益、模型加速或 Adreno 验收。</p>
+<label>Thermal <input id="thermal" value="UNKNOWN"></label><label>Charging <input id="charging" value="UNKNOWN"></label><label>DevTools <input id="devtools" value="UNKNOWN"></label><label>WebGPU Developer Features flag <input id="flag" value="UNKNOWN"></label>
+<label>会话编号 <select id="sessionNumber"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label><p>每次加载只运行一次。每轮下载后重新加载页面、选下一编号；保留失败文件。五轮条件一致，不根据结果重选或替换。</p><button id="run">运行本次独立会话</button><button id="abort">停止并保留本次记录</button><button id="download">下载 JSON（失败也保留）</button><p id="status">NOT_RUN</p><pre id="summary"></pre><script type="module" src="./part2_sweep.js?v=repeat-v1"></script></html>

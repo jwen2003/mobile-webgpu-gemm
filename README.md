@@ -385,3 +385,10 @@ Latest actual sweep: COMPLETE_WITH_FAILURES (four generated D shader compilation
 Phone rerun must show visible implementation version quant-index-fix-1. Open http://localhost:8000/src/benchmark/part2_sweep.html?v=quant-index-fix-1 ; previous second record still compiled old `meta` source.
 
 Latest evidence: PART2SWEEP-2026-10-06T06-07-34-319Z.json is COMPLETE and independently verified. Finite exploration accepted; five independent repetitions remain NOT_RUN. Earlier READY_FOR_PHONE and failed entries are historical states. See part2_sweep_results.md (in docs/) for full tables.
+
+
+## Part 2 five independent sessions — READY_FOR_PHONE
+
+Frozen QROW-REPEAT-v1 compares A and deduplicated original/selected B/C/D from the COMPLETE sweep. New entry: http://localhost:8000/src/benchmark/part2_repeat.html?v=repeat-v1 . Reload for each ordinal 1–5; one UUID/new device per page run, fresh preparation and warm-up. Per session 1,000 sampling passes (250 warm-up,750 measured), plus up to 357 correctness passes if all pass. Details: docs/part2_repeat_plan.md. Results NOT_RUN; no fabricated numbers, no pooled median or reselection. Independent auditor prepared; five verified sessions required before separate result commit/push. This does not satisfy Part 1 model repeats, logical model shape or Adreno requirements.
+
+Latest acceptance: five independent PART2REPEAT sessions COMPLETE and verified; earlier NOT_RUN/partial progress entries are historical. Frozen configs retained, no pooled median. See docs/part2_repeat_results.md (project root relative) for per-session values, ranges and reversals. Part 1, logical shapes and Adreno gaps remain open.

@@ -1,0 +1,982 @@
+{
+  "verification": "PASS",
+  "runStatus": "COMPLETE",
+  "smallOutputsIndependentlyChecked": 46597,
+  "timestampSamplesChecked": 1000,
+  "tables": [
+    {
+      "bits": 4,
+      "shape": {
+        "id": "M1",
+        "M": 1,
+        "K": 1024,
+        "N": 1024
+      },
+      "statistics": {
+        "A-original": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 1310720,
+            "p95": 2621440,
+            "min": 983040,
+            "max": 2621440,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 4.25,
+            "p95": 6.199999988079071,
+            "min": 3.099999964237213,
+            "max": 6.899999976158142,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "B-16x16-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 7372800,
+            "p95": 11468800,
+            "min": 2883584,
+            "max": 11599872,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 10.200000017881393,
+            "p95": 15.300000011920929,
+            "min": 6.199999988079071,
+            "max": 16.100000023841858,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "B-8x8-K8": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 3080192,
+            "p95": 6094848,
+            "min": 1310720,
+            "max": 6094848,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 6.1500000059604645,
+            "p95": 9.699999988079071,
+            "min": 3.800000011920929,
+            "max": 9.900000035762787,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "C-8x8-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 1146880,
+            "p95": 1310720,
+            "min": 786432,
+            "max": 1310720,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 4.0999999940395355,
+            "p95": 4.800000011920929,
+            "min": 3.5,
+            "max": 5.5,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "D-8x8-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 1540096,
+            "p95": 1900544,
+            "min": 983040,
+            "max": 1966080,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 4.349999964237213,
+            "p95": 5.600000023841858,
+            "min": 3.100000023841858,
+            "max": 5.800000011920929,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "D-4x8-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 1605632,
+            "p95": 1966080,
+            "min": 1114112,
+            "max": 2031616,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 4.8499999940395355,
+            "p95": 5.600000023841858,
+            "min": 3.099999964237213,
+            "max": 6,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        }
+      },
+      "selection": {}
+    },
+    {
+      "bits": 4,
+      "shape": {
+        "id": "M128",
+        "M": 128,
+        "K": 1024,
+        "N": 1024
+      },
+      "statistics": {
+        "A-original": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 3670016,
+            "p95": 9961472,
+            "min": 3473408,
+            "max": 11075584,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 7.8499999940395355,
+            "p95": 15.100000023841858,
+            "min": 5.800000011920929,
+            "max": 16.80000001192093,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "B-16x16-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 5210112,
+            "p95": 16908288,
+            "min": 5046272,
+            "max": 20381696,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 9.5,
+            "p95": 22,
+            "min": 7.100000023841858,
+            "max": 25.700000047683716,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "B-32x8-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 3833856,
+            "p95": 11534336,
+            "min": 3735552,
+            "max": 11796480,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 8.5,
+            "p95": 16.400000035762787,
+            "min": 6.099999964237213,
+            "max": 17.5,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "C-8x8-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 1179648,
+            "p95": 4063232,
+            "min": 983040,
+            "max": 4194304,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 5,
+            "p95": 7.099999964237213,
+            "min": 2.699999988079071,
+            "max": 7.399999976158142,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "D-8x8-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 1605632,
+            "p95": 4194304,
+            "min": 1507328,
+            "max": 5242880,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 6.4000000059604645,
+            "p95": 8.600000023841858,
+            "min": 2.900000035762787,
+            "max": 8.800000011920929,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "D-8x16-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 1245184,
+            "p95": 3276800,
+            "min": 1179648,
+            "max": 3735552,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 4.9000000059604645,
+            "p95": 8.199999988079071,
+            "min": 2.600000023841858,
+            "max": 9,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        }
+      },
+      "selection": {}
+    },
+    {
+      "bits": 8,
+      "shape": {
+        "id": "M1",
+        "M": 1,
+        "K": 1024,
+        "N": 1024
+      },
+      "statistics": {
+        "A-original": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 1212416,
+            "p95": 2490368,
+            "min": 851968,
+            "max": 2555904,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 4.350000023841858,
+            "p95": 6.199999988079071,
+            "min": 3.599999964237213,
+            "max": 6.200000047683716,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "B-16x16-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 9142272,
+            "p95": 11599872,
+            "min": 3080192,
+            "max": 11665408,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 12.650000005960464,
+            "p95": 15.699999988079071,
+            "min": 6.199999988079071,
+            "max": 16.5,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "B-32x8-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 1736704,
+            "p95": 4653056,
+            "min": 1179648,
+            "max": 4653056,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 5.200000017881393,
+            "p95": 7.699999988079071,
+            "min": 3.699999988079071,
+            "max": 7.699999988079071,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "C-8x8-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 1245184,
+            "p95": 1310720,
+            "min": 786432,
+            "max": 1376256,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 4.0999999940395355,
+            "p95": 5.400000035762787,
+            "min": 3.5,
+            "max": 5.699999988079071,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "D-8x8-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 1376256,
+            "p95": 1966080,
+            "min": 983040,
+            "max": 1966080,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 4.75,
+            "p95": 6.199999988079071,
+            "min": 3.599999964237213,
+            "max": 6.5,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "D-4x8-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 1474560,
+            "p95": 2031616,
+            "min": 1048576,
+            "max": 2031616,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 4.549999982118607,
+            "p95": 5.699999988079071,
+            "min": 3.400000035762787,
+            "max": 5.699999988079071,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        }
+      },
+      "selection": {}
+    },
+    {
+      "bits": 8,
+      "shape": {
+        "id": "M128",
+        "M": 128,
+        "K": 1024,
+        "N": 1024
+      },
+      "statistics": {
+        "A-original": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 8716288,
+            "p95": 12648448,
+            "min": 7602176,
+            "max": 14811136,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 12.399999976158142,
+            "p95": 18.19999998807907,
+            "min": 10.799999952316284,
+            "max": 20.80000001192093,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "B-16x16-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 14221312,
+            "p95": 19202048,
+            "min": 10551296,
+            "max": 19398656,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 18.599999994039536,
+            "p95": 24.600000023841858,
+            "min": 13.900000035762787,
+            "max": 24.80000001192093,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "B-8x8-K8": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 11403264,
+            "p95": 15073280,
+            "min": 9306112,
+            "max": 15400960,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 15.549999982118607,
+            "p95": 21.400000035762787,
+            "min": 13.099999964237213,
+            "max": 21.5,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "C-8x8-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 2424832,
+            "p95": 3407872,
+            "min": 1835008,
+            "max": 9043968,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 6.1500000059604645,
+            "p95": 8.300000011920929,
+            "min": 4.799999952316284,
+            "max": 15.800000011920929,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "C-8x16-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 2424832,
+            "p95": 3538944,
+            "min": 1966080,
+            "max": 3866624,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 6.199999988079071,
+            "p95": 7.399999976158142,
+            "min": 4.399999976158142,
+            "max": 7.399999976158142,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "D-8x8-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 3964928,
+            "p95": 6356992,
+            "min": 2949120,
+            "max": 8519680,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 7.5,
+            "p95": 9.899999976158142,
+            "min": 6,
+            "max": 14.100000023841858,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        },
+        "D-8x16-K16": {
+          "status": "PRELIMINARY",
+          "gpuPassNs": {
+            "count": 30,
+            "median": 3145728,
+            "p95": 4194304,
+            "min": 2359296,
+            "max": 6029312,
+            "zeroCount": 0
+          },
+          "submitToCompletionWallMs": {
+            "count": 30,
+            "median": 6.399999976158142,
+            "p95": 9.800000011920929,
+            "min": 4.399999976158142,
+            "max": 10.5,
+            "zeroCount": 0
+          },
+          "observedGridNs": "65536"
+        }
+      },
+      "selection": {}
+    }
+  ],
+  "scope": "Exported small inputs/reference/actual metrics independently replayed;large full actual arrays absent,online evidence only;no stable speedup claim",
+  "session": {
+    "id": "18a3332f-7cb9-414a-92de-967e92cb0f30",
+    "ordinal": 3,
+    "newPageRequired": true
+  },
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36",
+    "secureContext": true,
+    "manualState": {
+      "thermal": "\u672a\u660e\u663e\u53d1\u70ed\uff0c\u6e29\u5ea6\u672a\u6d4b\u91cf",
+      "charging": "\u6b63\u5728\u5145\u7535\uff0c\u7535\u91cf82%",
+      "devtools": "\u672a\u5f00\u542f",
+      "flag": "\u5df2\u505c\u7528"
+    },
+    "adapter": {
+      "info": {
+        "vendor": "arm",
+        "architecture": "gen-5",
+        "device": "",
+        "description": ""
+      },
+      "features": [
+        "depth32float-stencil8",
+        "rg11b10ufloat-renderable",
+        "bgra8unorm-storage",
+        "texture-formats-tier1",
+        "dual-source-blending",
+        "core-features-and-limits",
+        "float32-filterable",
+        "indirect-first-instance",
+        "texture-compression-astc-sliced-3d",
+        "float32-blendable",
+        "subgroup-size-control",
+        "texture-compression-astc",
+        "texture-compression-etc2",
+        "depth-clip-control",
+        "timestamp-query",
+        "texture-formats-tier2",
+        "shader-f16",
+        "primitive-index",
+        "texture-component-swizzle",
+        "subgroups"
+      ],
+      "limits": {
+        "maxBindGroups": 4,
+        "maxBindGroupsPlusVertexBuffers": 24,
+        "maxBindingsPerBindGroup": 1000,
+        "maxBufferSize": 4294967292,
+        "maxColorAttachmentBytesPerSample": 128,
+        "maxColorAttachments": 8,
+        "maxComputeInvocationsPerWorkgroup": 1024,
+        "maxComputeWorkgroupSizeX": 1024,
+        "maxComputeWorkgroupSizeY": 1024,
+        "maxComputeWorkgroupSizeZ": 64,
+        "maxComputeWorkgroupStorageSize": 32768,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxDynamicStorageBuffersPerPipelineLayout": 8,
+        "maxDynamicUniformBuffersPerPipelineLayout": 10,
+        "maxImmediateSize": 64,
+        "maxInterStageShaderVariables": 28,
+        "maxSampledTexturesPerShaderStage": 48,
+        "maxSamplersPerShaderStage": 16,
+        "maxStorageBufferBindingSize": 2147483644,
+        "maxStorageBuffersInFragmentStage": 16,
+        "maxStorageBuffersInVertexStage": 16,
+        "maxStorageBuffersPerShaderStage": 16,
+        "maxStorageTexturesInFragmentStage": 8,
+        "maxStorageTexturesInVertexStage": 8,
+        "maxStorageTexturesPerShaderStage": 8,
+        "maxTextureArrayLayers": 2048,
+        "maxTextureDimension1D": 16384,
+        "maxTextureDimension2D": 16384,
+        "maxTextureDimension3D": 2048,
+        "maxUniformBufferBindingSize": 65536,
+        "maxUniformBuffersPerShaderStage": 12,
+        "maxVertexAttributes": 30,
+        "maxVertexBufferArrayStride": 2048,
+        "maxVertexBuffers": 8,
+        "minStorageBufferOffsetAlignment": 256,
+        "minUniformBufferOffsetAlignment": 256
+      }
+    },
+    "requestDeviceDescriptor": {
+      "requiredFeatures": [
+        "shader-f16",
+        "timestamp-query"
+      ]
+    },
+    "device": {
+      "features": [
+        "core-features-and-limits",
+        "timestamp-query",
+        "shader-f16"
+      ],
+      "limits": {
+        "maxBindGroups": 4,
+        "maxBindGroupsPlusVertexBuffers": 24,
+        "maxBindingsPerBindGroup": 1000,
+        "maxBufferSize": 268435456,
+        "maxColorAttachmentBytesPerSample": 32,
+        "maxColorAttachments": 8,
+        "maxComputeInvocationsPerWorkgroup": 256,
+        "maxComputeWorkgroupSizeX": 256,
+        "maxComputeWorkgroupSizeY": 256,
+        "maxComputeWorkgroupSizeZ": 64,
+        "maxComputeWorkgroupStorageSize": 16384,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxDynamicStorageBuffersPerPipelineLayout": 4,
+        "maxDynamicUniformBuffersPerPipelineLayout": 8,
+        "maxImmediateSize": 64,
+        "maxInterStageShaderVariables": 16,
+        "maxSampledTexturesPerShaderStage": 16,
+        "maxSamplersPerShaderStage": 16,
+        "maxStorageBufferBindingSize": 134217728,
+        "maxStorageBuffersInFragmentStage": 8,
+        "maxStorageBuffersInVertexStage": 8,
+        "maxStorageBuffersPerShaderStage": 8,
+        "maxStorageTexturesInFragmentStage": 4,
+        "maxStorageTexturesInVertexStage": 4,
+        "maxStorageTexturesPerShaderStage": 4,
+        "maxTextureArrayLayers": 256,
+        "maxTextureDimension1D": 8192,
+        "maxTextureDimension2D": 8192,
+        "maxTextureDimension3D": 2048,
+        "maxUniformBufferBindingSize": 65536,
+        "maxUniformBuffersPerShaderStage": 12,
+        "maxVertexAttributes": 16,
+        "maxVertexBufferArrayStride": 2048,
+        "maxVertexBuffers": 8,
+        "minStorageBufferOffsetAlignment": 256,
+        "minUniformBufferOffsetAlignment": 256
+      }
+    }
+  },
+  "visibility": {
+    "initialState": "visible",
+    "enteredBackground": false,
+    "samplingEnteredBackground": false,
+    "events": []
+  },
+  "comparisons": [
+    {
+      "bits": 4,
+      "M": 1,
+      "frozenComparison": {
+        "selected": {
+          "B": "B-8x8-K8",
+          "C": "C-8x8-K16",
+          "D": "D-4x8-K16"
+        },
+        "AoverCandidate": {
+          "A-original": {
+            "value": 1,
+            "status": "WITHIN_ONE_GRID",
+            "differenceNs": 0,
+            "gridNs": 65536
+          },
+          "B-16x16-K16": {
+            "value": 0.17777777777777778,
+            "status": "PILOT_ONLY",
+            "differenceNs": -6062080,
+            "gridNs": 65536
+          },
+          "B-8x8-K8": {
+            "value": 0.425531914893617,
+            "status": "PILOT_ONLY",
+            "differenceNs": -1769472,
+            "gridNs": 65536
+          },
+          "C-8x8-K16": {
+            "value": 1.1428571428571428,
+            "status": "PILOT_ONLY",
+            "differenceNs": 163840,
+            "gridNs": 65536
+          },
+          "D-8x8-K16": {
+            "value": 0.851063829787234,
+            "status": "PILOT_ONLY",
+            "differenceNs": -229376,
+            "gridNs": 65536
+          },
+          "D-4x8-K16": {
+            "value": 0.8163265306122449,
+            "status": "PILOT_ONLY",
+            "differenceNs": -294912,
+            "gridNs": 65536
+          }
+        },
+        "originalOverSelected": {
+          "B": {
+            "value": 2.393617021276596,
+            "status": "PILOT_ONLY",
+            "differenceNs": 4292608,
+            "gridNs": 65536
+          },
+          "C": {
+            "value": 1,
+            "status": "WITHIN_ONE_GRID",
+            "differenceNs": 0,
+            "gridNs": 65536
+          },
+          "D": {
+            "value": 0.9591836734693877,
+            "status": "WITHIN_ONE_GRID",
+            "differenceNs": -65536,
+            "gridNs": 65536
+          }
+        }
+      }
+    },
+    {
+      "bits": 4,
+      "M": 128,
+      "frozenComparison": {
+        "selected": {
+          "B": "B-32x8-K16",
+          "C": "C-8x8-K16",
+          "D": "D-8x16-K16"
+        },
+        "AoverCandidate": {
+          "A-original": {
+            "value": 1,
+            "status": "WITHIN_ONE_GRID",
+            "differenceNs": 0,
+            "gridNs": 65536
+          },
+          "B-16x16-K16": {
+            "value": 0.7044025157232704,
+            "status": "PILOT_ONLY",
+            "differenceNs": -1540096,
+            "gridNs": 65536
+          },
+          "B-32x8-K16": {
+            "value": 0.9572649572649573,
+            "status": "PILOT_ONLY",
+            "differenceNs": -163840,
+            "gridNs": 65536
+          },
+          "C-8x8-K16": {
+            "value": 3.111111111111111,
+            "status": "PILOT_ONLY",
+            "differenceNs": 2490368,
+            "gridNs": 65536
+          },
+          "D-8x8-K16": {
+            "value": 2.2857142857142856,
+            "status": "PILOT_ONLY",
+            "differenceNs": 2064384,
+            "gridNs": 65536
+          },
+          "D-8x16-K16": {
+            "value": 2.9473684210526314,
+            "status": "PILOT_ONLY",
+            "differenceNs": 2424832,
+            "gridNs": 65536
+          }
+        },
+        "originalOverSelected": {
+          "B": {
+            "value": 1.358974358974359,
+            "status": "PILOT_ONLY",
+            "differenceNs": 1376256,
+            "gridNs": 65536
+          },
+          "C": {
+            "value": 1,
+            "status": "WITHIN_ONE_GRID",
+            "differenceNs": 0,
+            "gridNs": 65536
+          },
+          "D": {
+            "value": 1.2894736842105263,
+            "status": "PILOT_ONLY",
+            "differenceNs": 360448,
+            "gridNs": 65536
+          }
+        }
+      }
+    },
+    {
+      "bits": 8,
+      "M": 1,
+      "frozenComparison": {
+        "selected": {
+          "B": "B-32x8-K16",
+          "C": "C-8x8-K16",
+          "D": "D-4x8-K16"
+        },
+        "AoverCandidate": {
+          "A-original": {
+            "value": 1,
+            "status": "WITHIN_ONE_GRID",
+            "differenceNs": 0,
+            "gridNs": 65536
+          },
+          "B-16x16-K16": {
+            "value": 0.13261648745519714,
+            "status": "PILOT_ONLY",
+            "differenceNs": -7929856,
+            "gridNs": 65536
+          },
+          "B-32x8-K16": {
+            "value": 0.6981132075471698,
+            "status": "PILOT_ONLY",
+            "differenceNs": -524288,
+            "gridNs": 65536
+          },
+          "C-8x8-K16": {
+            "value": 0.9736842105263158,
+            "status": "WITHIN_ONE_GRID",
+            "differenceNs": -32768,
+            "gridNs": 65536
+          },
+          "D-8x8-K16": {
+            "value": 0.8809523809523809,
+            "status": "PILOT_ONLY",
+            "differenceNs": -163840,
+            "gridNs": 65536
+          },
+          "D-4x8-K16": {
+            "value": 0.8222222222222222,
+            "status": "PILOT_ONLY",
+            "differenceNs": -262144,
+            "gridNs": 65536
+          }
+        },
+        "originalOverSelected": {
+          "B": {
+            "value": 5.264150943396227,
+            "status": "PILOT_ONLY",
+            "differenceNs": 7405568,
+            "gridNs": 65536
+          },
+          "C": {
+            "value": 1,
+            "status": "WITHIN_ONE_GRID",
+            "differenceNs": 0,
+            "gridNs": 65536
+          },
+          "D": {
+            "value": 0.9333333333333333,
+            "status": "PILOT_ONLY",
+            "differenceNs": -98304,
+            "gridNs": 65536
+          }
+        }
+      }
+    },
+    {
+      "bits": 8,
+      "M": 128,
+      "frozenComparison": {
+        "selected": {
+          "B": "B-8x8-K8",
+          "C": "C-8x16-K16",
+          "D": "D-8x16-K16"
+        },
+        "AoverCandidate": {
+          "A-original": {
+            "value": 1,
+            "status": "WITHIN_ONE_GRID",
+            "differenceNs": 0,
+            "gridNs": 65536
+          },
+          "B-16x16-K16": {
+            "value": 0.6129032258064516,
+            "status": "PILOT_ONLY",
+            "differenceNs": -5505024,
+            "gridNs": 65536
+          },
+          "B-8x8-K8": {
+            "value": 0.764367816091954,
+            "status": "PILOT_ONLY",
+            "differenceNs": -2686976,
+            "gridNs": 65536
+          },
+          "C-8x8-K16": {
+            "value": 3.5945945945945947,
+            "status": "PILOT_ONLY",
+            "differenceNs": 6291456,
+            "gridNs": 65536
+          },
+          "C-8x16-K16": {
+            "value": 3.5945945945945947,
+            "status": "PILOT_ONLY",
+            "differenceNs": 6291456,
+            "gridNs": 65536
+          },
+          "D-8x8-K16": {
+            "value": 2.1983471074380163,
+            "status": "PILOT_ONLY",
+            "differenceNs": 4751360,
+            "gridNs": 65536
+          },
+          "D-8x16-K16": {
+            "value": 2.7708333333333335,
+            "status": "PILOT_ONLY",
+            "differenceNs": 5570560,
+            "gridNs": 65536
+          }
+        },
+        "originalOverSelected": {
+          "B": {
+            "value": 1.2471264367816093,
+            "status": "PILOT_ONLY",
+            "differenceNs": 2818048,
+            "gridNs": 65536
+          },
+          "C": {
+            "value": 1,
+            "status": "WITHIN_ONE_GRID",
+            "differenceNs": 0,
+            "gridNs": 65536
+          },
+          "D": {
+            "value": 1.2604166666666667,
+            "status": "PILOT_ONLY",
+            "differenceNs": 819200,
+            "gridNs": 65536
+          }
+        }
+      }
+    }
+  ],
+  "rawSha256": "cacfc8f4574b2a73cb87eefec2a757504cbaea42f0a08213117ca674c0d70142"
+}

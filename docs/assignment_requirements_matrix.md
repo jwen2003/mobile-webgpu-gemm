@@ -260,3 +260,19 @@ Actual COMPLETE, independent verification PASS. All ten candidates compile and p
 | Q8 | 128 | B-8x8-K8 | C-8x16-K16 | D-8x16-K16 |
 
 Q4 M128 C retains original under frozen one-grid tie preference. Q8 M1 D alternatives tie within one grid; original is outside tie, so lowest-median candidate remains provisional. This completes one finite exploratory sweep, not five independent repetitions or stable benefit acceptance. Choices differ from previous partial runs; no causal thermal/format explanation established. Next minimal task: freeze selected candidates plus same-round originals/A, collect at least five independent runs under the same contract. Do not expand candidates, assert model acceleration, Adreno validation or true logical model shape completion.
+
+
+## Part 2 five independent sessions — READY_FOR_PHONE
+
+Frozen QROW-REPEAT-v1 compares A and deduplicated original/selected B/C/D from the COMPLETE sweep. New entry: http://localhost:8000/src/benchmark/part2_repeat.html?v=repeat-v1 . Reload for each ordinal 1–5; one UUID/new device per page run, fresh preparation and warm-up. Per session 1,000 sampling passes (250 warm-up,750 measured), plus up to 357 correctness passes if all pass. Details: docs/part2_repeat_plan.md. Results NOT_RUN; no fabricated numbers, no pooled median or reselection. Independent auditor prepared; five verified sessions required before separate result commit/push. This does not satisfy Part 1 model repeats, logical model shape or Adreno requirements.
+
+
+Part 2 independent repetitions: S1 COMPLETE/verified, 1/5. Four sessions outstanding; Part 1 model repeats, logical shape and Adreno remain open.
+
+Part 2 independent repetitions: S1/S2 COMPLETE and independently verified, 2/5. Three sessions outstanding; no reselection or stable gain claim. Part 1 model repeats, logical shape and Adreno remain open.
+
+Part 2 independent repetitions: S1–S3 COMPLETE and independently verified, 3/5. Two sessions outstanding; no reselection or stable benefit acceptance. Part 1 model repeats, logical shape and Adreno remain open.
+
+Part 2 independent repetitions: S1–S4 COMPLETE and independently verified, 4/5. One session outstanding; no reselection or stable benefit acceptance. Part 1 model repeats, logical shape and Adreno remain open.
+
+Latest acceptance: five independent PART2REPEAT sessions COMPLETE and verified; earlier NOT_RUN/partial progress entries are historical. Frozen configs retained, no pooled median. See docs/part2_repeat_results.md (project root relative) for per-session values, ranges and reversals. Part 1, logical shapes and Adreno gaps remain open.
