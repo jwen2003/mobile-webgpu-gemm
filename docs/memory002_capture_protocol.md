@@ -79,3 +79,8 @@ RSS across processes may count shared pages multiple times. PSS apportions share
 Next pilot can ask: under recorded conditions, how do separately reported browser/GPU process PSS/RSS change from verified PAGE_IDLE to initialization and drain holds? Which individual memory commands fit fully inside generation under measured clock uncertainty? Are PID lifetimes stable, or are comparisons invalidated by replacement? It cannot answer model-exclusive memory, physical GPU residency, target renderer memory, continuous peak, five-repeat stability or stock latency without further evidence.
 
 CPU-only checks cover no-idle initialization block, failed role receipt, marker changes, uncertainty-bound crossing, missing/inconsistent clock exchange, clock steps, Cancel cleanup, loopback HTTP and old BASELINE002 mock regression. v2 is READY_FOR_PROTOCOL_PHONE_CHECK; no phone acceptance this round. Historical pilot remains PARTIAL and assignment memory remains PARTIAL.
+
+
+## MEMORY002 v2 observed protocol pilot
+
+[One128-token v2 result](../docs/memory002_v2_pilot_results.md): PROTOCOL_PASS_WITH_CONDITION_WARNING. Required4/4 stage coverage, five snapshots, fresh browser/GPU readings and idle deltas, bounded generation timing (~28.975ms uncertainty), all10 debug-forward cleanups verified. Initialization background5.606s retained; target renderer UNKNOWN, zygote strict meminfo unavailable. One protocol pilot only: not five-repeat memory acceptance, model-exclusive/physical GPU memory or continuous peak. Historical PARTIAL pilot unchanged; no extra trial scheduled.

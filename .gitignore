@@ -58,3 +58,6 @@ service-account*.json
 
 # Private adb process inventories (device IDs and unrelated app names).
 /results/local/adb_memory/
+
+# Private MEMORY002 v2 page evidence; publish derived audit and hashes only.
+/results/raw/MEMORY002-BASELINE002-L128-R1-2026-10-06T10-13-48-016Z.json

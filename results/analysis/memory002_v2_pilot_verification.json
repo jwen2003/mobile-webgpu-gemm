@@ -1,0 +1,676 @@
+{
+  "experimentId": "MEMORY002",
+  "protocolVersion": "memory002-v2",
+  "status": "PROTOCOL_PASS_WITH_CONDITION_WARNING",
+  "scope": "One phone protocol pilot only;browser/GPU process-level memory,not model-exclusive/physical GPU memory/continuous peak;not five-repeat memory acceptance",
+  "pageStatus": "COMPLETE",
+  "pageFile": "results/raw/MEMORY002-BASELINE002-L128-R1-2026-10-06T10-13-48-016Z.json",
+  "pageSha256": "c7b4e48005cd0c335da3d1d770dd38beed6c0297f6252860462947adaa82ef9a",
+  "session": {
+    "id": "03292c53-e0e3-4fac-919f-7e4dd3e06e82",
+    "ordinal": 1,
+    "targetTokens": 128,
+    "repetition": 1,
+    "freshPageTaskDevice": true
+  },
+  "coverage": {
+    "requiredStages": 4,
+    "validRequiredStages": 4,
+    "totalSnapshots": 5,
+    "browserGpuValidValues": 10,
+    "targetRendererMapping": "UNKNOWN",
+    "zygoteMeminfo": "UNAVAILABLE_PID_HEADER"
+  },
+  "cleanupCount": 10,
+  "rows": [
+    {
+      "stage": "PAGE_IDLE",
+      "archive": "20261006T100236256774Z",
+      "collectionDurationMs": 8471.38680005446,
+      "browserGpu": [
+        {
+          "role": "BROWSER_MAIN",
+          "pid": 14567,
+          "sameLifetimeAsIdle": true,
+          "pssKiB": 249919,
+          "rssKiB": 429182,
+          "deltaPssKiB": 0,
+          "deltaRssKiB": 0,
+          "utcStart": "2026-10-06T10:02:40.893807+00:00",
+          "utcEnd": "2026-10-06T10:02:41.107529+00:00",
+          "timing": {
+            "phase": "HELD_HANDSHAKE_AND_FINAL_PAGE_HISTORY_CHECKED"
+          }
+        },
+        {
+          "role": "GPU",
+          "pid": 11306,
+          "sameLifetimeAsIdle": true,
+          "pssKiB": 162986,
+          "rssKiB": 304373,
+          "deltaPssKiB": 0,
+          "deltaRssKiB": 0,
+          "utcStart": "2026-10-06T10:02:40.543465+00:00",
+          "utcEnd": "2026-10-06T10:02:40.709048+00:00",
+          "timing": {
+            "phase": "HELD_HANDSHAKE_AND_FINAL_PAGE_HISTORY_CHECKED"
+          }
+        }
+      ],
+      "otherProcesses": [
+        {
+          "pid": 11256,
+          "ppid": 1390,
+          "name": "com.android.chrome_zygote",
+          "status": "UNAVAILABLE",
+          "pssKiB": null,
+          "rssKiB": null,
+          "identityConsistent": false,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": "Missing totals or PID/name identity mismatch",
+          "startTicksBefore": 55628481,
+          "role": "UNKNOWN",
+          "roleEvidence": "No consistent fresh before/after CDP process evidence",
+          "procStatusVmRssKiB": 85608,
+          "startTicksAfter": 55628481,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 11292,
+          "ppid": 11256,
+          "name": "com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0",
+          "status": "AVAILABLE",
+          "pssKiB": 91300,
+          "rssKiB": 242968,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 55628491,
+          "role": "RENDERER_TARGET_UNKNOWN",
+          "roleEvidence": "CDP renderer role known; target-to-OS-PID mapping unproven",
+          "procStatusVmRssKiB": 244932,
+          "startTicksAfter": 55628491,
+          "stablePidLifetime": true
+        }
+      ],
+      "receipt": {
+        "captureId": "2c442c39-69aa-49a3-a7a6-f918e5f34fed",
+        "stage": "PAGE_IDLE",
+        "markerId": "101cf034-f634-4c6c-84bb-fe53d33f2d60",
+        "hostStartEpochMs": 1791280959859.4912,
+        "hostStartMonoMs": 777473770.9322001,
+        "status": "ACCEPTED",
+        "hostEndEpochMs": 1791280964729.5425,
+        "hostEndMonoMs": 777478640.9581,
+        "archive": "20261006T100236256774Z",
+        "validatedRoles": [
+          "RENDERER_TARGET_UNKNOWN",
+          "GPU",
+          "BROWSER_MAIN"
+        ],
+        "phase": "HELD_HANDSHAKE_CONFIRMED_PENDING_PAGE_AUDIT",
+        "endMarkerId": "101cf034-f634-4c6c-84bb-fe53d33f2d60"
+      },
+      "pidChanges": {
+        "added": [],
+        "removed": [],
+        "renamed": []
+      }
+    },
+    {
+      "stage": "AFTER_INIT",
+      "archive": "20261006T100655904380Z",
+      "collectionDurationMs": 8380.46359992586,
+      "browserGpu": [
+        {
+          "role": "BROWSER_MAIN",
+          "pid": 14567,
+          "sameLifetimeAsIdle": true,
+          "pssKiB": 239975,
+          "rssKiB": 423966,
+          "deltaPssKiB": -9944,
+          "deltaRssKiB": -5216,
+          "utcStart": "2026-10-06T10:07:00.395120+00:00",
+          "utcEnd": "2026-10-06T10:07:00.586064+00:00",
+          "timing": {
+            "phase": "HELD_HANDSHAKE_AND_FINAL_PAGE_HISTORY_CHECKED"
+          }
+        },
+        {
+          "role": "GPU",
+          "pid": 11306,
+          "sameLifetimeAsIdle": true,
+          "pssKiB": 2163859,
+          "rssKiB": 2446557,
+          "deltaPssKiB": 2000873,
+          "deltaRssKiB": 2142184,
+          "utcStart": "2026-10-06T10:07:00.055197+00:00",
+          "utcEnd": "2026-10-06T10:07:00.216813+00:00",
+          "timing": {
+            "phase": "HELD_HANDSHAKE_AND_FINAL_PAGE_HISTORY_CHECKED"
+          }
+        }
+      ],
+      "otherProcesses": [
+        {
+          "pid": 11256,
+          "ppid": 1390,
+          "name": "com.android.chrome_zygote",
+          "status": "UNAVAILABLE",
+          "pssKiB": null,
+          "rssKiB": null,
+          "identityConsistent": false,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": "Missing totals or PID/name identity mismatch",
+          "startTicksBefore": 55628481,
+          "role": "UNKNOWN",
+          "roleEvidence": "No consistent fresh before/after CDP process evidence",
+          "procStatusVmRssKiB": 85604,
+          "startTicksAfter": 55628481,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 11292,
+          "ppid": 11256,
+          "name": "com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0",
+          "status": "AVAILABLE",
+          "pssKiB": 1515042,
+          "rssKiB": 1803260,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 55628491,
+          "role": "RENDERER_TARGET_UNKNOWN",
+          "roleEvidence": "CDP renderer role known; target-to-OS-PID mapping unproven",
+          "procStatusVmRssKiB": 1803284,
+          "startTicksAfter": 55628491,
+          "stablePidLifetime": true
+        }
+      ],
+      "receipt": {
+        "captureId": "c24f085a-7f7e-4cfd-849b-f44fc52420fe",
+        "stage": "AFTER_INIT",
+        "markerId": "6f462497-9017-4321-bfd3-1b5fb381d810",
+        "hostStartEpochMs": 1791281219317.744,
+        "hostStartMonoMs": 777733229.1855999,
+        "status": "ACCEPTED",
+        "hostEndEpochMs": 1791281224286.2866,
+        "hostEndMonoMs": 777738197.7054,
+        "archive": "20261006T100655904380Z",
+        "validatedRoles": [
+          "RENDERER_TARGET_UNKNOWN",
+          "GPU",
+          "BROWSER_MAIN"
+        ],
+        "phase": "HELD_HANDSHAKE_CONFIRMED_PENDING_PAGE_AUDIT",
+        "endMarkerId": "6f462497-9017-4321-bfd3-1b5fb381d810"
+      },
+      "pidChanges": {
+        "added": [],
+        "removed": [],
+        "renamed": []
+      }
+    },
+    {
+      "stage": "BEFORE_GENERATION",
+      "archive": "20261006T100907135879Z",
+      "collectionDurationMs": 8554.392999969423,
+      "browserGpu": [
+        {
+          "role": "BROWSER_MAIN",
+          "pid": 14567,
+          "sameLifetimeAsIdle": true,
+          "pssKiB": 230188,
+          "rssKiB": 414202,
+          "deltaPssKiB": -19731,
+          "deltaRssKiB": -14980,
+          "utcStart": "2026-10-06T10:09:11.763578+00:00",
+          "utcEnd": "2026-10-06T10:09:11.901742+00:00",
+          "timing": {
+            "phase": "HELD_HANDSHAKE_AND_FINAL_PAGE_HISTORY_CHECKED"
+          }
+        },
+        {
+          "role": "GPU",
+          "pid": 11306,
+          "sameLifetimeAsIdle": true,
+          "pssKiB": 2158928,
+          "rssKiB": 2441669,
+          "deltaPssKiB": 1995942,
+          "deltaRssKiB": 2137296,
+          "utcStart": "2026-10-06T10:09:11.403407+00:00",
+          "utcEnd": "2026-10-06T10:09:11.569723+00:00",
+          "timing": {
+            "phase": "HELD_HANDSHAKE_AND_FINAL_PAGE_HISTORY_CHECKED"
+          }
+        }
+      ],
+      "otherProcesses": [
+        {
+          "pid": 11256,
+          "ppid": 1390,
+          "name": "com.android.chrome_zygote",
+          "status": "UNAVAILABLE",
+          "pssKiB": null,
+          "rssKiB": null,
+          "identityConsistent": false,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": "Missing totals or PID/name identity mismatch",
+          "startTicksBefore": 55628481,
+          "role": "UNKNOWN",
+          "roleEvidence": "No consistent fresh before/after CDP process evidence",
+          "procStatusVmRssKiB": 85604,
+          "startTicksAfter": 55628481,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 11292,
+          "ppid": 11256,
+          "name": "com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0",
+          "status": "AVAILABLE",
+          "pssKiB": 1517069,
+          "rssKiB": 1805296,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 55628491,
+          "role": "RENDERER_TARGET_UNKNOWN",
+          "roleEvidence": "CDP renderer role known; target-to-OS-PID mapping unproven",
+          "procStatusVmRssKiB": 1805304,
+          "startTicksAfter": 55628491,
+          "stablePidLifetime": true
+        }
+      ],
+      "receipt": {
+        "captureId": "90e063a4-4ff8-475b-9eb6-57c4849e160c",
+        "stage": "BEFORE_GENERATION",
+        "markerId": "e363cfd0-cd77-4714-9c85-6c5e5954995e",
+        "hostStartEpochMs": 1791281350644.438,
+        "hostStartMonoMs": 777864555.8701,
+        "status": "ACCEPTED",
+        "hostEndEpochMs": 1791281355716.662,
+        "hostEndMonoMs": 777869628.0784,
+        "archive": "20261006T100907135879Z",
+        "validatedRoles": [
+          "RENDERER_TARGET_UNKNOWN",
+          "GPU",
+          "BROWSER_MAIN"
+        ],
+        "phase": "HELD_HANDSHAKE_CONFIRMED_PENDING_PAGE_AUDIT",
+        "endMarkerId": "e363cfd0-cd77-4714-9c85-6c5e5954995e"
+      },
+      "pidChanges": {
+        "added": [],
+        "removed": [],
+        "renamed": []
+      }
+    },
+    {
+      "stage": "GENERATION",
+      "archive": "20261006T101052938684Z",
+      "collectionDurationMs": 10649.233000003733,
+      "browserGpu": [
+        {
+          "role": "BROWSER_MAIN",
+          "pid": 14567,
+          "sameLifetimeAsIdle": true,
+          "pssKiB": 229729,
+          "rssKiB": 413946,
+          "deltaPssKiB": -20190,
+          "deltaRssKiB": -15236,
+          "utcStart": "2026-10-06T10:10:59.715450+00:00",
+          "utcEnd": "2026-10-06T10:10:59.902208+00:00",
+          "timing": {
+            "phase": "GENERATION_WITHIN_OBSERVED_CLOCK_BOUND",
+            "offsetEnvelopeMs": [
+              -444.4609375,
+              -415.486083984375
+            ],
+            "uncertaintyWidthMs": 28.974853515625,
+            "possiblePageWindowMs": [
+              1791281460130.936,
+              1791281460346.669
+            ],
+            "assumption": "No unobserved clock step/drift outside bracketing measured envelope; causal nonnegative transport,2ms timestamp-resolution guard;not exact synchronization"
+          }
+        },
+        {
+          "role": "GPU",
+          "pid": 11306,
+          "sameLifetimeAsIdle": true,
+          "pssKiB": 2693656,
+          "rssKiB": 2976429,
+          "deltaPssKiB": 2530670,
+          "deltaRssKiB": 2672056,
+          "utcStart": "2026-10-06T10:10:59.406133+00:00",
+          "utcEnd": "2026-10-06T10:10:59.567928+00:00",
+          "timing": {
+            "phase": "GENERATION_WITHIN_OBSERVED_CLOCK_BOUND",
+            "offsetEnvelopeMs": [
+              -444.4609375,
+              -415.486083984375
+            ],
+            "uncertaintyWidthMs": 28.974853515625,
+            "possiblePageWindowMs": [
+              1791281459821.6191,
+              1791281460012.389
+            ],
+            "assumption": "No unobserved clock step/drift outside bracketing measured envelope; causal nonnegative transport,2ms timestamp-resolution guard;not exact synchronization"
+          }
+        }
+      ],
+      "otherProcesses": [
+        {
+          "pid": 11256,
+          "ppid": 1390,
+          "name": "com.android.chrome_zygote",
+          "status": "UNAVAILABLE",
+          "pssKiB": null,
+          "rssKiB": null,
+          "identityConsistent": false,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": "Missing totals or PID/name identity mismatch",
+          "startTicksBefore": 55628481,
+          "role": "UNKNOWN",
+          "roleEvidence": "No consistent fresh before/after CDP process evidence",
+          "procStatusVmRssKiB": 85604,
+          "startTicksAfter": 55628481,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 11292,
+          "ppid": 11256,
+          "name": "com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0",
+          "status": "AVAILABLE",
+          "pssKiB": 1519423,
+          "rssKiB": 1807684,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 55628491,
+          "role": "RENDERER_TARGET_UNKNOWN",
+          "roleEvidence": "CDP renderer role known; target-to-OS-PID mapping unproven",
+          "procStatusVmRssKiB": 1807684,
+          "startTicksAfter": 55628491,
+          "stablePidLifetime": true
+        }
+      ],
+      "receipt": {
+        "captureId": "86125a33-32cf-4fb1-83e5-36d52ca0565a",
+        "stage": "GENERATION",
+        "markerId": "cdd028b0-a62d-4d12-a085-bca660a7a29f",
+        "hostStartEpochMs": 1791281458791.266,
+        "hostStartMonoMs": 777972702.7049999,
+        "status": "ACCEPTED",
+        "hostEndEpochMs": 1791281463589.2554,
+        "hostEndMonoMs": 777977500.6682,
+        "archive": "20261006T101052938684Z",
+        "validatedRoles": [
+          "RENDERER_TARGET_UNKNOWN",
+          "GPU",
+          "BROWSER_MAIN"
+        ],
+        "phase": "NEEDS_CLOCK_AUDIT",
+        "endMarkerId": "cdd028b0-a62d-4d12-a085-bca660a7a29f"
+      },
+      "pidChanges": {
+        "added": [],
+        "removed": [],
+        "renamed": []
+      }
+    },
+    {
+      "stage": "AFTER_DRAIN",
+      "archive": "20261006T101203492773Z",
+      "collectionDurationMs": 8588.826499995776,
+      "browserGpu": [
+        {
+          "role": "BROWSER_MAIN",
+          "pid": 14567,
+          "sameLifetimeAsIdle": true,
+          "pssKiB": 229605,
+          "rssKiB": 413822,
+          "deltaPssKiB": -20314,
+          "deltaRssKiB": -15360,
+          "utcStart": "2026-10-06T10:12:08.118615+00:00",
+          "utcEnd": "2026-10-06T10:12:08.254297+00:00",
+          "timing": {
+            "phase": "HELD_HANDSHAKE_AND_FINAL_PAGE_HISTORY_CHECKED"
+          }
+        },
+        {
+          "role": "GPU",
+          "pid": 11306,
+          "sameLifetimeAsIdle": true,
+          "pssKiB": 2167082,
+          "rssKiB": 2449841,
+          "deltaPssKiB": 2004096,
+          "deltaRssKiB": 2145468,
+          "utcStart": "2026-10-06T10:12:07.780467+00:00",
+          "utcEnd": "2026-10-06T10:12:07.931506+00:00",
+          "timing": {
+            "phase": "HELD_HANDSHAKE_AND_FINAL_PAGE_HISTORY_CHECKED"
+          }
+        }
+      ],
+      "otherProcesses": [
+        {
+          "pid": 11256,
+          "ppid": 1390,
+          "name": "com.android.chrome_zygote",
+          "status": "UNAVAILABLE",
+          "pssKiB": null,
+          "rssKiB": null,
+          "identityConsistent": false,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": "Missing totals or PID/name identity mismatch",
+          "startTicksBefore": 55628481,
+          "role": "UNKNOWN",
+          "roleEvidence": "No consistent fresh before/after CDP process evidence",
+          "procStatusVmRssKiB": 85604,
+          "startTicksAfter": 55628481,
+          "stablePidLifetime": true
+        },
+        {
+          "pid": 11292,
+          "ppid": 11256,
+          "name": "com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0",
+          "status": "AVAILABLE",
+          "pssKiB": 1519973,
+          "rssKiB": 1808216,
+          "identityConsistent": true,
+          "reportedUnit": "KB (1024 bytes)",
+          "meminfoUnavailableReason": null,
+          "startTicksBefore": 55628491,
+          "role": "RENDERER_TARGET_UNKNOWN",
+          "roleEvidence": "CDP renderer role known; target-to-OS-PID mapping unproven",
+          "procStatusVmRssKiB": 1808216,
+          "startTicksAfter": 55628491,
+          "stablePidLifetime": true
+        }
+      ],
+      "receipt": {
+        "captureId": "661832f6-d340-4384-9f24-a9172c576d5c",
+        "stage": "AFTER_DRAIN",
+        "markerId": "bffe146c-ec7c-48e8-b11e-307892f6ff57",
+        "hostStartEpochMs": 1791281527067.1143,
+        "hostStartMonoMs": 778040978.5542,
+        "status": "ACCEPTED",
+        "hostEndEpochMs": 1791281532082.9077,
+        "hostEndMonoMs": 778045994.3220999,
+        "archive": "20261006T101203492773Z",
+        "validatedRoles": [
+          "RENDERER_TARGET_UNKNOWN",
+          "GPU",
+          "BROWSER_MAIN"
+        ],
+        "phase": "HELD_HANDSHAKE_CONFIRMED_PENDING_PAGE_AUDIT",
+        "endMarkerId": "bffe146c-ec7c-48e8-b11e-307892f6ff57"
+      },
+      "pidChanges": {
+        "added": [],
+        "removed": [],
+        "renamed": []
+      }
+    }
+  ],
+  "clockExchanges": [
+    {
+      "exchangeId": "b591d6a4-4ee2-4679-b626-0d5d6cea55e2",
+      "pageSendEpochMs": 1791281033108,
+      "pageSendMonoMs": 221055.60000002384,
+      "hostReceiveEpochMs": 1791281032668.2021,
+      "hostReceiveMonoMs": 777546579.6310999,
+      "hostSendEpochMs": 1791281032668.2285,
+      "pageReceiveEpochMs": 1791281033124,
+      "pageReceiveMonoMs": 221071.30000001192,
+      "hostMinusPageLowerMs": -457.771484375,
+      "hostMinusPageUpperMs": -437.7978515625,
+      "status": "BOUNDED",
+      "hostAckReceiveEpochMs": 1791281032682.5789
+    },
+    {
+      "exchangeId": "875617e7-4b3c-4ca1-9eb0-c19e9ca4c2b4",
+      "pageSendEpochMs": 1791281033232,
+      "pageSendMonoMs": 221179.19999998808,
+      "hostReceiveEpochMs": 1791281032791.6199,
+      "hostReceiveMonoMs": 777546703.0394001,
+      "hostSendEpochMs": 1791281032791.6362,
+      "pageReceiveEpochMs": 1791281033241,
+      "pageReceiveMonoMs": 221188.89999997616,
+      "hostMinusPageLowerMs": -451.36376953125,
+      "hostMinusPageUpperMs": -438.380126953125,
+      "status": "BOUNDED",
+      "hostAckReceiveEpochMs": 1791281032801.2107
+    },
+    {
+      "exchangeId": "b9518030-16b4-4f15-8bdb-af711b4bed0d",
+      "pageSendEpochMs": 1791281126144,
+      "pageSendMonoMs": 314092.10000002384,
+      "hostReceiveEpochMs": 1791281125729.4617,
+      "hostReceiveMonoMs": 777639640.887,
+      "hostSendEpochMs": 1791281125729.484,
+      "pageReceiveEpochMs": 1791281126207,
+      "pageReceiveMonoMs": 314154.8000000119,
+      "hostMinusPageLowerMs": -479.51611328125,
+      "hostMinusPageUpperMs": -412.538330078125,
+      "status": "BOUNDED",
+      "hostAckReceiveEpochMs": 1791281125798.756
+    },
+    {
+      "exchangeId": "3bf2a622-6566-427c-9b6d-86a4260cba51",
+      "pageSendEpochMs": 1791281301263,
+      "pageSendMonoMs": 489210.8000000119,
+      "hostReceiveEpochMs": 1791281300830.5005,
+      "hostReceiveMonoMs": 777814741.92,
+      "hostSendEpochMs": 1791281300830.5166,
+      "pageReceiveEpochMs": 1791281301279,
+      "pageReceiveMonoMs": 489226.39999997616,
+      "hostMinusPageLowerMs": -450.4833984375,
+      "hostMinusPageUpperMs": -430.49951171875,
+      "status": "BOUNDED",
+      "hostAckReceiveEpochMs": 1791281300849.3096
+    },
+    {
+      "exchangeId": "26641dbf-b88e-454a-8eb5-f1b8e591d818",
+      "pageSendEpochMs": 1791281301373,
+      "pageSendMonoMs": 489320.60000002384,
+      "hostReceiveEpochMs": 1791281300937.1484,
+      "hostReceiveMonoMs": 777814848.5675,
+      "hostSendEpochMs": 1791281300937.164,
+      "pageReceiveEpochMs": 1791281301383,
+      "pageReceiveMonoMs": 489330.3000000119,
+      "hostMinusPageLowerMs": -447.8359375,
+      "hostMinusPageUpperMs": -433.8515625,
+      "status": "BOUNDED",
+      "hostAckReceiveEpochMs": 1791281300944.9514
+    },
+    {
+      "exchangeId": "a370bd1b-2f57-462d-b715-06d2d755b57b",
+      "pageSendEpochMs": 1791281458464,
+      "pageSendMonoMs": 646411.6000000238,
+      "hostReceiveEpochMs": 1791281458046.514,
+      "hostReceiveMonoMs": 777971957.9425,
+      "hostSendEpochMs": 1791281458046.539,
+      "pageReceiveEpochMs": 1791281458489,
+      "pageReceiveMonoMs": 646437.1999999881,
+      "hostMinusPageLowerMs": -444.4609375,
+      "hostMinusPageUpperMs": -415.486083984375,
+      "status": "BOUNDED",
+      "hostAckReceiveEpochMs": 1791281458056.4038
+    },
+    {
+      "exchangeId": "24cc187a-534e-44e0-9958-6bb3e661f9d5",
+      "pageSendEpochMs": 1791281466267,
+      "pageSendMonoMs": 654215.1000000238,
+      "hostReceiveEpochMs": 1791281465833.447,
+      "hostReceiveMonoMs": 777979744.8686,
+      "hostSendEpochMs": 1791281465833.465,
+      "pageReceiveEpochMs": 1791281466275,
+      "pageReceiveMonoMs": 654223.1000000238,
+      "hostMinusPageLowerMs": -443.534912109375,
+      "hostMinusPageUpperMs": -431.552978515625,
+      "status": "BOUNDED",
+      "hostAckReceiveEpochMs": 1791281465845.2385
+    },
+    {
+      "exchangeId": "67c93796-5c28-426d-b73a-ff8cc451a0f4",
+      "pageSendEpochMs": 1791281627868,
+      "pageSendMonoMs": 815815.8999999762,
+      "hostReceiveEpochMs": 1791281627444.9524,
+      "hostReceiveMonoMs": 778141356.3738999,
+      "hostSendEpochMs": 1791281627444.9707,
+      "pageReceiveEpochMs": 1791281627890,
+      "pageReceiveMonoMs": 815837.6999999881,
+      "hostMinusPageLowerMs": -447.029296875,
+      "hostMinusPageUpperMs": -421.047607421875,
+      "status": "BOUNDED",
+      "hostAckReceiveEpochMs": 1791281627461.0757
+    }
+  ],
+  "wallMetrics": {
+    "runtimePreparationMs": 50.89999997615814,
+    "modelInitializationMs": 92847.09999996424,
+    "tokenPreparationMs": 62.5,
+    "tokenPreparationDrainMs": 3.099999964237213,
+    "generationCallToCompletionMs": 7701,
+    "firstCallbackMs": 2250.800000011921,
+    "postGenerationDrainMs": 58.89999997615814
+  },
+  "visibility": {
+    "initialState": "visible",
+    "enteredBackground": true,
+    "events": [
+      {
+        "isoTime": "2026-10-06T10:04:26.739Z",
+        "wallMs": 254686.69999998808,
+        "state": "hidden",
+        "stage": "INITIALIZING"
+      },
+      {
+        "isoTime": "2026-10-06T10:04:32.345Z",
+        "wallMs": 260292.80000001192,
+        "state": "visible",
+        "stage": "INITIALIZING"
+      }
+    ]
+  },
+  "backgroundDurationMs": [
+    5606.100000023842
+  ],
+  "environmentManualState": {
+    "thermal": "未明显发热，温度未测量",
+    "charging": "正在充电，电量93%",
+    "devtools": "未开启",
+    "flag": "已停用",
+    "backgroundApps": "无其它主动运行的后台应用；VPN开启"
+  },
+  "limitations": [
+    "Initialization entered background;not constant-foreground performance evidence",
+    "Renderer target association UNKNOWN",
+    "Clock interval is observed bound with documented no-unobserved-clock-step/drift assumption",
+    "Sparse sequential process snapshots are not continuous peak",
+    "Only one protocol pilot,not five independent memory repetitions"
+  ],
+  "oldPilot": "PARTIAL unchanged"
+}

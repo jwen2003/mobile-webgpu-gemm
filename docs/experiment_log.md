@@ -1883,3 +1883,8 @@ One128-token page session COMPLETE and independently audited; initialization86.5
 ## MEMORY002 protocol v2 — offline correction
 
 Historical pilot remains PARTIAL. Latest authoritative method: [mandatory idle/handshake/clock protocol](../docs/memory002_capture_protocol.md). Old operator-only v1 instructions are historical and do not grant formal capture. Run serve_memory002.py on loopback8000; phone entry /src/baseline/sessions.html?memory002=1&v=memory002-v2. Initialization blocked until role-qualified idle receipt. Scope narrowed to browser/GPU process PSS/RSS; target renderer UNKNOWN. Generation windows require bracketing offset/uncertainty audit; no model-exclusive/physical GPU memory or continuous peak. CPU checks completed, v2 phone check NOT_RUN; assignment memory remains PARTIAL.
+
+
+## MEMORY002 v2 observed protocol pilot
+
+[One128-token v2 result](../docs/memory002_v2_pilot_results.md): PROTOCOL_PASS_WITH_CONDITION_WARNING. Required4/4 stage coverage, five snapshots, fresh browser/GPU readings and idle deltas, bounded generation timing (~28.975ms uncertainty), all10 debug-forward cleanups verified. Initialization background5.606s retained; target renderer UNKNOWN, zygote strict meminfo unavailable. One protocol pilot only: not five-repeat memory acceptance, model-exclusive/physical GPU memory or continuous peak. Historical PARTIAL pilot unchanged; no extra trial scheduled.
