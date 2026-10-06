@@ -1,5 +1,7 @@
 # BASELINE002 actual evidence
 
+> 当前状态：15/15会话已核验，128/512/1024各5。下文逐次进度记录是历史；最新texture核算以MEMORY001为准，原始部分格式统计不改写。当前阶段总表见report/performance_report.md，纯phase/token/kernel与完整RSS重复仍未完成。
+
 
 ## BASELINE002 ordinal 1 — L128 R1 actual evidence
 

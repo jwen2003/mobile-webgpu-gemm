@@ -1,5 +1,7 @@
 # GEMM004 execution-shape proof and limits
 
+> 当前状态：GEMM004已运行并有raw核验（此前Phone NOT_RUN为证据冻结时状态）。证明范围仍仅执行/padded M8/K1536/N2048，有效逻辑layer/decode/prefill shape未确认。
+
 Decision: REVIEWED_EXECUTION_SHAPE, **EXECUTION_PADDED_ONLY**. Phone NOT_RUN. A proved mathematical execution shape is sufficient for this supplementary experiment per the current user instruction; valid logical Gemma layer shape is not proved. Earlier WAITING statements are historical and superseded only for this category.
 
 ## Evidence identities

@@ -1,5 +1,7 @@
 # BASELINE002：给 Work 的十五次独立会话总结
 
+> 历史Work摘要：后续MEMORY001已补齐texture格式，MEMORY002 v2仅一次进程协议pilot，TRACE001有界可用性检查完成。当前权威报告为report/performance_report.md和docs/assignment_requirements_matrix.md；下文原建议与未测状态保留为当时进度，不应重复启动。
+
 验收：128、512、1024 完整 prompt tokens 各五次，15/15 COMPLETE，独立核验 PASS。原始JSON字节不变，历史哈希核对通过。每份有独立UUID、task/device/page；错误为空，无后台切换或采集丢失。实际 tokenizer `sizeInTokens(fullPrompt)` 精确匹配，正文分别120/504/1016，模板单独8；模板计入，差值不用于推断隐式BOS/实际prefill tensor。每种长度完整prompt/hash跨轮一致。
 
 固定runtime @mediapipe/tasks-genai@0.10.29和已有Gemma3n E2B Web模型；maxTokens2048（总容量），topK40/temperature0.8/seed101/numResponses1，纯文本。每会话只一次生成，0额外生成warm-up；tokenizer准备与drain独立记录。Stock cache/rewinding默认不改；OS/browser/driver缓存未清除，初始化不是冷缓存指标。资源生命周期观察有开销，不能当无观察stock控制。

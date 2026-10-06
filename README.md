@@ -1,5 +1,7 @@
 # Mobile WebGPU GEMM investigation
 
+当前阶段整体为 **PARTIAL（部分完成）**。请先阅读[当前交付报告与图表](report/performance_report.md)和[逐项原题状态](docs/assignment_requirements_matrix.md)。实验内部COMPLETE/PASS不表示整个assignment完成；当前Mali/合成QROW证据不等于Adreno、真实逻辑layer shape或模型加速。历史NOT_RUN/进度记录以当前状态矩阵为准。
+
 Documentation scaffold for the IN2PETA assignment. No LLM profiling, custom kernel benchmark, or speedup has been measured yet.
 
 Development device: OnePlus Ace 6 Supreme Edition, Dimensity 9500, ARM Mali-G1-Ultra MC12. Final target: Snapdragon Adreno; access and acceptance of development-device results remain unresolved.

@@ -1,5 +1,7 @@
 # Part 2 independent repetition — frozen QROW-REPEAT-v1
 
+> 当前状态：五会话已完成并核验；下面READY_FOR_PHONE/NOT_RUN为运行前冻结计划状态。候选和测量契约未因结果改变，当前验收范围见part2_repeat_results.md。
+
 Status: READY_FOR_PHONE / NOT_RUN. This is a new five-session campaign, not five partitions of the accepted sweep. Source selection: `results/raw/PART2SWEEP-2026-10-06T06-07-34-319Z.json`; choices in `part2_sweep_results.md` are frozen, including within-grid ties.
 
 Every group compares fixed A, original B/C/D and selected B/C/D, deduplicated. All retain QROW unsigned Q4/Q8, group K=32, stored FP16 activation/scales, f32 dequantization then f16 weight, increasing-K f16 FMA accumulation and f32 output. Existing two CPU references and tolerances are unchanged. Representative K=N=1024; no new logical model shape evidence.

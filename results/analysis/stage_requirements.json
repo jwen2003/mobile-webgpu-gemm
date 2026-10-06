@@ -1,0 +1,218 @@
+[
+  {
+    "part": "Target,p1",
+    "original": "Gemma E2B (Gemma 3n)",
+    "type": "REQUIRED",
+    "status": "COMPLETE",
+    "scope": "指定Web模型在stock0.10.29初始化/生成成功；仅此模型可运行性子项",
+    "evidence": "docs/baseline_sessions_results.md"
+  },
+  {
+    "part": "Target,p1",
+    "original": "Snapdragon device with Adreno GPU",
+    "type": "REQUIRED",
+    "status": "NOT_RUN",
+    "scope": "当前为Mali；所有速度结论仅适用于当前设备，不满足目标硬件验收",
+    "evidence": "docs/environment.md"
+  },
+  {
+    "part": "1,p1",
+    "original": "Run…existing WebGPU stack…Do not optimize anything",
+    "type": "REQUIRED",
+    "status": "COMPLETE",
+    "scope": "stock模型/runtime算法未优化；instrumentation开销单列。整个Part1仍PARTIAL",
+    "evidence": "docs/baseline_sessions_plan.md"
+  },
+  {
+    "part": "1,p1",
+    "original": "Run each metric at least 5 times…median and p95",
+    "type": "REQUIRED",
+    "status": "PARTIAL",
+    "scope": "组合墙钟/JS与逻辑资源各长度五次；RSS/PSS仅pilot，真实token/phase/kernel指标缺失",
+    "evidence": "report/performance_report.md"
+  },
+  {
+    "part": "1,p1",
+    "original": "Tokens/sec — Decode throughput",
+    "type": "REQUIRED",
+    "status": "BLOCKED",
+    "scope": "公开API不提供真实生成token数与decode区间；不使用字符数/重新分词/回调数",
+    "evidence": "docs/remaining_metrics_feasibility.md"
+  },
+  {
+    "part": "1,p1",
+    "original": "Prefill latency — Fixed prompts of 128,512,1024 tokens",
+    "type": "REQUIRED",
+    "status": "PARTIAL",
+    "scope": "完整prompt实际tokenizer计数和五会话COMPLETE；纯prefill边界BLOCKED",
+    "evidence": "docs/baseline_sessions_results.md"
+  },
+  {
+    "part": "1,p1",
+    "original": "Decode latency per token…distribution",
+    "type": "REQUIRED",
+    "status": "BLOCKED",
+    "scope": "文本callback墙钟不等于真实token/纯decode事件",
+    "evidence": "docs/remaining_metrics_feasibility.md"
+  },
+  {
+    "part": "1,p1",
+    "original": "Memory usage — GPU buffers,JS heap,device RSS",
+    "type": "REQUIRED",
+    "status": "PARTIAL",
+    "scope": "15会话分口径逻辑buffer/texture/JS；browser/GPU RSS/PSS一次v2pilot。非模型独占或物理GPU驻留",
+    "evidence": "docs/memory002_v2_pilot_results.md"
+  },
+  {
+    "part": "1,p1",
+    "original": "Kernel(dispatch) count per token…command stream",
+    "type": "REQUIRED",
+    "status": "PARTIAL",
+    "scope": "真实提交dispatch结构已采集；每request计数可用，token分母与关联BLOCKED",
+    "evidence": "docs/profile002_shader_analysis.md"
+  },
+  {
+    "part": "1,p1–2",
+    "original": "Individual kernel execution time…per-kernel table…op type",
+    "type": "REQUIRED",
+    "status": "BLOCKED",
+    "scope": "模型pass重叠与多dispatch归因限制；不能以计数排名代替耗时",
+    "evidence": "docs/profile003_overlap_review.md"
+  },
+  {
+    "part": "1,p2",
+    "original": "A stacked time-breakdown chart",
+    "type": "REQUIRED",
+    "status": "BLOCKED",
+    "scope": "无可信独占GPU算子区间；不制作可加和stacked chart。组合墙钟图为补充",
+    "evidence": "docs/trace001_availability.md"
+  },
+  {
+    "part": "1,p1–2",
+    "original": "Identify top2–3 bottleneck kernels…classify…evidence",
+    "type": "REQUIRED",
+    "status": "BLOCKED",
+    "scope": "仅源码结构与可能成本解释，无可支持瓶颈排名的GPU时间/硬件counter",
+    "evidence": "docs/remaining_metrics_feasibility.md"
+  },
+  {
+    "part": "1,p2",
+    "original": "Methodology…device,driver,Chrome version,thermal state",
+    "type": "REQUIRED",
+    "status": "PARTIAL",
+    "scope": "当前设备/Chrome/人工状态与边界已记；真实WebGPU driver及目标Adreno缺口。触感不是测温",
+    "evidence": "docs/environment.md"
+  },
+  {
+    "part": "1,p1",
+    "original": "timestamp-query;Chrome tracing;chrome://gpu;adb meminfo",
+    "type": "LISTED METHODS",
+    "status": "PARTIAL",
+    "scope": "timestamp与meminfo已使用，TRACE001有界查询无执行源；CPU Dawn不是GPU时间",
+    "evidence": "docs/trace001_availability.md"
+  },
+  {
+    "part": "1,p1",
+    "original": "Snapdragon Profiler…if available",
+    "type": "CONDITIONAL",
+    "status": "NOT_RUN",
+    "scope": "原题明确if available；暂无Adreno/工具访问，不把counter缺失编为测量",
+    "evidence": "docs/environment.md"
+  },
+  {
+    "part": "1,p1–2",
+    "original": "Classification Example evidence…roofline/peak/stalls/waves",
+    "type": "EXAMPLE",
+    "status": "NOT_RUN",
+    "scope": "例证不是每一项新增mandatory实验；当前无对应硬件依据",
+    "evidence": "docs/assignment_requirements_matrix.md"
+  },
+  {
+    "part": "2,p2",
+    "original": "Q4/Q8…dequantization…matrix multiplication…FP16 accumulation",
+    "type": "REQUIRED",
+    "status": "COMPLETE",
+    "scope": "合成QROW Q4/Q8精度路径、FP16 probe与reference通过；并非Gemma原生量化",
+    "evidence": "docs/part2_compute_contract.md"
+  },
+  {
+    "part": "2,p2",
+    "original": "A naive WGSL;B shared memory;C vectorized loads;D fused dequant+GEMM",
+    "type": "REQUIRED",
+    "status": "COMPLETE",
+    "scope": "四个规定结构版本已实测；specialized不代替C。只关闭实现结构/当前契约子项",
+    "evidence": "docs/part2_repeat_results.md"
+  },
+  {
+    "part": "2,p2",
+    "original": "Gemma real layer shapes…decode M1,prefill M>=128",
+    "type": "REQUIRED",
+    "status": "PARTIAL",
+    "scope": "仅代表性M1/M128；GEMM004仅执行/padded M8,K1536,N2048。有数学映射不等于有效逻辑层shape",
+    "evidence": "docs/gemm004_shape_proof.md"
+  },
+  {
+    "part": "2,p2",
+    "original": "Sweep tile sizes and workgroup sizes",
+    "type": "REQUIRED",
+    "status": "COMPLETE",
+    "scope": "冻结预算Q4/Q8两shape，B/C/D至多三候选，有限sweep及选定/原配置五会话复验；当前Mali范围",
+    "evidence": "docs/part2_sweep_results.md"
+  },
+  {
+    "part": "2,p2",
+    "original": "GFLOPS,effective GB/s,correctness(max abs error vs FP32)",
+    "type": "REQUIRED",
+    "status": "PARTIAL",
+    "scope": "全量在线FP32 oracle误差+离线小数组已核验；派生2MNK/pass GFLOP/s非峰值。有效GB/s统一口径未完成，实际DRAM流量未测",
+    "evidence": "report/performance_report.md"
+  },
+  {
+    "part": "2,p2",
+    "original": "shader-f16…fallback if absent",
+    "type": "REQUIRED",
+    "status": "PARTIAL",
+    "scope": "f16路径实际通过，fallback代码/电脑检查具备；无f16手机硬件路径尚未实测，不算fallback验收",
+    "evidence": "docs/part2_compute_contract.md"
+  },
+  {
+    "part": "2,p2",
+    "original": "warm-up,many iterations,timestamp-query rather than CPU timers",
+    "type": "REQUIRED",
+    "status": "COMPLETE",
+    "scope": "10warm+30measured/候选，串行单dispatch pass；网格、零值、尾部保存。完整路径CPU墙钟另口径",
+    "evidence": "docs/part2_repeat_plan.md"
+  },
+  {
+    "part": "2,p2",
+    "original": "GEMM…beats baseline…target Adreno",
+    "type": "REQUIRED",
+    "status": "NOT_RUN",
+    "scope": "当前Mali合成shape速度不能代替Adreno验收，更不能称模型加速",
+    "evidence": "report/performance_report.md"
+  },
+  {
+    "part": "2,p2",
+    "original": "Comparison table A-D;why faster/slower;reproducible harness",
+    "type": "REQUIRED",
+    "status": "PARTIAL",
+    "scope": "五轮绝对时间/同轮比值/源码与raw齐备；硬件解释仅假设，真实shape/Adreno结论缺失",
+    "evidence": "report/performance_report.md"
+  },
+  {
+    "part": "2,p2",
+    "original": "Suggested results table…Tile/WG/Time/GFLOPS/GB/s/error",
+    "type": "SUGGESTED PRESENTATION",
+    "status": "PARTIAL",
+    "scope": "绝对时间/配置/误差完整表；mandatory GFLOPS/GB/s项独立保留缺口",
+    "evidence": "report/performance_report.md"
+  },
+  {
+    "part": "p2–3",
+    "original": "Grading Rubric(suggested)",
+    "type": "SUGGESTED RUBRIC",
+    "status": "NOT_RUN",
+    "scope": "非新增实验要求，不预测成绩",
+    "evidence": "assignment/webgpu_adreno_assignment.pdf"
+  }
+]

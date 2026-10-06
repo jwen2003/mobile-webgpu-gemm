@@ -1,5 +1,7 @@
 # Part 2 independent repetition results
 
+> 当前状态：FIVE_SESSIONS_VERIFIED。下文1/5–4/5等进度是历史，不是当前campaign状态；当前五轮合成kernel证据不等同原题全部完成。最新绝对表与图见report/performance_report.md。
+
 
 ## PART2REPEAT S1 actual evidence
 
@@ -357,4 +359,4 @@ S5 original/selected: {"B": {"value": 1.171919770773639, "status": "PILOT_ONLY",
 
 All B selections have lower median than original in all five sessions. M128 D selection likewise has lower median in both formats in all five. These are observed consistent directions under this synthetic prepared-input protocol, not proof of model acceleration or universal stable benefit. M1 D is uncertain: Q4 ratios 0.896–1.045, with S4 slower and others within-grid; Q8 ratios 0.933–1.095 with faster/slower reversals and within-grid observations. Q8 M128 C ratios 0.986–1.063 are all within one grid: no distinguishable improvement. Q4 C and Q8 M1 C selected/original are identical configurations, not an optimization comparison. Retain all data;do not reselect after unfavorable results.
 
-The five repetitions address Part 2 repetition evidence only. Part 1 model repetitions, trustworthy per-kernel/breakdown and actual generated-token/phase metrics, physical GPU memory, true logical model shape and Adreno remain unresolved. No additional phone repetitions automatically started.
+The five repetitions address Part 2 repetition evidence only. Part 1 pure-phase/true-output-token repetitions, trustworthy per-kernel/breakdown, complete process-memory repetitions, physical GPU memory, true logical model shape and Adreno remain unresolved. BASELINE002 subsequently verified five combined-wall sessions per input length; those walls do not close pure phase/token requirements. No additional phone repetitions automatically started.

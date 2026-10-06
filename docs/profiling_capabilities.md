@@ -1,5 +1,7 @@
 # PROFILE001: fixed MediaPipe runtime observability
 
+> 当前状态2026-10-06：此PROFILE001为早期能力审查。输入sizeInTokens和结构采集已由后续实验验证；当前剩余token/phase/trace结论见remaining_metrics_feasibility.md和trace001_availability.md，不能把初始建议当作新的运行要求。
+
 Status: source audit and proposed measurement plan; no PROFILE001 phone benchmark or instrumentation run. Keep the successful Gemma 3n E2B Web model and @mediapipe/tasks-genai 0.10.29. No model/runtime algorithm, shader, tiling, precision or cache option is changed in this round.
 
 ## Evidence and provenance

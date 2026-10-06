@@ -1,5 +1,7 @@
 # Part2 A–D compute contract — PART2-QROW-v1
 
+> 当前状态2026-10-06：Q4/Q8规定FP16 A–D与五轮复验已通过当前合成契约；下文初始NOT_RUN/未实现描述是冻结时历史状态，后续增量契约仍适用。当前原题状态以assignment_requirements_matrix.md和report/performance_report.md为准；Mali/代表性QROW不等于Adreno/真实有效层shape。
+
 Frozen before phone execution. Required FP16 A/B implementation NOT_RUN;C/D data interface defined,not implemented. Original PDF preserved at assignment/webgpu_adreno_assignment.pdf,SHA256 dc02d42a5fdf521b75794ac641478cfe91ec7d9e165fa93a1c2e43b3ec63e9c3. Extracted original pages in results/analysis/assignment_original_text.txt. Earlier GEMM001–004 FP32 pages/results are supplemental,not counted as these A/B implementations.
 
 ## Original requirements versus project choices

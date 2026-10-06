@@ -1888,3 +1888,8 @@ Historical pilot remains PARTIAL. Latest authoritative method: [mandatory idle/h
 ## MEMORY002 v2 observed protocol pilot
 
 [One128-token v2 result](../docs/memory002_v2_pilot_results.md): PROTOCOL_PASS_WITH_CONDITION_WARNING. Required4/4 stage coverage, five snapshots, fresh browser/GPU readings and idle deltas, bounded generation timing (~28.975ms uncertainty), all10 debug-forward cleanups verified. Initialization background5.606s retained; target renderer UNKNOWN, zygote strict meminfo unavailable. One protocol pilot only: not five-repeat memory acceptance, model-exclusive/physical GPU memory or continuous peak. Historical PARTIAL pilot unchanged; no extra trial scheduled.
+
+
+## Current-stage delivery consolidation — 2026-10-06
+
+Status: PARTIAL assignment; documentation/derived figures only, no new phone/model/benchmark. Direct original PDF audit;15 baseline and5 Part2 sessions independently rechecked;5000 timestamp samples and232985 exported small outputs verified;historical42 raw hashes unchanged. Current report: ../report/performance_report.md; authoritative statuses: assignment_requirements_matrix.md. Keep true outputtoken/phase/kernel breakdown BLOCKED, memory process repetitions and Adreno NOT_RUN, true effective logical shapes unresolved. Original device outputs and v2 page stay local ignored. Synthetic QROW prepared-input results do not claim model acceleration.

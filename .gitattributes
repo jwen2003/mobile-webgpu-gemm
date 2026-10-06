@@ -4,3 +4,5 @@ results/raw/*.json -text
 results/analysis/profile002/shaders/*.wgsl -text whitespace=-trailing-space
 # Reviewed official source snapshots: preserve SHA256 across checkouts.
 results/analysis/remaining_metrics_sources/* -text
+# Exact exported chart files: preserve published figure hashes.
+report/figures/*.svg -text
