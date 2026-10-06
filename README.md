@@ -417,3 +417,8 @@ Historical pilot remains PARTIAL. Latest authoritative method: [mandatory idle/h
 ## MEMORY002 v2 observed protocol pilot
 
 [One128-token v2 result](docs/memory002_v2_pilot_results.md): PROTOCOL_PASS_WITH_CONDITION_WARNING. Required4/4 stage coverage, five snapshots, fresh browser/GPU readings and idle deltas, bounded generation timing (~28.975ms uncertainty), all10 debug-forward cleanups verified. Initialization background5.606s retained; target renderer UNKNOWN, zygote strict meminfo unavailable. One protocol pilot only: not five-repeat memory acceptance, model-exclusive/physical GPU memory or continuous peak. Historical PARTIAL pilot unchanged; no extra trial scheduled.
+
+
+## TRACE001 availability conclusion (2026-10-06)
+
+[Bounded device check](docs/trace001_availability.md): Perfetto metadata query available; only android.gpu.memory registered among GPU-related sources, no registered gpu.renderstages/gpu.counters variants. Ordinary shell tracefs access denied/path absent. GPU execution timeline unavailable through current registered route; WebGPU shader/dispatch attribution UNKNOWN. Configuration conversion failures retained; registration is not successful capture. No model/trace recording, profiler or permission changes. Keep per-kernel/breakdown gap and proceed to report consolidation. [Fixed-runtime metric review](docs/remaining_metrics_feasibility.md) retains true output tokens and pure phase boundaries as unavailable through public API.

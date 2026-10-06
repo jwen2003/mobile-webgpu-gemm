@@ -1,0 +1,20 @@
+{
+  "startedUtc": "2026-10-06T10:26:51Z",
+  "hardStopUtc": "2026-10-06T11:26:51Z",
+  "finishedUtc": "2026-10-06T10:32:32.271818+00:00",
+  "status": "REVIEW_COMPLETE_NO_NEW_MEASUREMENTS",
+  "localRuntimeSha256": {
+    "assets\\vendor\\tasks-genai\\0.10.29\\genai.d.ts": "224edd06387553d5e193c9e0ecbd914c399106d9e57fb2b118543c53c8ec0991",
+    "assets\\vendor\\tasks-genai\\0.10.29\\genai_bundle.mjs": "73bae6514adb91eeeb03a92968f5e97dd0d690b54aed8fbf3cea1651cdc5f50d",
+    "assets\\vendor\\tasks-genai\\0.10.29\\wasm\\genai_wasm_internal.js": "dd02fb217a4aed569e504444eda9a1972a80c8017c96e4000687782690eed927"
+  },
+  "noModelRun": true,
+  "noPhoneConnection": true,
+  "noProfilerAdded": true,
+  "actualGeneratedTokens": "UNAVAILABLE_PUBLIC_API",
+  "purePrefillDecode": "UNAVAILABLE_PUBLIC_API",
+  "driverGpuTimeline": "UNKNOWN_ON_INSTALLED_BUILD",
+  "operatorGpuAttribution": "UNKNOWN",
+  "sourceManifest": "results/analysis/remaining_metrics_sources/manifest.json",
+  "elapsedSeconds": 341.271818
+}

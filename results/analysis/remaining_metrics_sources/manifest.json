@@ -1,0 +1,20 @@
+[
+  {
+    "file": "chromium_webgpu_decoder.cc",
+    "url": "https://chromium.googlesource.com/chromium/src/+/main/gpu/command_buffer/service/webgpu_decoder_impl.cc?format=TEXT",
+    "sha256": "1a174ee306df8717cdd6c32aaec97c05f4a7ec0643e45cc7b60b23faaf301065",
+    "version": "upstream main retrieved 2026-10-06;not installed Chrome build"
+  },
+  {
+    "file": "chromium_dawn_platform.cc",
+    "url": "https://chromium.googlesource.com/chromium/src/+/main/gpu/command_buffer/service/dawn_platform.cc?format=TEXT",
+    "sha256": "aa36cc99b05d6cd9891aaee3bfee2ec2ba169cd796d11e08baa5ebe19c43ae74",
+    "version": "upstream main retrieved 2026-10-06;not installed Chrome build"
+  },
+  {
+    "file": "gpu_render_stage_event.proto",
+    "url": "https://raw.githubusercontent.com/google/perfetto/main/protos/perfetto/trace/gpu/gpu_render_stage_event.proto",
+    "sha256": "c3a8d8cc35ee1b8f7ef76840ccb93acf21aa1d2a08e3c439865c029ab58ef50e",
+    "version": "upstream main retrieved 2026-10-06;not installed Chrome build"
+  }
+]

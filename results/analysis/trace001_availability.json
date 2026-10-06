@@ -1,0 +1,123 @@
+{
+  "experimentId": "TRACE001",
+  "status": "CHECK_COMPLETE_NO_VALIDATED_GPU_TIMELINE",
+  "scope": "One service-registration snapshot,ordinary authorized adb shell;no trace/model run",
+  "startedUtc": "2026-10-06T10:34:32Z",
+  "budgetSeconds": 900,
+  "deviceCheckEndedUtc": "2026-10-06T10:39:01.945144+00:00",
+  "serviceVersion": "Perfetto v49.0 (N/A)",
+  "serviceQuery": "AVAILABLE",
+  "registeredGpuRelatedSources": [
+    "android.gpu.memory"
+  ],
+  "registeredLinuxFtrace": true,
+  "gpuExecutionTimeline": {
+    "status": "UNAVAILABLE_CURRENT_REGISTERED_ROUTE",
+    "gpuRenderstagesRegistered": false,
+    "gpuCountersRegistered": false,
+    "otherUnregisteredOrOnDemandRoutes": "UNKNOWN"
+  },
+  "targetWebGpuDispatchShaderAssociation": {
+    "status": "UNKNOWN_NO_VALIDATED_ENTRY",
+    "targetChromeRegisteredTrackEvent": false,
+    "targetChromeCdpCategories": "NOT_QUERIED",
+    "optionalProtoFieldsAreNotProducerEvidence": true
+  },
+  "permissions": {
+    "shellUid": 2000,
+    "serviceQueryExitCode": 0,
+    "tracefsAvailableEvents": "PERMISSION_DENIED",
+    "debugTracefsAvailableEvents": "NO_SUCH_FILE",
+    "privilegedFtraceProducerCapture": "UNKNOWN_NOT_CAPTURED"
+  },
+  "configuration": {
+    "memoryDataSource": "android.gpu.memory",
+    "registration": "AVAILABLE",
+    "recordingPermissionAndPayload": "UNKNOWN_NOT_CAPTURED",
+    "configConversion": "UNAVAILABLE_ATTEMPTS_FAILED_FILE_INPUT",
+    "gpuTimelineConfig": "NO_REGISTERED_GPU_RENDERSTAGE_SOURCE"
+  },
+  "preservedFailures": [
+    {
+      "name": "perfetto_help",
+      "exitCode": 1
+    },
+    {
+      "name": "tracefs_access",
+      "exitCode": 1
+    },
+    {
+      "name": "tracefs_readability",
+      "exitCode": 1
+    },
+    {
+      "name": "debug_tracefs_readability",
+      "exitCode": 1
+    },
+    {
+      "name": "tracefs_gpu_events",
+      "exitCode": 1
+    },
+    {
+      "name": "debug_tracefs_gpu_events",
+      "exitCode": 1
+    },
+    {
+      "name": "config_parse",
+      "exitCode": 255
+    },
+    {
+      "name": "config_convert",
+      "exitCode": 255
+    }
+  ],
+  "cleanup": {
+    "createdForwardCount": 0,
+    "startedTraceSessionCount": 0,
+    "deviceFilesCreated": 0,
+    "systemPermissionChanges": 0
+  },
+  "privateEvidence": {
+    "commandsSha256": "2787d0c4570c7b3127590c80852da8b709c962da832e8c236a06b1518a4b8c0d",
+    "queryRawSha256": "28fb9a21554da8025fbd16124ed00ac855e008947eab19a0c7e1d852fc2bc891",
+    "queryDecodedSha256": "f7004be287e6498d0259b5710ca0a3d411ffabbeb53078fffe3a622f2e2e843c",
+    "transportNormalization": "CRLF-to-LF inversion;validated by independent text inventory",
+    "fileHashes": {
+      "commands.json": "2787d0c4570c7b3127590c80852da8b709c962da832e8c236a06b1518a4b8c0d",
+      "config_convert.stderr": "c214e80ff7b46160b8d128d14d02b02223f02f90dead1f02b75cf5ce8e9ce3a7",
+      "config_convert.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "config_parse.stderr": "2f81cd764cd843e2bca958dd64719c2b27ea0688570d6df1576c047abfc93ec5",
+      "config_parse.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "debug_tracefs_gpu_events.stderr": "def4cbabba0ed6f8fe9651af13306b7d49a8fe80c5cfe6ec45e8c7993690dc42",
+      "debug_tracefs_gpu_events.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "debug_tracefs_readability.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "debug_tracefs_readability.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "devices.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "devices.stdout": "7a7c94c0a64eec09edf3ff2edcfc2cad62be5eb3b9a5ecde9a30afdb65d67ae2",
+      "identity.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "identity.stdout": "2e3d6afde869d420f84254c32b0babe4d9d750b4eec11eafa9913aee6cac1a65",
+      "memory_config.pbtxt": "33610915036b09ba85cc12b50512b6c11ec4ff9d721ac31639a16b6e4dc00334",
+      "perfetto_help.stderr": "3015a7d63ea9b7692d8f5c09bf22ab3620557d5194cecdace69fa54278c6bbd9",
+      "perfetto_help.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "perfetto_query.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "perfetto_query.stdout": "09a3e3e889dff4cbee0646f8ec00ee93ac5ef9762d70766c92c720bc697bc866",
+      "perfetto_query_long.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "perfetto_query_long.stdout": "9f1c5f176a84803b28fd2cd4130eb7deb14a0c96c1c9ce9b8d48e76053a2b2b1",
+      "perfetto_query_raw.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "perfetto_query_raw.stdout": "28fb9a21554da8025fbd16124ed00ac855e008947eab19a0c7e1d852fc2bc891",
+      "tracefs_access.stderr": "b4d600c4939878cec23c95c6f4615a0e2536a5a23be19e248ec043b4b039cf9a",
+      "tracefs_access.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tracefs_gpu_events.stderr": "08f5c52d561e686cf8f2d4b181345eb197313bea120a3fea0ed04849314f25b6",
+      "tracefs_gpu_events.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tracefs_readability.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tracefs_readability.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "limitations": [
+    "Registration is not successful capture or operator attribution",
+    "Memory source is not GPU execution time",
+    "CPU Dawn events are not hardware GPU intervals",
+    "Source absence is this observed service state,not proof all future driver routes impossible",
+    "No model trace proposal justified;retain breakdown gap and consolidate report"
+  ]
+}
