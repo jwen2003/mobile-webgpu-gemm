@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "historicalRawHashesChecked": 42,
+  "relativeLinksChecked": 99,
+  "baselineSessions": 15,
+  "part2Sessions": 5,
+  "candidateSessionRows": 125,
+  "figures": [
+    {
+      "file": "report/figures/model_combined_wall.svg",
+      "sha256": "bef0b82085af295fe990e6db9c71eb3e233d3fff98c66d53768f5c6428677a16"
+    },
+    {
+      "file": "report/figures/kernel_session_medians.svg",
+      "sha256": "483c1df2ebc13baee07257f035580e4edb4cf5af7d1179263bc47f8c7b1cc58f"
+    },
+    {
+      "file": "report/figures/kernel_variation.svg",
+      "sha256": "226a68fb2e0ed10e55a6e4ec5401703c4d6d7a7499793907e56aea31cf7710b2"
+    }
+  ],
+  "figureQA": "SVG parse,labels,data provenance and layout bounds reviewed;browser visual preview unavailable (tool initialization failed)",
+  "noNewExperiment": true,
+  "limits": "No physical GPU memory,real generated-token/phase or additive GPU breakdown claim"
+}

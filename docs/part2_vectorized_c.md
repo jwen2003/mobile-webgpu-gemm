@@ -1,40 +1,5 @@
-# PART2ABC — fixed Q4 FP16 vectorized C
+# 中文 / English
 
-Status NOT_RUN on phone. Original assignment p2 C is “Tiled with vectorized loads (vec4, packed u32)”. It does not prescribe tile/WG or require both representations;this implementation chooses vec4<f16> loads,not the historical M1-specialized kernel. Frozen PART2-QROW-v1 mathematical input,quantization group/packing/scales/zeroPoint,f16 activation/weights/accumulation and f32 lossless half-valued output carrier remain unchanged. This is an independent page;original A/B page and all four A/B shaders remain available. Original raw files byte-identical. No D,Q8 implementation/sweep/new precision path/subgroups/split-K/auto-tuning added.
+[中文](zh-CN/part2_vectorized_c.md) · [English](en/part2_vectorized_c.md)
 
-## Source and layout
-
-C source src/benchmark/part2_c_f16.wgsl. Workgroup8×8×1 (64 invocations),output tile8 rows×32 columns,K tile16. Each invocation holds vec4<f16> sums and computes adjacent columns4*group.x*8+4*local.x+c,c0..3,one row8*group.y+local.y. SharedA128f16=256 bytes;SharedB128vec4<f16>=1024 bytes,total1280. Each lane cooperatively loads two A scalar slots and two B vec4 slots per tile;64*2 covers128 shared slots once. No dot,no K parallel partition/reassociation,no early return. Two uniform barriers per K tile. For k increasing0..K-1,component-wise fma(vec4(av),B4,sum) performs the same arithmetic sequence per output as A/B. Float rules/reference caveats unchanged;vec4 source syntax is not evidence of hardware vector instructions,occupancy or bandwidth.
-
-C B input is the SAME CPU-predecoded B16 copied into[K,ceil(N/4)*4] with zero padding only at N row tails. Shader array<vec4<f16>> views four neighboring columns per K row;uniform fourth word=ceil(N/4). A/B ignore that previously unused fourth word. A shared across all variants;A/B share dense B buffer,C uses separately uploaded padded B buffer. No new quantization/dequant precision conversion;logical B[k,n] bits are identical. No K-tail padding into arithmetic:base+k<K explicit. Partial vec4 safe because the last padded row vector exists and unused components0;out-of-range source row/vector loads stay zero;output stores independently check each of four columns. Invalid row/column lanes still reach barriers. GPU helper distinguishes actual WG8×8 from output extent32×8:dispatchceil(N/32),ceil(M/8),1.
-
-CPU layout allocation/copy wall,host padded bytes,extra GPU buffer bytes,per-variant B upload size and independent output buffers are exported under preprocessing.byVariant.C. A/B preprocessing recorded as shared base cost,not paid independently three times. C adds a separate2MiB B buffer for each performance shape (N1024 needs no tail padding but deliberately retains same explicit preparation path);all allocation/upload outside sampling. Intermediate logical byte counts are not physical GPU memory. Kernel-only ratios EXCLUDE CPU repack/upload/base preprocessing;host overall run scope includes them but is not a GPU fused-D comparison. No hidden claim of free rearrangement or end-to-end speedup.
-
-## Changed structures,not a single-factor experiment
-
-|Variant|WG/invocations|Output/group|Accumulator/invocation|Shared bytes|K progression/barriers|
-|---|---|---|---|---:|---|
-|A|8×8/64|8×8|one f16 scalar|0|scalar K loop,no barriers|
-|B|16×16/256|16×16|one f16 scalar|1024|16 K tiles,two barriers/tile|
-|C|8×8/64|8×32|four f16 components|1280|16 K tiles,two barriers/tile|
-
-C changes loading width,output mapping,number of accumulator values,WG shape/shared capacity,and B layout/resource arrangement together. Four source accumulator components do not prove native register allocation. Reuse,parallelism,register pressure/cache/scheduling are hypotheses until measured;no causal isolation,DRAM estimate,model acceleration or Adreno benefit claim. C slower/no benefit is allowed.
-
-## Correctness and sampling
-
-Same part2_math.mjs seed0x2ab00117,actualQ4 codes/group32/scale/zeroPoint,exact/fractional families and frozen thresholds. Canonical binary16,binary64 high and FP32 references used independently of shader. Precision discriminatorA=[2048,1,1],B=[1,1,1]:canonical half2048 versusFP322050. C must pass alongside A/B. Small cases include existing scalar/rectangularM3,K5,N7/tile-group-tailM17,K35,N23/packing-tailM1,K33,N9;additionalM9,K17,N35 spans C's row8/column32 workgroup edge and vec4/K/group/packing tails. Full small data export A bits/values,q,words,scales/zeros,B bits/values,references and allA/B/C outputs. Each configuration must PASS exact+fractional+precision gate for all variants before timing;failure records remain downloadable with no ranking of that failed shape.
-
-Two performance shapes:representativeM1 andM128,K=N1024,not confirmed model effective logical layer shapes. Current inherited shape order M1 thenM128 is explicitly exported,not randomized or silently presented as such. Each variant10 warmups;30 measured rounds×3 variants;all six permutationsABC,ACB,BAC,BCA,CAB,CBA each5,shuffled with xorshift32 seed0x2ab00118 xor M. Every variant appears10 times at each measured ordinal position. Actual phase/round/order/index/global execution order saved;120 raw samples/shape including30 warmups,90 measured. No per-sample UI/console updates.
-
-Single pass/single dispatch,serial submission completion plus full query/output map/unmap and all-output check before next sample. Same shared gemm_gpu.mjs boundaries;setup/preprocess/CPU references outside measured pass/sampling loop. BigInt timestamp delta,decimal raw endpoints,submit-to-completion wall,map/check walls and correctness recorded. Indices0/1 reuse only after previous pass readback. Median/nearest-rank p95/min/max/zeros/GCD preserve all zeros/tails. Resolution-limit rule unchanged median<10*max65536ns/observedGCD or any zero. Same-run A/B,A/C,B/C median ratios only;unresolved/zero/absent timestamp pair ratios suppressed. No old PART2AB/FP32 denominator. C preprocessing exclusions explicitly attached to these kernel-only ratios.
-
-Required shader-f16 explicitly requested;timestamp-query requested when supported. No shader-f16→UNSUPPORTED,missing timestamps→correctness only. Existing AB page retains its separate fallback;ABC offers neither Q8 nor fallback. Errors:requestDevice,compilation,validation/internal/OOM,device lost,map/readback/correctness;always export failure. Capability limits check padded B size,WG64/shared1280 and output dispatch extent;no tile/shape shrink. Thermal/charging/DevTools/flag manualUNKNOWN default,visibility transitions retained. Phone status NOT_RUN.
-
-## Checks and phone steps
-
-Computer checks `node scripts/check_part2_abc.mjs` independently interprets cooperation/layout/tails across M1/8/9/17,K1/3/16/17/33/35,N1/3/4/5/9/23/31/32/33/35,exact/fractional;checks canonical sums and2048 probe,zero padding,six permutations and ratio suppression. `node scripts/check_part2_abc_page.mjs` runs actual shared controller with fake-native CPU buffers,120 samples/shape,correct padded B indexing/dispatch/grid/export/cleanup,unsupported/device/map/correctness failures. They are NOT GPU/phone evidence;no fake results exported to raw. AB regression `node scripts/check_part2_page.mjs`;unchangedhalf/packing tests and older GPU helper regression retained.
-
-From C:\Projects\mobile-webgpu-gemm run `python -m http.server 8000 --bind 127.0.0.1`;other PowerShell `& "C:\Tools\platform-tools\platform-tools\adb.exe" reverse tcp:8000 tcp:8000`. Open http://localhost:8000/src/benchmark/part2_abc.html . Confirm PART2ABC,Q4 and A/B/C heading;fill actual manual environment,click run,stay foreground through CPU reference and GPU sampling,download PART2ABC-FP16 JSON even on failure. No existing page rerun required. Driver WGSL compilation/phone correctness/time unknown until actual run. No commit/push.
-
-
-PART2ABC Q4 FP16 actual run COMPLETE (2026-10-05),superseding NOT_RUN: all correctness summaries PASS;independent4425small outputs and timestamp/statistics/order verification PASS. Same-run A/C median ratios1.15625(M1),3.8125(M128);B/C4.59375,5.984375. See docs/experiment_log.md and results/analysis/part2_abc_verified.json. Q8,D,sweep/five independent repeats and real logical shapes/Adreno remain gaps.
+[Historical original / 历史原文](history/original/docs/part2_vectorized_c.md)

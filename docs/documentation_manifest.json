@@ -1,0 +1,680 @@
+{
+  "version": 1,
+  "sourceCommit": "ec8401ddf868ad0e7d41c1164215020494457d87",
+  "documents": [
+    {
+      "original": "README.md",
+      "category": "current-explanation",
+      "archive": "docs/history/original/README.md",
+      "sha256": "8860e47a8d603e342613e99c84f9b58b5256736f483011770c836288e9c5f6b8",
+      "localized": {
+        "zh-CN": "docs/zh-CN/README.md",
+        "en": "docs/en/README.md"
+      }
+    },
+    {
+      "original": "assets/models/README.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/assets/models/README.md",
+      "sha256": "4803345fc25182cf54b8b71515327631f8687576ad3d2d8330c08d5f33b1b22e",
+      "localized": {
+        "zh-CN": "docs/zh-CN/model_preparation.md",
+        "en": "docs/en/model_preparation.md"
+      }
+    },
+    {
+      "original": "docs/adb_memory_sampling_plan.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/adb_memory_sampling_plan.md",
+      "sha256": "3106adfcc1791e06d9d4ee715d98f8c406a6ac756d54aec249a47dd57af16d7e",
+      "localized": {
+        "zh-CN": "docs/zh-CN/adb_memory_sampling_plan.md",
+        "en": "docs/en/adb_memory_sampling_plan.md"
+      }
+    },
+    {
+      "original": "docs/archive_validation.md",
+      "category": "historical-record",
+      "archive": "docs/history/original/docs/archive_validation.md",
+      "sha256": "1319f70eda244c00d49d73bda80511406052bf63406b96aa41eba99645480c34",
+      "localized": {
+        "zh-CN": "docs/zh-CN/archive_validation.md",
+        "en": "docs/en/archive_validation.md"
+      }
+    },
+    {
+      "original": "docs/assignment_requirements_matrix.md",
+      "category": "current-explanation",
+      "archive": "docs/history/original/docs/assignment_requirements_matrix.md",
+      "sha256": "f07d337fc87f3f0b9ce1cab7d16cbfd06225e7d80c59838c9e738a78c4847946",
+      "localized": {
+        "zh-CN": "docs/zh-CN/assignment_requirements_matrix.md",
+        "en": "docs/en/assignment_requirements_matrix.md"
+      }
+    },
+    {
+      "original": "docs/baseline002_work_summary.md",
+      "category": "historical-record",
+      "archive": "docs/history/original/docs/baseline002_work_summary.md",
+      "sha256": "2c0e3f45dcda23a1da129e38a86a0e4650f73be4f7969696f8257d33f9ce75de",
+      "localized": {
+        "zh-CN": "docs/zh-CN/baseline002_work_summary.md",
+        "en": "docs/en/baseline002_work_summary.md"
+      }
+    },
+    {
+      "original": "docs/baseline_sessions_plan.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/baseline_sessions_plan.md",
+      "sha256": "e6c209b19ed715c7e297a942c201fc9c683ee3e550cd7af0748218dcba84a1b8",
+      "localized": {
+        "zh-CN": "docs/zh-CN/baseline_sessions_plan.md",
+        "en": "docs/en/baseline_sessions_plan.md"
+      }
+    },
+    {
+      "original": "docs/baseline_sessions_results.md",
+      "category": "current-report",
+      "archive": "docs/history/original/docs/baseline_sessions_results.md",
+      "sha256": "1f57c80ed42834dd423a208f4b9d44f9c1c8524c73071eef5b28b2b2a3022523",
+      "localized": {
+        "zh-CN": "docs/zh-CN/baseline_sessions_results.md",
+        "en": "docs/en/baseline_sessions_results.md"
+      }
+    },
+    {
+      "original": "docs/environment.md",
+      "category": "current-explanation",
+      "archive": "docs/history/original/docs/environment.md",
+      "sha256": "0784d8baff01d2561069eee8f924e85337a88f727e88c60ef27ba8ea8b8f5017",
+      "localized": {
+        "zh-CN": "docs/zh-CN/environment.md",
+        "en": "docs/en/environment.md"
+      }
+    },
+    {
+      "original": "docs/experiment_log.md",
+      "category": "historical-record",
+      "archive": "docs/history/original/docs/experiment_log.md",
+      "sha256": "bbee4ca446ca5152bee752d02f203ac8006853a521e5938af6830711b6f054f8",
+      "localized": {
+        "zh-CN": "docs/zh-CN/experiment_log.md",
+        "en": "docs/en/experiment_log.md"
+      }
+    },
+    {
+      "original": "docs/experiment_template.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/experiment_template.md",
+      "sha256": "10dfeb31dff4d294d0b20666f76e122d88b9676a2f218af1b0284b65a9c42c14",
+      "localized": {
+        "zh-CN": "docs/zh-CN/experiment_template.md",
+        "en": "docs/en/experiment_template.md"
+      }
+    },
+    {
+      "original": "docs/gemm004_shape_proof.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/gemm004_shape_proof.md",
+      "sha256": "18defaf4c7bfcb6f02765450c4e5bab1e6b8817537e94bfb63ec737e5d48137b",
+      "localized": {
+        "zh-CN": "docs/zh-CN/gemm004_shape_proof.md",
+        "en": "docs/en/gemm004_shape_proof.md"
+      }
+    },
+    {
+      "original": "docs/measurement_contract.md",
+      "category": "contract",
+      "archive": "docs/history/original/docs/measurement_contract.md",
+      "sha256": "4c7c510ffafce3644830cae3ce41b7adb1ac2ba613ca5b0334e64e3475d81b80",
+      "localized": {
+        "zh-CN": "docs/zh-CN/measurement_contract.md",
+        "en": "docs/en/measurement_contract.md"
+      }
+    },
+    {
+      "original": "docs/memory001_texture_accounting.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/memory001_texture_accounting.md",
+      "sha256": "ab1ca778e9c1b9626a8951b851ef2b86f61ccd6960fd69445f7f19d06b975bc3",
+      "localized": {
+        "zh-CN": "docs/zh-CN/memory001_texture_accounting.md",
+        "en": "docs/en/memory001_texture_accounting.md"
+      }
+    },
+    {
+      "original": "docs/memory002_capture_protocol.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/memory002_capture_protocol.md",
+      "sha256": "f14354e0cb803e95d9efb211be07ec18d15ea40b46ea2d04c237c66d41d5aad9",
+      "localized": {
+        "zh-CN": "docs/zh-CN/memory002_capture_protocol.md",
+        "en": "docs/en/memory002_capture_protocol.md"
+      }
+    },
+    {
+      "original": "docs/memory002_pilot_results.md",
+      "category": "historical-record",
+      "archive": "docs/history/original/docs/memory002_pilot_results.md",
+      "sha256": "d234495e8299485b5996a173e996169bdd4842ff3f4c4bf69d1201260dec0940",
+      "localized": {
+        "zh-CN": "docs/zh-CN/memory002_pilot_results.md",
+        "en": "docs/en/memory002_pilot_results.md"
+      }
+    },
+    {
+      "original": "docs/memory002_v2_pilot_results.md",
+      "category": "current-report",
+      "archive": "docs/history/original/docs/memory002_v2_pilot_results.md",
+      "sha256": "3276e28041580498366bdc217702c9f4746f891011b58af61eedc6fde718bff2",
+      "localized": {
+        "zh-CN": "docs/zh-CN/memory002_v2_pilot_results.md",
+        "en": "docs/en/memory002_v2_pilot_results.md"
+      }
+    },
+    {
+      "original": "docs/model_shape_recovery.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/model_shape_recovery.md",
+      "sha256": "003b94da32660976733c44c1d96bb34f23985f8e169129c49cf20318cc79e4fc",
+      "localized": {
+        "zh-CN": "docs/zh-CN/model_shape_recovery.md",
+        "en": "docs/en/model_shape_recovery.md"
+      }
+    },
+    {
+      "original": "docs/part2_compute_contract.md",
+      "category": "contract",
+      "archive": "docs/history/original/docs/part2_compute_contract.md",
+      "sha256": "48b6dcbeb750d9bd9fc5d70f03afa3bac803c4abec025205cc7f99ddc636a6ac",
+      "localized": {
+        "zh-CN": "docs/zh-CN/part2_compute_contract.md",
+        "en": "docs/en/part2_compute_contract.md"
+      }
+    },
+    {
+      "original": "docs/part2_fused_d.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/part2_fused_d.md",
+      "sha256": "18331d5334cf9752834ed4297a16303fb2fed83bb9fa8227a84f2e4379ae20bf",
+      "localized": {
+        "zh-CN": "docs/zh-CN/part2_fused_d.md",
+        "en": "docs/en/part2_fused_d.md"
+      }
+    },
+    {
+      "original": "docs/part2_q8.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/part2_q8.md",
+      "sha256": "3e81f1fe41a8e1156e6ff3b352b6799dda2a9feadb275453de8f94578a685463",
+      "localized": {
+        "zh-CN": "docs/zh-CN/part2_q8.md",
+        "en": "docs/en/part2_q8.md"
+      }
+    },
+    {
+      "original": "docs/part2_repeat_plan.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/part2_repeat_plan.md",
+      "sha256": "1b15b6cf12149b3091ee23596ba6ab6e18017074bfac2d0c78e9376a13c59681",
+      "localized": {
+        "zh-CN": "docs/zh-CN/part2_repeat_plan.md",
+        "en": "docs/en/part2_repeat_plan.md"
+      }
+    },
+    {
+      "original": "docs/part2_repeat_results.md",
+      "category": "current-report",
+      "archive": "docs/history/original/docs/part2_repeat_results.md",
+      "sha256": "c87efe6b7167a7a035bfeacd3fa582e8c1bcf70a1f7188b42801b2313e0e6b1c",
+      "localized": {
+        "zh-CN": "docs/zh-CN/part2_repeat_results.md",
+        "en": "docs/en/part2_repeat_results.md"
+      }
+    },
+    {
+      "original": "docs/part2_sweep_plan.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/part2_sweep_plan.md",
+      "sha256": "db137e8aacd1794e4bcefecb1ef1925e9e9159a2edfb9a2b9216f9ebf556a292",
+      "localized": {
+        "zh-CN": "docs/zh-CN/part2_sweep_plan.md",
+        "en": "docs/en/part2_sweep_plan.md"
+      }
+    },
+    {
+      "original": "docs/part2_sweep_results.md",
+      "category": "current-report",
+      "archive": "docs/history/original/docs/part2_sweep_results.md",
+      "sha256": "fb635a5330caf7f5c215080553dadd3c5f593609cc7c3f65dd28f5bbfa2cf4a7",
+      "localized": {
+        "zh-CN": "docs/zh-CN/part2_sweep_results.md",
+        "en": "docs/en/part2_sweep_results.md"
+      }
+    },
+    {
+      "original": "docs/part2_vectorized_c.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/part2_vectorized_c.md",
+      "sha256": "d0508a374a08d094087f72125a55d7f37dfed1bca9b9992b44f07d38aa0285da",
+      "localized": {
+        "zh-CN": "docs/zh-CN/part2_vectorized_c.md",
+        "en": "docs/en/part2_vectorized_c.md"
+      }
+    },
+    {
+      "original": "docs/profile002_shader_analysis.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/profile002_shader_analysis.md",
+      "sha256": "08b10fc7a64e68c24c27589def490a6aeac16278f04b7a18d8e43384d5d6efa4",
+      "localized": {
+        "zh-CN": "docs/zh-CN/profile002_shader_analysis.md",
+        "en": "docs/en/profile002_shader_analysis.md"
+      }
+    },
+    {
+      "original": "docs/profile003_overlap_review.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/profile003_overlap_review.md",
+      "sha256": "e6c311a5c5298d20c6afc44648716085327f1252922fd55a02a25525e38c1d12",
+      "localized": {
+        "zh-CN": "docs/zh-CN/profile003_overlap_review.md",
+        "en": "docs/en/profile003_overlap_review.md"
+      }
+    },
+    {
+      "original": "docs/profiling_capabilities.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/profiling_capabilities.md",
+      "sha256": "3104722c09356c4a1ce90221a919da57b629ee984e274522036408361aa7d88b",
+      "localized": {
+        "zh-CN": "docs/zh-CN/profiling_capabilities.md",
+        "en": "docs/en/profiling_capabilities.md"
+      }
+    },
+    {
+      "original": "docs/remaining_metrics_feasibility.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/remaining_metrics_feasibility.md",
+      "sha256": "10606ac27014c1c45fdd5617a38b15c2b19402e4f3e0210c3f33711b04dc4629",
+      "localized": {
+        "zh-CN": "docs/zh-CN/remaining_metrics_feasibility.md",
+        "en": "docs/en/remaining_metrics_feasibility.md"
+      }
+    },
+    {
+      "original": "docs/requirements.md",
+      "category": "current-explanation",
+      "archive": "docs/history/original/docs/requirements.md",
+      "sha256": "9e1e06c5106b3039cebe01cef21bc755bdcae89ee0b98e50342509024b1431a8",
+      "localized": {
+        "zh-CN": "docs/zh-CN/requirements.md",
+        "en": "docs/en/requirements.md"
+      }
+    },
+    {
+      "original": "docs/timestamp_validity.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/timestamp_validity.md",
+      "sha256": "d05c3cca915ac1c00753d83ccd2a60426449d320ee148e24d3c79ceb2884ccef",
+      "localized": {
+        "zh-CN": "docs/zh-CN/timestamp_validity.md",
+        "en": "docs/en/timestamp_validity.md"
+      }
+    },
+    {
+      "original": "docs/trace001_availability.md",
+      "category": "method-or-results",
+      "archive": "docs/history/original/docs/trace001_availability.md",
+      "sha256": "ec9acc370e480480a3481ec8a95c4a9c10a47623a6978828aa5841c5432d74fa",
+      "localized": {
+        "zh-CN": "docs/zh-CN/trace001_availability.md",
+        "en": "docs/en/trace001_availability.md"
+      }
+    },
+    {
+      "original": "report/performance_report.md",
+      "category": "current-report",
+      "archive": "docs/history/original/report/performance_report.md",
+      "sha256": "f036758aa4668da83a3b7eb2f3bf5ca4d8fac3f67515237931f535157bc98fda",
+      "localized": {
+        "zh-CN": "report/zh-CN/performance_report.md",
+        "en": "report/en/performance_report.md"
+      }
+    }
+  ],
+  "protectedFiles": {
+    "assets/models/model_manifest.json": "a174bfe6b9e7ee3bbdec7ef38f18d3740467e1cce91ab041da3a0816cbc45823",
+    "assignment/webgpu_adreno_assignment.pdf": "dc02d42a5fdf521b75794ac641478cfe91ec7d9e165fa93a1c2e43b3ec63e9c3",
+    "report/figures/kernel_session_medians.svg": "483c1df2ebc13baee07257f035580e4edb4cf5af7d1179263bc47f8c7b1cc58f",
+    "report/figures/kernel_variation.svg": "226a68fb2e0ed10e55a6e4ec5401703c4d6d7a7499793907e56aea31cf7710b2",
+    "report/figures/model_combined_wall.svg": "bef0b82085af295fe990e6db9c71eb3e233d3fff98c66d53768f5c6428677a16",
+    "results/analysis/BASELINE002-L1024-R1-2026-10-06T07-28-08-096Z-verified.json": "aa557595a2e6e8c354dbef290df62e72f550f37bc593dc8603e95de5e25ae507",
+    "results/analysis/BASELINE002-L1024-R2-2026-10-06T07-37-31-596Z-verified.json": "bbddeca930a7d91f5330f12a0af818141b72185a5cb50851544ceefb3f2cb0da",
+    "results/analysis/BASELINE002-L1024-R3-2026-10-06T07-46-43-691Z-verified.json": "bc29db4732833d0d9652e6a1e439766637f6f65cfe6eb4c391e5bd38865ba107",
+    "results/analysis/BASELINE002-L1024-R4-2026-10-06T08-02-23-026Z-verified.json": "85f3a03e02d8840c9e89d98c8b80925a6b10273e66c20714b9b873568bdbeba7",
+    "results/analysis/BASELINE002-L1024-R5-2026-10-06T08-14-18-851Z-verified.json": "822b7bec101a192027dd38e50d836f2368e6ba47af8392c00104040f4c19790b",
+    "results/analysis/BASELINE002-L128-R1-2026-10-06T07-19-26-784Z-verified.json": "d796a1080a9c6a4941fb9f1690c9cf18f2827dcf7f37af5cf002d72cda880c58",
+    "results/analysis/BASELINE002-L128-R2-2026-10-06T07-41-20-289Z-verified.json": "157f838cd805bd1beb2e2746cd359ca9c7464a40345e046e5ea18c3b64b202a2",
+    "results/analysis/BASELINE002-L128-R3-2026-10-06T07-51-45-180Z-verified.json": "bae79d556551c5e031e7e9df92d636f21daa7c1efa9e036e82c62e0cd6900b92",
+    "results/analysis/BASELINE002-L128-R4-2026-10-06T07-59-17-219Z-verified.json": "1a92957909b07f46ef272e9e48e3853bbba9819be1df5533a4e2cf9b98cbc2fa",
+    "results/analysis/BASELINE002-L128-R5-2026-10-06T08-10-57-422Z-verified.json": "2cac390ee3dede43738b41ce69fed8b47f2f40f6772edd03d81509d308e4f99f",
+    "results/analysis/BASELINE002-L512-R1-2026-10-06T07-23-10-169Z-verified.json": "27f9383b6fc59ccc4402e71e719fa89ce7f51c3c131efe8c475ff62286b3779f",
+    "results/analysis/BASELINE002-L512-R2-2026-10-06T07-32-56-502Z-verified.json": "8b846a103d4fcb39bbe6b5e9bb28e024214ca70fd176da617ef33c162c5d11b5",
+    "results/analysis/BASELINE002-L512-R3-2026-10-06T07-56-22-753Z-verified.json": "7ba705b5b49aa65339b999548272287b69431116a31af204c85827df4791fba5",
+    "results/analysis/BASELINE002-L512-R4-2026-10-06T08-05-22-837Z-verified.json": "3d63b345cc7fd131fb2476a6ae6c431699d8c2a0ee536c8166e607516d74d223",
+    "results/analysis/BASELINE002-L512-R5-2026-10-06T08-08-08-584Z-verified.json": "44c41221425cac5c1087b71cf587893c5bf60c2e4539b9a9aee4b688f5c5c862",
+    "results/analysis/PART2REPEAT-S1-2026-10-06T06-24-56-318Z-verified.json": "1406e751d594e454d7083600e688ca8dcb76186701c16eecaadf12e9ae9d823f",
+    "results/analysis/PART2REPEAT-S2-2026-10-06T06-31-34-251Z-verified.json": "32a76a654d54ae50b356220b647045c432368998b682d268d21fda7937e5a865",
+    "results/analysis/PART2REPEAT-S3-2026-10-06T06-36-58-650Z-verified.json": "76895c11c0a7849690fa81b7c9a8894b14925f057a24c1ba9a928582834c9443",
+    "results/analysis/PART2REPEAT-S4-2026-10-06T06-41-19-381Z-verified.json": "8d172dbc8af777b3a7a7ead80bd77e99b8e3d35ec9b78d31ce111a68317ee21f",
+    "results/analysis/PART2REPEAT-S5-2026-10-06T06-47-12-646Z-verified.json": "5fc505855c54cbe4d80f613fdb5674df3cfc567957187de6789385cff8b73cb9",
+    "results/analysis/PART2SWEEP-2026-10-06T05-52-59-758Z-verified.json": "4e1c44927134073e79fc067beb4af03768cb765927d40905e2d456ef565a90e6",
+    "results/analysis/PART2SWEEP-2026-10-06T06-02-22-899Z-verified.json": "ce9408ecf74266e5e189cc8d6a4e31fad7637553060aa71838fc0bdc7601f1e4",
+    "results/analysis/PART2SWEEP-2026-10-06T06-07-34-319Z-verified.json": "31c20fa17d60eda9766a3726d388c9ea303f276920e4a2ab73e7bef0deec7404",
+    "results/analysis/assignment_original_text.txt": "a691ec409b32a2cd5a5781b679a511ba12249e54edfa3b5914fb53407a6f78df",
+    "results/analysis/baseline002_summary.json": "62cb56964ba88971e984161b6e871758658d293eec50d3797cf3576c5d64a54b",
+    "results/analysis/gemm004_verified.json": "cb0c7766d6cdb5d38691111f1d6810bc73a9d00080ff984dd283e2d4b02472bb",
+    "results/analysis/memory001_texture_payload.json": "95e922eac4f7c34ba384fc4741d7d42c854e3917aeb677340b1c4621abec483f",
+    "results/analysis/memory001_verification.json": "79039f281581981e21da4dd7240102758627b79c5600c462df912001df284dc4",
+    "results/analysis/memory002_local_evidence_sha256.json": "10a203b098e63a55b1513c1c07e4a3555202e765fc5fe7ebca67410a98cd349d",
+    "results/analysis/memory002_pilot_verification.json": "8a57ba563a67a4866febb6bb01de614fbcb7bb8b52ab10c3d81cb72c2c4f4954",
+    "results/analysis/memory002_v2_evidence_sha256.json": "038370e547e240656654559d3691300ff601c731e0f16554bb70cb66c3b4df2d",
+    "results/analysis/memory002_v2_pilot_verification.json": "6df27dc34ff1bbbfc34eb618dcfcbb799cd71ca217ce62d56fa0bda6343acc23",
+    "results/analysis/model_metadata_review.json": "282e0412b2db4c7d2d0992d2cc8ec2f97fa8835f89f5c1b8bfa0a19c668d3307",
+    "results/analysis/part2_ab_verified.json": "20daf16699634087bcd6dc5e90248402bda795dfc152d576e10d6454210f2bf3",
+    "results/analysis/part2_abc_verified.json": "1d099aeb19cf115a540ec7929e871cf651a7d55eed994ffefd81ff0d2f312886",
+    "results/analysis/part2_abcd_verified.json": "72e685dd7be49e386d64316f89c63d3bf942a62231dc0b3a630db097ef9965d8",
+    "results/analysis/part2_q8_abcd_verified.json": "c71543329937bb37eb62c8a6567149294a296dfa05e4803b515d19d37fe445f1",
+    "results/analysis/part2_repeat_summary.json": "56d5be49021a32ac694a09c9943dd10b4465f192e5e71b6e673569607d3df0d4",
+    "results/analysis/profile002/gemm003_shape_candidate.json": "04f57c2cd03f8e84cad77c72016ef55b135cc1a54d718c614e6540520e55a83e",
+    "results/analysis/profile002/pass_structure.json": "afc423b1e87fbb3fdc489fd1d3a2ea5ea0648646d61bb13cbf5713bf911fcd97",
+    "results/analysis/profile002/shader_classification.csv": "0f318d92f6e43188dc7e63d58168dc2355e4371702574fd84b41c7e4253c8bfc",
+    "results/analysis/profile002/shader_classification.json": "3b8e18a7eb3db64514a7d35ad542635c9a2a324b599bac5c31b182232d23b50e",
+    "results/analysis/profile002/shaders/00757628dbfb8950ebf06edebe16120c2953a10b48f689d0ee1e442c3e5e8e43.wgsl": "00757628dbfb8950ebf06edebe16120c2953a10b48f689d0ee1e442c3e5e8e43",
+    "results/analysis/profile002/shaders/010470a871e2d36941883dd62059e8b13854f286cb2541f88424856c9ff55c5e.wgsl": "010470a871e2d36941883dd62059e8b13854f286cb2541f88424856c9ff55c5e",
+    "results/analysis/profile002/shaders/078bb19c16a59df878d4082177ec976ab92cc6d398a43819522c45a996dfb69a.wgsl": "078bb19c16a59df878d4082177ec976ab92cc6d398a43819522c45a996dfb69a",
+    "results/analysis/profile002/shaders/0af340a1d9dae9d60f48270d9e4142724f7d4572030f3674f31a7b020a683ccb.wgsl": "0af340a1d9dae9d60f48270d9e4142724f7d4572030f3674f31a7b020a683ccb",
+    "results/analysis/profile002/shaders/0bb8f31dc4e8c454e3233e1d568da2de84c95e71b61352bb4c5474cf2ffc6cdc.wgsl": "0bb8f31dc4e8c454e3233e1d568da2de84c95e71b61352bb4c5474cf2ffc6cdc",
+    "results/analysis/profile002/shaders/0d0257fc062531ed370136a1dacbfcd4eac69fc80e30c9288bb43c6f96fcd8cd.wgsl": "0d0257fc062531ed370136a1dacbfcd4eac69fc80e30c9288bb43c6f96fcd8cd",
+    "results/analysis/profile002/shaders/0e18de785afcea96c0aaa540eb02de477650d8b4a05c33a3a331cb4b87d96c9f.wgsl": "0e18de785afcea96c0aaa540eb02de477650d8b4a05c33a3a331cb4b87d96c9f",
+    "results/analysis/profile002/shaders/1132f62ea4edc03973f050988e439e0716dcd3bc2a325e38e4a0e3d198aee974.wgsl": "1132f62ea4edc03973f050988e439e0716dcd3bc2a325e38e4a0e3d198aee974",
+    "results/analysis/profile002/shaders/151247f7c9aaa4c6d6f275372de88580f3d286cbc5f7552428ebb6794e138ec4.wgsl": "151247f7c9aaa4c6d6f275372de88580f3d286cbc5f7552428ebb6794e138ec4",
+    "results/analysis/profile002/shaders/159dfaaa53720d53b400ae65a49ce59f285be1aeb0482213244ade08113554ba.wgsl": "159dfaaa53720d53b400ae65a49ce59f285be1aeb0482213244ade08113554ba",
+    "results/analysis/profile002/shaders/1b04ebe9234826f61f7be9f83db9c690e0741a7075179bd528df2c1e67734f9a.wgsl": "1b04ebe9234826f61f7be9f83db9c690e0741a7075179bd528df2c1e67734f9a",
+    "results/analysis/profile002/shaders/1e227b7667e662034e36e743deac66b3d09cddb038262e90b2b842eaab6f924a.wgsl": "1e227b7667e662034e36e743deac66b3d09cddb038262e90b2b842eaab6f924a",
+    "results/analysis/profile002/shaders/214580707d50d985c234fb1b197fe0cd26c5aa0267a0414532650ca505338cfd.wgsl": "214580707d50d985c234fb1b197fe0cd26c5aa0267a0414532650ca505338cfd",
+    "results/analysis/profile002/shaders/22174c1a9d2840466af6aac2139912e473eb7cf8ea74ccdf404e5369aaef0402.wgsl": "22174c1a9d2840466af6aac2139912e473eb7cf8ea74ccdf404e5369aaef0402",
+    "results/analysis/profile002/shaders/25136861088a9921d05bc2dd34527df78c5d22eeb9f9f6c98ccd39a8c1097a76.wgsl": "25136861088a9921d05bc2dd34527df78c5d22eeb9f9f6c98ccd39a8c1097a76",
+    "results/analysis/profile002/shaders/26b7b79485e67bc1029c628ceb7096e7a44dec481bfa7c6c1787e41108eab0b4.wgsl": "26b7b79485e67bc1029c628ceb7096e7a44dec481bfa7c6c1787e41108eab0b4",
+    "results/analysis/profile002/shaders/273201ca8d2dbb099749d9111d0f9ec569195238e26cd090c5558924a24a03a7.wgsl": "273201ca8d2dbb099749d9111d0f9ec569195238e26cd090c5558924a24a03a7",
+    "results/analysis/profile002/shaders/27c7d6464e22b672d9a807702c22b24bdd47a10a72f333ad5e5b8dda0aa079bb.wgsl": "27c7d6464e22b672d9a807702c22b24bdd47a10a72f333ad5e5b8dda0aa079bb",
+    "results/analysis/profile002/shaders/28f232d932dc98ccdc12b7edb62d6ccabd5dc59d9b0ec62e72974a12f62f7a3e.wgsl": "28f232d932dc98ccdc12b7edb62d6ccabd5dc59d9b0ec62e72974a12f62f7a3e",
+    "results/analysis/profile002/shaders/294de37edf99c9b9f242e3aa1e27e283a9e93b223abbf575f0ea0c8b4f6faa45.wgsl": "294de37edf99c9b9f242e3aa1e27e283a9e93b223abbf575f0ea0c8b4f6faa45",
+    "results/analysis/profile002/shaders/295261f1c9d2a4fd929d2cbff636bf90588eecd5feb1e0fbef08aeacb7ef8560.wgsl": "295261f1c9d2a4fd929d2cbff636bf90588eecd5feb1e0fbef08aeacb7ef8560",
+    "results/analysis/profile002/shaders/2a05cbb8a6d4641a33fe454de43cc8aecf6a249d60236455cc79adb567b65367.wgsl": "2a05cbb8a6d4641a33fe454de43cc8aecf6a249d60236455cc79adb567b65367",
+    "results/analysis/profile002/shaders/2a6570bcda124c2c968df00ad0b26b5b43c00b8364198b1c9638c07dfc87e098.wgsl": "2a6570bcda124c2c968df00ad0b26b5b43c00b8364198b1c9638c07dfc87e098",
+    "results/analysis/profile002/shaders/2d8f2c9b121cc5c4739ca0eca59b5c6b53469fcbe5a94731bc2bae43a995b108.wgsl": "2d8f2c9b121cc5c4739ca0eca59b5c6b53469fcbe5a94731bc2bae43a995b108",
+    "results/analysis/profile002/shaders/2e623825600e7fd67d89df4c3ca7698013ca328f8f6d0bc6354f8313db2d7efb.wgsl": "2e623825600e7fd67d89df4c3ca7698013ca328f8f6d0bc6354f8313db2d7efb",
+    "results/analysis/profile002/shaders/3064f050cd43882b612fd693d38158db1c37d177a7560ff7605fb246909aae1d.wgsl": "3064f050cd43882b612fd693d38158db1c37d177a7560ff7605fb246909aae1d",
+    "results/analysis/profile002/shaders/3623020ff484c99270e26f2519374f7b6ed649fa399c5fd5630e899644a514d5.wgsl": "3623020ff484c99270e26f2519374f7b6ed649fa399c5fd5630e899644a514d5",
+    "results/analysis/profile002/shaders/3bd538178424caa229009447d36b81c5a4680cc96c072ea672abac45be3b1a4f.wgsl": "3bd538178424caa229009447d36b81c5a4680cc96c072ea672abac45be3b1a4f",
+    "results/analysis/profile002/shaders/3bd9688745d89814ba58af045dd18a29a2a6f3c7c5b428f68e7ca9840d211af9.wgsl": "3bd9688745d89814ba58af045dd18a29a2a6f3c7c5b428f68e7ca9840d211af9",
+    "results/analysis/profile002/shaders/3e8221dd257bfd84a71028faecd63800a5edcd8e84c7ac2baf05103c5a426994.wgsl": "3e8221dd257bfd84a71028faecd63800a5edcd8e84c7ac2baf05103c5a426994",
+    "results/analysis/profile002/shaders/41ac95ccbebdc78bead67be9f6bff4afadd996041c948c307288df88451478f9.wgsl": "41ac95ccbebdc78bead67be9f6bff4afadd996041c948c307288df88451478f9",
+    "results/analysis/profile002/shaders/42ddedd95f51719b1ac3a786579d4b44a3e9d3abfe2010f62c388fa5c881b279.wgsl": "42ddedd95f51719b1ac3a786579d4b44a3e9d3abfe2010f62c388fa5c881b279",
+    "results/analysis/profile002/shaders/442df1c664998f251e20242bb1045ccbb3d6feef6fc6ca1ca91dd3df80529852.wgsl": "442df1c664998f251e20242bb1045ccbb3d6feef6fc6ca1ca91dd3df80529852",
+    "results/analysis/profile002/shaders/46dd91811c462bd273e6091de3083c13522568922c512c5208d74483add47526.wgsl": "46dd91811c462bd273e6091de3083c13522568922c512c5208d74483add47526",
+    "results/analysis/profile002/shaders/473d55eee2a63230235147dab545da593c80af23a2546e79452d4caad996f89a.wgsl": "473d55eee2a63230235147dab545da593c80af23a2546e79452d4caad996f89a",
+    "results/analysis/profile002/shaders/4a6ebd70052c8240191319b63cfff723fc72b5f2a36989bfbec2bad041acadd4.wgsl": "4a6ebd70052c8240191319b63cfff723fc72b5f2a36989bfbec2bad041acadd4",
+    "results/analysis/profile002/shaders/4e6687451885a48841797ef5d3dd551e27380ec8c525f47441214c74a257e0ed.wgsl": "4e6687451885a48841797ef5d3dd551e27380ec8c525f47441214c74a257e0ed",
+    "results/analysis/profile002/shaders/5043a0fcb3d830f9943da10bcfb4ec3c7378b77312cd4ada472b20446226ff14.wgsl": "5043a0fcb3d830f9943da10bcfb4ec3c7378b77312cd4ada472b20446226ff14",
+    "results/analysis/profile002/shaders/5074047d9b404fe4879731af02ea2c7b1983ce8e63acf7e753e1cac012d40d05.wgsl": "5074047d9b404fe4879731af02ea2c7b1983ce8e63acf7e753e1cac012d40d05",
+    "results/analysis/profile002/shaders/50ecd9f3f189510455ae0900ea724bde0cce6e909568b1110b3869c74d9f017e.wgsl": "50ecd9f3f189510455ae0900ea724bde0cce6e909568b1110b3869c74d9f017e",
+    "results/analysis/profile002/shaders/5103dc5f6facafbe3cf070a31e9a0518fe84be28406ff916af90fc958de9ecb3.wgsl": "5103dc5f6facafbe3cf070a31e9a0518fe84be28406ff916af90fc958de9ecb3",
+    "results/analysis/profile002/shaders/511281f712efd490de74ea9efe83e8c913fea1f0e35c5211761b9dc47d80d4e2.wgsl": "511281f712efd490de74ea9efe83e8c913fea1f0e35c5211761b9dc47d80d4e2",
+    "results/analysis/profile002/shaders/52b3361d6b778047a4a9cd0277b96b30ab43bbc0507f23c54424851cdb9c6313.wgsl": "52b3361d6b778047a4a9cd0277b96b30ab43bbc0507f23c54424851cdb9c6313",
+    "results/analysis/profile002/shaders/53e44834e5d43aaf9f08c18615576886f827e57e2994bc2773c4ecfeb0c449ae.wgsl": "53e44834e5d43aaf9f08c18615576886f827e57e2994bc2773c4ecfeb0c449ae",
+    "results/analysis/profile002/shaders/551406f8e2121542186f7c00843622ee1677f51c5ffaad222eccf4a12df4e9c2.wgsl": "551406f8e2121542186f7c00843622ee1677f51c5ffaad222eccf4a12df4e9c2",
+    "results/analysis/profile002/shaders/568d94e815d1311937963e0855532b19c5179adbed25ff67e1b091b2d71bf4a1.wgsl": "568d94e815d1311937963e0855532b19c5179adbed25ff67e1b091b2d71bf4a1",
+    "results/analysis/profile002/shaders/5791567b318f63f7c43b519a0b4fb1ddd591469be7b1e3698a2666c0aef9e905.wgsl": "5791567b318f63f7c43b519a0b4fb1ddd591469be7b1e3698a2666c0aef9e905",
+    "results/analysis/profile002/shaders/57b13720b95349cfc4957b0b4d8c1638babbd390dc6309d18025fb0beffb6227.wgsl": "57b13720b95349cfc4957b0b4d8c1638babbd390dc6309d18025fb0beffb6227",
+    "results/analysis/profile002/shaders/5df658b782ce8089e3ca987f287cec50ef466a7a2d1fd1c9fe02c2ef5276a523.wgsl": "5df658b782ce8089e3ca987f287cec50ef466a7a2d1fd1c9fe02c2ef5276a523",
+    "results/analysis/profile002/shaders/60c9ada5c39ab8561fd3f2de4a87d4a5fb872e317aa9d1ee4e2fbbb40994aa7d.wgsl": "60c9ada5c39ab8561fd3f2de4a87d4a5fb872e317aa9d1ee4e2fbbb40994aa7d",
+    "results/analysis/profile002/shaders/647d6b54bb7705cde18a6c82f59a5a10123ec3217f2dfb650b2150676b4ea058.wgsl": "647d6b54bb7705cde18a6c82f59a5a10123ec3217f2dfb650b2150676b4ea058",
+    "results/analysis/profile002/shaders/692338559821911d3e05fba0eafa110ecfc947943a7eeaf6fc340dea5320e8a4.wgsl": "692338559821911d3e05fba0eafa110ecfc947943a7eeaf6fc340dea5320e8a4",
+    "results/analysis/profile002/shaders/696c8ab22626981669d8fe21fae5a01cb4cad62c0b54b548096b3445a4cd4a3f.wgsl": "696c8ab22626981669d8fe21fae5a01cb4cad62c0b54b548096b3445a4cd4a3f",
+    "results/analysis/profile002/shaders/69d5748e61d4c960e430fbc3746af88f17aa1dc75b584846ad0a9478af8e48f0.wgsl": "69d5748e61d4c960e430fbc3746af88f17aa1dc75b584846ad0a9478af8e48f0",
+    "results/analysis/profile002/shaders/6aee7d2c4e325b20b4b32b3eaeedb4a68800779816678137f136d022d0521a2a.wgsl": "6aee7d2c4e325b20b4b32b3eaeedb4a68800779816678137f136d022d0521a2a",
+    "results/analysis/profile002/shaders/6b17afafb5fc32d117c15a69488298d43dae435ad303bff262f76428d83ae1a9.wgsl": "6b17afafb5fc32d117c15a69488298d43dae435ad303bff262f76428d83ae1a9",
+    "results/analysis/profile002/shaders/6bcb59a0759a84c639602f4dbbef814eed26a0ad47cb6804aea31d00d49145f8.wgsl": "6bcb59a0759a84c639602f4dbbef814eed26a0ad47cb6804aea31d00d49145f8",
+    "results/analysis/profile002/shaders/6c0dc019d83c49c231d688d8bbe7e3be391907097647e925960d0797f56f9b2c.wgsl": "6c0dc019d83c49c231d688d8bbe7e3be391907097647e925960d0797f56f9b2c",
+    "results/analysis/profile002/shaders/6c45ad32ad2f0f4aae52a4752ba6e21cf479efd4febc089b54e4f8f61eb7c081.wgsl": "6c45ad32ad2f0f4aae52a4752ba6e21cf479efd4febc089b54e4f8f61eb7c081",
+    "results/analysis/profile002/shaders/6e5684d82470d80060d79b3537f87ef5a8a60e08245b06dc92a48a87b5db3966.wgsl": "6e5684d82470d80060d79b3537f87ef5a8a60e08245b06dc92a48a87b5db3966",
+    "results/analysis/profile002/shaders/735ba7082e81eeb6c8154a0e9375d671908eb8afe6a9a86df20580e1ff60792c.wgsl": "735ba7082e81eeb6c8154a0e9375d671908eb8afe6a9a86df20580e1ff60792c",
+    "results/analysis/profile002/shaders/77dad553f791c20c83a112efe02b972e81e1ec7644289af207bac205f59b2e6b.wgsl": "77dad553f791c20c83a112efe02b972e81e1ec7644289af207bac205f59b2e6b",
+    "results/analysis/profile002/shaders/7a0f284fc1057b15ac83df4a6e5597ba1e93213ce1267c605443bd5e91c0c286.wgsl": "7a0f284fc1057b15ac83df4a6e5597ba1e93213ce1267c605443bd5e91c0c286",
+    "results/analysis/profile002/shaders/809db407113e48aa0e3fa04d2f489272304e4b9b408687cee8cf51cf36008fe3.wgsl": "809db407113e48aa0e3fa04d2f489272304e4b9b408687cee8cf51cf36008fe3",
+    "results/analysis/profile002/shaders/8272e6bb3d0c46163b9414730aea9946afcb92fb40fbd4030b34d95ebe904856.wgsl": "8272e6bb3d0c46163b9414730aea9946afcb92fb40fbd4030b34d95ebe904856",
+    "results/analysis/profile002/shaders/82d48709342776d92fa950d1036fbfa13aef6290fb2b03cb25be2fdce88b6863.wgsl": "82d48709342776d92fa950d1036fbfa13aef6290fb2b03cb25be2fdce88b6863",
+    "results/analysis/profile002/shaders/85b66a0378fb864eb410b654e3073e1b96aab7abaeb9605abbd26c828c985057.wgsl": "85b66a0378fb864eb410b654e3073e1b96aab7abaeb9605abbd26c828c985057",
+    "results/analysis/profile002/shaders/8678e50f0be0442a3d69a1d6fe5475c67ece11e9dd9b5840fb0374c386f296ed.wgsl": "8678e50f0be0442a3d69a1d6fe5475c67ece11e9dd9b5840fb0374c386f296ed",
+    "results/analysis/profile002/shaders/8758eb0efb1874fec141c9e4440658e3d057cf0de640959ba32ab8d196bc05f6.wgsl": "8758eb0efb1874fec141c9e4440658e3d057cf0de640959ba32ab8d196bc05f6",
+    "results/analysis/profile002/shaders/8c2423bb348cc4b741dcbea0e8d4f58a0745a524dee385c5ee046250ca69fd4e.wgsl": "8c2423bb348cc4b741dcbea0e8d4f58a0745a524dee385c5ee046250ca69fd4e",
+    "results/analysis/profile002/shaders/8d58d76897d4dc5c8e9db4a84a85f151b8754ddfa66a8d6c1e49d2a3d2536da9.wgsl": "8d58d76897d4dc5c8e9db4a84a85f151b8754ddfa66a8d6c1e49d2a3d2536da9",
+    "results/analysis/profile002/shaders/8d6e8ff48fb2fe994b9c2a21f84581147ee9f43dbe940172741545da34cab20b.wgsl": "8d6e8ff48fb2fe994b9c2a21f84581147ee9f43dbe940172741545da34cab20b",
+    "results/analysis/profile002/shaders/8f59e941677988aa0e8d6db617d7e01c0bb78a1789fea0f66f970c6b4ee56ba1.wgsl": "8f59e941677988aa0e8d6db617d7e01c0bb78a1789fea0f66f970c6b4ee56ba1",
+    "results/analysis/profile002/shaders/8fd4ee078dfe7420dab63ff64afd7e54abbedc35b86ab7e1a252cb122dba10a2.wgsl": "8fd4ee078dfe7420dab63ff64afd7e54abbedc35b86ab7e1a252cb122dba10a2",
+    "results/analysis/profile002/shaders/932ac17cd39d25f2f59d5567529a3503fa89ee8dec9fd60ab68a889b6383bca5.wgsl": "932ac17cd39d25f2f59d5567529a3503fa89ee8dec9fd60ab68a889b6383bca5",
+    "results/analysis/profile002/shaders/97b08bb0f229490bf9036b95828ba884b38983ff898879877e43660f921e620c.wgsl": "97b08bb0f229490bf9036b95828ba884b38983ff898879877e43660f921e620c",
+    "results/analysis/profile002/shaders/999c1c72cd2c5e007298a14f4e212110cb49db9cd8e1383609ba206fdf6adca1.wgsl": "999c1c72cd2c5e007298a14f4e212110cb49db9cd8e1383609ba206fdf6adca1",
+    "results/analysis/profile002/shaders/9b975e9cd9c3bfa7737796f3c69b659f0dfc1aa73630223d065efc0981578bcc.wgsl": "9b975e9cd9c3bfa7737796f3c69b659f0dfc1aa73630223d065efc0981578bcc",
+    "results/analysis/profile002/shaders/9bf8b1fc63a1b73bd4e19f26aae2d023f8055bef22c89dc525261ce4d44103b3.wgsl": "9bf8b1fc63a1b73bd4e19f26aae2d023f8055bef22c89dc525261ce4d44103b3",
+    "results/analysis/profile002/shaders/a005e2b819aca449c7fb99b0d360194fb3d24c276bf5f99760cbe2af88e477ff.wgsl": "a005e2b819aca449c7fb99b0d360194fb3d24c276bf5f99760cbe2af88e477ff",
+    "results/analysis/profile002/shaders/a1a5d317805b31b9fee5617b928799583151aec3a7fe8a2c8328cbc8673189c7.wgsl": "a1a5d317805b31b9fee5617b928799583151aec3a7fe8a2c8328cbc8673189c7",
+    "results/analysis/profile002/shaders/a5035ab2fb5376d13623c26f8831206d3727a7d47196372a6f72d9085d5d9960.wgsl": "a5035ab2fb5376d13623c26f8831206d3727a7d47196372a6f72d9085d5d9960",
+    "results/analysis/profile002/shaders/a60a208018313ee1c9a1996351713a9795638e20e6cac500ecf538f4e2c68834.wgsl": "a60a208018313ee1c9a1996351713a9795638e20e6cac500ecf538f4e2c68834",
+    "results/analysis/profile002/shaders/a65650ca355d0df0dbbaa0408d2fd26d59710094cc7939dc7415832ee27ec90a.wgsl": "a65650ca355d0df0dbbaa0408d2fd26d59710094cc7939dc7415832ee27ec90a",
+    "results/analysis/profile002/shaders/af0cb3e498ff2904bfa0bf60098fe5d531681bfe91f59a9db31460b7b6423e83.wgsl": "af0cb3e498ff2904bfa0bf60098fe5d531681bfe91f59a9db31460b7b6423e83",
+    "results/analysis/profile002/shaders/b0f2bfcd9cc07b84fb40656d76aa02855b7438af81545fbfeb3935937b04fd65.wgsl": "b0f2bfcd9cc07b84fb40656d76aa02855b7438af81545fbfeb3935937b04fd65",
+    "results/analysis/profile002/shaders/b122814e771a680ecf4a4de624fcee9b988e7b9308b48ea74293f98b3d24bc17.wgsl": "b122814e771a680ecf4a4de624fcee9b988e7b9308b48ea74293f98b3d24bc17",
+    "results/analysis/profile002/shaders/b7eae3c2541ea9332e7c2e5c25b7a2ba1f05faeb58d6300ddc355519cdb1ec50.wgsl": "b7eae3c2541ea9332e7c2e5c25b7a2ba1f05faeb58d6300ddc355519cdb1ec50",
+    "results/analysis/profile002/shaders/bab12320046fba2b9df9d1d918850c7446b373f97d9df03b67a9d83f6fcbb050.wgsl": "bab12320046fba2b9df9d1d918850c7446b373f97d9df03b67a9d83f6fcbb050",
+    "results/analysis/profile002/shaders/becec683eca2e6e43f086f17c1414ad6708509052e71a642ba3b3466841ab345.wgsl": "becec683eca2e6e43f086f17c1414ad6708509052e71a642ba3b3466841ab345",
+    "results/analysis/profile002/shaders/c0309c089fc04223f5bb4f266b9d59fc689e3d97e52a8e4deeeb25f097fc37b1.wgsl": "c0309c089fc04223f5bb4f266b9d59fc689e3d97e52a8e4deeeb25f097fc37b1",
+    "results/analysis/profile002/shaders/c054c1be63b9fe1a14c670d8345cc4532117762f4e86a5d0c6dbd671b397de03.wgsl": "c054c1be63b9fe1a14c670d8345cc4532117762f4e86a5d0c6dbd671b397de03",
+    "results/analysis/profile002/shaders/c2db25eba21be2b144db24441edf5581198bade43b6053f3b3914954d5dd0b3f.wgsl": "c2db25eba21be2b144db24441edf5581198bade43b6053f3b3914954d5dd0b3f",
+    "results/analysis/profile002/shaders/c35e22e94f781ad4e502aa7702bd3742e1b260f3d24195d4a23d79cb5b002c6b.wgsl": "c35e22e94f781ad4e502aa7702bd3742e1b260f3d24195d4a23d79cb5b002c6b",
+    "results/analysis/profile002/shaders/c414aa1202aa478a5179d690514d16ebb5e132d23a41d82706bb1737f830f840.wgsl": "c414aa1202aa478a5179d690514d16ebb5e132d23a41d82706bb1737f830f840",
+    "results/analysis/profile002/shaders/c4981146b49d7c7212803902e09382fcd4293f340d888c4848d8dd3bda516e29.wgsl": "c4981146b49d7c7212803902e09382fcd4293f340d888c4848d8dd3bda516e29",
+    "results/analysis/profile002/shaders/c5d3beac341ff42f2d9e71f8f6a729d0a2516ea552c447e59571ac5d0347d5aa.wgsl": "c5d3beac341ff42f2d9e71f8f6a729d0a2516ea552c447e59571ac5d0347d5aa",
+    "results/analysis/profile002/shaders/c8725d55a7f11f5d0b469bd4bb405416189025c38465665c72877ac4e7e5a627.wgsl": "c8725d55a7f11f5d0b469bd4bb405416189025c38465665c72877ac4e7e5a627",
+    "results/analysis/profile002/shaders/c8bf42283405a52d7695de592bb1e073a8b8bc5fbf02f8ddf4a40ad1274c03eb.wgsl": "c8bf42283405a52d7695de592bb1e073a8b8bc5fbf02f8ddf4a40ad1274c03eb",
+    "results/analysis/profile002/shaders/c8f15322aba50e28881cc2266658f70754d3ed86b1d12d7f5466e23feaf0f0c0.wgsl": "c8f15322aba50e28881cc2266658f70754d3ed86b1d12d7f5466e23feaf0f0c0",
+    "results/analysis/profile002/shaders/cb46c298c93c14bd41aaa393a84da967389a8553472a5be8c8bb250a44701461.wgsl": "cb46c298c93c14bd41aaa393a84da967389a8553472a5be8c8bb250a44701461",
+    "results/analysis/profile002/shaders/cbbfaa6c74436dac9056f5a41e673096c1ab1bcf695701c23be7975bc4171678.wgsl": "cbbfaa6c74436dac9056f5a41e673096c1ab1bcf695701c23be7975bc4171678",
+    "results/analysis/profile002/shaders/cda21830279a8879b6d460ccc0aff4e555d86fa2b55b802fd934d1aa04904f00.wgsl": "cda21830279a8879b6d460ccc0aff4e555d86fa2b55b802fd934d1aa04904f00",
+    "results/analysis/profile002/shaders/cdcb4a36b53bc53c23317eae3c39b23fa2268f32e82f5808840594e15c4157cc.wgsl": "cdcb4a36b53bc53c23317eae3c39b23fa2268f32e82f5808840594e15c4157cc",
+    "results/analysis/profile002/shaders/ce0b624c99974cb24cf32445001c045443d50f9aa1edb6f984deb02b87a59bde.wgsl": "ce0b624c99974cb24cf32445001c045443d50f9aa1edb6f984deb02b87a59bde",
+    "results/analysis/profile002/shaders/cf77a76277a05405abdbb2ad8680e140650117042a6685ec39e011b464136ff8.wgsl": "cf77a76277a05405abdbb2ad8680e140650117042a6685ec39e011b464136ff8",
+    "results/analysis/profile002/shaders/d1809423554616985b2d4f78ed4b2248caf5f01a524e268f64e97cae18c17f0a.wgsl": "d1809423554616985b2d4f78ed4b2248caf5f01a524e268f64e97cae18c17f0a",
+    "results/analysis/profile002/shaders/d381f31a51db49e952f06bd662619d175bea6b84798290910a2bcaf0eb49cd1d.wgsl": "d381f31a51db49e952f06bd662619d175bea6b84798290910a2bcaf0eb49cd1d",
+    "results/analysis/profile002/shaders/d3d297b12ad31c8f0086fd5e4277d7c4dec746e3d898894de52b29bc2563084d.wgsl": "d3d297b12ad31c8f0086fd5e4277d7c4dec746e3d898894de52b29bc2563084d",
+    "results/analysis/profile002/shaders/d49a6bf832d0c0be3524fd9246a4f04ad7d1ac5db3c05d947d51ddf56ce9abe2.wgsl": "d49a6bf832d0c0be3524fd9246a4f04ad7d1ac5db3c05d947d51ddf56ce9abe2",
+    "results/analysis/profile002/shaders/d6ed3b4d2433a96c625ee2afb905eb6c1cc8ad336120b56674c646547ed4fefa.wgsl": "d6ed3b4d2433a96c625ee2afb905eb6c1cc8ad336120b56674c646547ed4fefa",
+    "results/analysis/profile002/shaders/d71f90a87043d020ecbcc47a004335fafe5e8493575aa75531bf29c3998fa025.wgsl": "d71f90a87043d020ecbcc47a004335fafe5e8493575aa75531bf29c3998fa025",
+    "results/analysis/profile002/shaders/d72873a814fefaf801133af87934cc16cbda48efed040a7e8a3cba06fdc1f507.wgsl": "d72873a814fefaf801133af87934cc16cbda48efed040a7e8a3cba06fdc1f507",
+    "results/analysis/profile002/shaders/d9ec17910cc60630c3a01308fac69a279d6f8422b3078650dc35b27d731e5cb8.wgsl": "d9ec17910cc60630c3a01308fac69a279d6f8422b3078650dc35b27d731e5cb8",
+    "results/analysis/profile002/shaders/e1ff8b9f71e19f1fc5ce95417a0922bdd3ed3ececb214c327f64397c20e6e057.wgsl": "e1ff8b9f71e19f1fc5ce95417a0922bdd3ed3ececb214c327f64397c20e6e057",
+    "results/analysis/profile002/shaders/e4ed4765e98ecf2b528fb1b565cf52a5141a13e8a48d25f7c7657c911a0b3938.wgsl": "e4ed4765e98ecf2b528fb1b565cf52a5141a13e8a48d25f7c7657c911a0b3938",
+    "results/analysis/profile002/shaders/e51caf85682a6e58cac6f8a910936e5a314da059663a32979822a6d404734e0e.wgsl": "e51caf85682a6e58cac6f8a910936e5a314da059663a32979822a6d404734e0e",
+    "results/analysis/profile002/shaders/e8bd50ca0f8e8c3fc9a64ddb37440f4513794a3ebf3ebb8a6566c7110d40fb80.wgsl": "e8bd50ca0f8e8c3fc9a64ddb37440f4513794a3ebf3ebb8a6566c7110d40fb80",
+    "results/analysis/profile002/shaders/e8c6152ac5f54b5ee2c8068c44612f4e0ec8668b8e270430cb709c8814b6232e.wgsl": "e8c6152ac5f54b5ee2c8068c44612f4e0ec8668b8e270430cb709c8814b6232e",
+    "results/analysis/profile002/shaders/e954a6c6da86e43f0f40daf8959f39fc7d45c5095cc43677c9ce36289c8223d8.wgsl": "e954a6c6da86e43f0f40daf8959f39fc7d45c5095cc43677c9ce36289c8223d8",
+    "results/analysis/profile002/shaders/e98fc3a9790d2ced2a05bca7b7ac1e4633cc55954c8b58431c67f6e6a978b695.wgsl": "e98fc3a9790d2ced2a05bca7b7ac1e4633cc55954c8b58431c67f6e6a978b695",
+    "results/analysis/profile002/shaders/ea70c82269cd11fa86a3c6e77f39e1d9976b658339f6ce814697a5893a72312e.wgsl": "ea70c82269cd11fa86a3c6e77f39e1d9976b658339f6ce814697a5893a72312e",
+    "results/analysis/profile002/shaders/eae859b1945c3827c5e75ebb92cf4373ae1757a6dd149b88f292e32fb72e1bf6.wgsl": "eae859b1945c3827c5e75ebb92cf4373ae1757a6dd149b88f292e32fb72e1bf6",
+    "results/analysis/profile002/shaders/ee4604782daac269d919c9903b669f8501988e166ea677e8bdf8f7137e2994d6.wgsl": "ee4604782daac269d919c9903b669f8501988e166ea677e8bdf8f7137e2994d6",
+    "results/analysis/profile002/shaders/ee9a0b2823d07f56fe2e9c50134dbc9c58f9f411dcfc11795869196870dd6036.wgsl": "ee9a0b2823d07f56fe2e9c50134dbc9c58f9f411dcfc11795869196870dd6036",
+    "results/analysis/profile002/shaders/f189d987ffd839fc5272cadcb79c875b989ea2600d82308f5945665158c1c159.wgsl": "f189d987ffd839fc5272cadcb79c875b989ea2600d82308f5945665158c1c159",
+    "results/analysis/profile002/shaders/f20b96c4998e4d4761edee676dd287347bb3504098a34817293570977f6faf69.wgsl": "f20b96c4998e4d4761edee676dd287347bb3504098a34817293570977f6faf69",
+    "results/analysis/profile002/shaders/f28b918dc97bcf4eaa2cda014ef4d01168ca6126e7ac80a0213ea200568296d6.wgsl": "f28b918dc97bcf4eaa2cda014ef4d01168ca6126e7ac80a0213ea200568296d6",
+    "results/analysis/profile002/shaders/f698bc76c0a1613eef593bc942d606eb2cb1992f073e6d36c3059abd0008ce8c.wgsl": "f698bc76c0a1613eef593bc942d606eb2cb1992f073e6d36c3059abd0008ce8c",
+    "results/analysis/profile002/shaders/f772f8821a51230f367098bc99588a0bbab6afb7598d24fe094ef6d0b23ac505.wgsl": "f772f8821a51230f367098bc99588a0bbab6afb7598d24fe094ef6d0b23ac505",
+    "results/analysis/profile002/shaders/f93bc2f0cf6d7da48a0ad95d41c688437236a270ce8d5251cd110de69e8dee4e.wgsl": "f93bc2f0cf6d7da48a0ad95d41c688437236a270ce8d5251cd110de69e8dee4e",
+    "results/analysis/profile002/shaders/f94e4e48f4562a0e869a88dc561ffdb5b38907207c67e595a3fc71aaa95dd335.wgsl": "f94e4e48f4562a0e869a88dc561ffdb5b38907207c67e595a3fc71aaa95dd335",
+    "results/analysis/profile003/overlap_diagnostics.json": "6e536fa581101bb9fbb3cf0b83e30aef64f177bbf5c17f642e9e68a269a10119",
+    "results/analysis/q8_cpu_reference_validation.json": "14882027813ca7b2b6bf5c5eff1906375a185b2bfcd87104d5067631cae82fea",
+    "results/analysis/raw_sha256_manifest.json": "9b09d1e33bae96ef4eb760c79a2c7349f01b9dce63d48ba025407a253c4057cb",
+    "results/analysis/remaining_metrics_feasibility.json": "eca05149a76d6f2ecf0749ed985723ea4f3cb5c245c69646ea4e1a26936fcb4b",
+    "results/analysis/remaining_metrics_sources/chromium_dawn_platform.cc": "aa36cc99b05d6cd9891aaee3bfee2ec2ba169cd796d11e08baa5ebe19c43ae74",
+    "results/analysis/remaining_metrics_sources/chromium_webgpu_decoder.cc": "1a174ee306df8717cdd6c32aaec97c05f4a7ec0643e45cc7b60b23faaf301065",
+    "results/analysis/remaining_metrics_sources/gpu_render_stage_event.proto": "c3a8d8cc35ee1b8f7ef76840ccb93acf21aa1d2a08e3c439865c029ab58ef50e",
+    "results/analysis/remaining_metrics_sources/manifest.json": "0cb5a5a07774c04664c4be1c18c73bf77b9b4d4305183bd50517d7167827e9fc",
+    "results/analysis/stage_delivery_checks.json": "b37177899058ee4892b57b972833b7d6a0ff4c7eadd12d2d79c91511521ce0a6",
+    "results/analysis/stage_delivery_data.json": "703ebfb6ac7e7fd1de3a0bbcd4e4d7ca2a35fb12fe971a705efea82cc46b8f55",
+    "results/analysis/stage_requirements.json": "b25cf8eae90baa2b28cbc35b5e1a62554153af96f24c523e05d17022e1c927a7",
+    "results/analysis/timing002_verified.json": "25c7ec8fbd6bc11ccf77445447a9d30fe3bac3c96df3646b649f370073cb89c9",
+    "results/analysis/trace001_availability.json": "32515fae7332e7675f84314489f04923d55212b16e338bf4ef0d4c12dbab62bd",
+    "results/bottlenecks.csv": "0ea3ad6eca0acc9bc9b2cbd5219228fa9f9950831d98b37c64e6e98a85ed09a1",
+    "results/dispatch_samples.csv": "20d3a5c8bff4a632a0ac6b6388ba3921f39b824e702ad6a3f0caa85147f077b9",
+    "results/figures/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/inference_runs.csv": "9a3f7d87b6925023aada8d9c39ffa5c965556bc9691e02bef51e16b34bbdca69",
+    "results/kernel_comparison.csv": "7ba508d0fe406c301aba5f52385c4c81b6f9806e0a49b33f4d32e707411267bf",
+    "results/kernel_samples.csv": "ff034a29d11f67be302861c7720eb61f62e6c242f3a6b936d5eb1525c935b6cb",
+    "results/kernel_timings.csv": "8cecbca4d956ad01e82fc8b0de10758b503ba06f99582cdcff1ada578ebecca9",
+    "results/memory.csv": "7dd17cc1845cc149fcab833d13fe9bde9b82b7afe7d524a4555e495a071d85fb",
+    "results/raw/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/raw/BASELINE001-2026-10-04T14-11-39-378Z.json": "c66237e875591f2daa739ef4543ffa617775f151ba4e05471cceae227c588ca3",
+    "results/raw/BASELINE002-L1024-R1-2026-10-06T07-28-08-096Z.json": "4ae4001e7eed0f6e1b865e4a481d466eceb8a1855ec6493eea97d8e9e95654bb",
+    "results/raw/BASELINE002-L1024-R2-2026-10-06T07-37-31-596Z.json": "0fc14e964873b71d385ce62c1ba3010a2fb7c9b7fdb97339eaa4aa620a3c54b8",
+    "results/raw/BASELINE002-L1024-R3-2026-10-06T07-46-43-691Z.json": "e7407b47357d1ea4c5d43cb279cc2edfad6631f1fe3efd171b5c023856584abd",
+    "results/raw/BASELINE002-L1024-R4-2026-10-06T08-02-23-026Z.json": "95825df69b6b464c20c9b06d0d38958884f02143a8fc4e3575d0b8a517e61a03",
+    "results/raw/BASELINE002-L1024-R5-2026-10-06T08-14-18-851Z.json": "f9de79fb4c6d416b159cc42ad075a7ac91d1de94b4bd6cfb0cd827e7b0531236",
+    "results/raw/BASELINE002-L128-R1-2026-10-06T07-19-26-784Z.json": "8fd3d0c51534493d6da61a1de78d0e91efcdf4c9ba2ce49de4afdfd916c50d4d",
+    "results/raw/BASELINE002-L128-R2-2026-10-06T07-41-20-289Z.json": "0fcc12110e79482ad6a0fbef3e7a77084c16484ca7cef2a612e238d9e62657f8",
+    "results/raw/BASELINE002-L128-R3-2026-10-06T07-51-45-180Z.json": "a715dd71687bcf87b688a8068d39381d8085713645f1537640be59747509022c",
+    "results/raw/BASELINE002-L128-R4-2026-10-06T07-59-17-219Z.json": "41533244d4132115b0d0667422680816bb2cb9b57f4ba17be9c29579caea983b",
+    "results/raw/BASELINE002-L128-R5-2026-10-06T08-10-57-422Z.json": "557a8868824f653262c0c2153fb2591907fa426402d1a969359cb966d43c5cae",
+    "results/raw/BASELINE002-L512-R1-2026-10-06T07-23-10-169Z.json": "a9d1cc3dadc043a67db3319574f88d514f956340494bb8c2c84bfb6a3e459d79",
+    "results/raw/BASELINE002-L512-R2-2026-10-06T07-32-56-502Z.json": "ceb8941645c61ee21cd2666add29f968cac6e895813c5d5300f4bb9fb8e8daa3",
+    "results/raw/BASELINE002-L512-R3-2026-10-06T07-56-22-753Z.json": "90e58dbceced3be81051c2f7000f00be86543746af90691222cc52b117a13edb",
+    "results/raw/BASELINE002-L512-R4-2026-10-06T08-05-22-837Z.json": "567c70ff31635f0b26c04cf5cd73244aedba570694307c2f82e300100ab16475",
+    "results/raw/BASELINE002-L512-R5-2026-10-06T08-08-08-584Z.json": "dbd70a81a93b8122e10955f417345d50864cf902fec463c920142a4d68891ae6",
+    "results/raw/COMPUTE001-2026-10-04T10-53-11-629Z.json": "b5729f9b46ad0d087e15b8fa5ffa837d9a2732ca8a053183506efa50c5993bc1",
+    "results/raw/GEMM001-2026-10-05T04-20-24-462Z.json": "21c89d477e3f05f8489ec4875e7df4b1f17e6421826fe120873f2931088e1f73",
+    "results/raw/GEMM002-2026-10-05T04-58-16-647Z.json": "26bd3dc90351f2499627ddcb93bd8cb46ebf7851e47edf3dd59e56d11a2f5a90",
+    "results/raw/GEMM003-2026-10-05T10-00-55-452Z.json": "95cb1119984fe39993a405767719bad83b51e5dce1c5e2d7462e086721ac38e2",
+    "results/raw/GEMM004-2026-10-05T12-00-58-417Z.json": "766adfe6e87f679375a0a937b8f73f8e6d7ac733ecfbd11bec2ae7ecafa5e11a",
+    "results/raw/MEMORY002-BASELINE002-L128-R1-2026-10-06T09-28-20-120Z.json": "a19b5871c2d4124a7c8e15382af82dd6baa0ef2e02f7076185bbf6107f4c4de3",
+    "results/raw/PART2AB-FP16-2026-10-05T14-50-01-368Z.json": "76da3dda1c721cb055ea8a6ce7bf7fb793e163761286c1f6b748be2cbcebae5a",
+    "results/raw/PART2ABC-FP16-2026-10-05T15-31-54-819Z.json": "a19773b430c71922308f2f938e8dd037d34b8d72c041e8c461d535265c563a30",
+    "results/raw/PART2ABCD-FP16-2026-10-05T15-57-38-287Z.json": "55d593b93a5703180ebc20b1469aa12167a39f88595d9bd2317b3752bec61a68",
+    "results/raw/PART2Q8ABCD-FP16-2026-10-05T16-36-52-920Z.json": "2b90dcaefe5777ff780ab85e947d05b62d8619dc8cbdc3f60e44c28b86877a4d",
+    "results/raw/PART2REPEAT-S1-2026-10-06T06-24-56-318Z.json": "c8b7c03fee89a8ee97225dcbc5a733188870ebb4d16700e4df277fd382f37dde",
+    "results/raw/PART2REPEAT-S2-2026-10-06T06-31-34-251Z.json": "e877780636014b958117d278a6dd38b2643667302f01df0509a59f1dba0cf8aa",
+    "results/raw/PART2REPEAT-S3-2026-10-06T06-36-58-650Z.json": "cacfc8f4574b2a73cb87eefec2a757504cbaea42f0a08213117ca674c0d70142",
+    "results/raw/PART2REPEAT-S4-2026-10-06T06-41-19-381Z.json": "7dd86a1b7f2f5a784c8605acdcd605b3193dc0e107ba36f69fa111353e2fcb7f",
+    "results/raw/PART2REPEAT-S5-2026-10-06T06-47-12-646Z.json": "54b2d510b59100f648694111c3226989f233c1660d4c9f41d39060cfd53b144c",
+    "results/raw/PART2SWEEP-2026-10-06T05-52-59-758Z.json": "c21e9bbed332b54cead19ecb8ad8150ca636dc36e6b495f7e634b41deaa8b671",
+    "results/raw/PART2SWEEP-2026-10-06T06-02-22-899Z.json": "8bbca5205c93b8ffb69a34ed978a3dd8917b23968cebed7c3343ff4fa6841a45",
+    "results/raw/PART2SWEEP-2026-10-06T06-07-34-319Z.json": "055b4ad76abbed961fddbd65445fee3c6f70d96566219599416a0701cd90bc66",
+    "results/raw/PROFILE002-2026-10-04T15-23-33-186Z.json": "1ddda0c9a7175daa9447ae2ee509c5c22d21a33698d06a015265f9b78e220b9e",
+    "results/raw/PROFILE002-2026-10-04T15-53-13-603Z.json": "c6e10b219dbc280669ebdd716d08b374682369375dc69ec15caaf96a19efb840",
+    "results/raw/PROFILE003-2026-10-05T03-20-03-974Z.json": "040c5c4b667789b5ced7b5c7dd02d8abc85e3f085588b4e85f9ee9fa82e3af3d",
+    "results/raw/SHAPE001-2026-10-05T11-16-33-534Z.json": "a03f57a46422e957dc9174f1e570a5561d5cb0b16d8f6a125905fbf0f4c7d861",
+    "results/raw/SHAPE001-2026-10-05T11-32-49-007Z.json": "fcece04380902827c2db59597ba9b2e01687d431ff3273a3d72d75026218d721",
+    "results/raw/TIMING001-2026-10-04T11-25-41-874Z.json": "a41cb1f4da74c2b75a409e69a41ed42d80e4cd33d11d63aef1835259cc786ec9",
+    "results/raw/TIMING001-2026-10-04T11-39-21-730Z.json": "cf91b1747ae2779ccbbe2812b8c295b00f736d585d3723c65736d92d7b6ed4f4",
+    "results/raw/TIMING002-2026-10-05T11-36-40-431Z.json": "83ea2722f7f60f08059ab9b5fdad9f6be5f105f532e129038f1f35a1a857f6c4",
+    "results/sessions.csv": "a627088a9368c1e65422bad6680e414a0cdd96eb5d1a6967c30c9a148d71c6df",
+    "results/time_breakdown.csv": "fd3bfa901b012e84d9bb3eaae01cea74a15e841dc96f4bb2cd28a164d5d8c798",
+    "results/token_latencies.csv": "42f459c11f5c70dde4e9f5aaa8e6544a5bd9e0f10488ebfc97b337af7ead925a",
+    "src/baseline/baseline.js": "477e447c308b32ba4dd5dc7bb22caa42f4cededc39131a8c44e5fa58e46f9c2a",
+    "src/baseline/config.mjs": "d1ff5f5cbccedabc1299b5e748050edb46d7d1a222734527d748bc4a8c18fec4",
+    "src/baseline/index.html": "ef392af11c5248a2298fc2c967ccc5e9b63a9276dd8eaa2d88f70e93671eb64c",
+    "src/baseline/memory002_gates.mjs": "5c059a6e7efdd17ea1477ebee5b4406c3d6892b569e914638340c4b4b40ffdc7",
+    "src/baseline/runtime_manifest.json": "293152d38cfd07661ea730e9cf51013771609e793561d50eaa3f8c6bd909cbdf",
+    "src/baseline/session_memory.mjs": "c420457e48e4bfac1798ae5ab267b882ca8f292086a458eeffaf3ef09c18b322",
+    "src/baseline/session_plan.mjs": "3a1468a7a5b609c757b737e04a95cddc146d8a7b7c48cbeb1aa345410c95eda6",
+    "src/baseline/sessions.html": "edc74b795af3d9f9037dd864f6e391cd3c5f1fbfbe4c94f313c411bdc46b9749",
+    "src/baseline/sessions.js": "bc3629b5a684588dc53e594af51a644fc1d50380879e7290631d9c1471a17ee8",
+    "src/benchmark/gemm.html": "0ad90b3c6d32a74795d38a6138569a703b6e0514843cd9155d7d3c544d1951b2",
+    "src/benchmark/gemm.js": "65286c50b5944819cc5b58d5fe6bf25322699cc70aea23945b8b7e1c45610361",
+    "src/benchmark/gemm002.html": "7eb78e7fd7cccb60fe76c4bb874d3c874da718af4268fb09bf5644d22aa756cf",
+    "src/benchmark/gemm002.js": "94a5ef9844cd6c47a0200afe4c49271e64292c453b963d9ce5fabe5c04fb070e",
+    "src/benchmark/gemm003.html": "a82096fa9b8521ea9f8b981e610279e96828df23f992bcb36cc4ffd7c5a532c8",
+    "src/benchmark/gemm003.js": "ee749af8edfe664418a6eb1660f6826674d51023f540371d6e764986d8f25b95",
+    "src/benchmark/gemm004.html": "96672b719c3f34a08d0bf2de90f97c88ca2b66d38cb7636f4547b52c9280fd48",
+    "src/benchmark/gemm004.js": "92b1239995e33b4bbf97657548137c36b6691ae2d6f439618392db27ed0982be",
+    "src/benchmark/gemm004_shape.json": "d11312cda28cc615e8086124efecac6104bba1d3621c55c4b864cc44dd16a90a",
+    "src/benchmark/gemm_compare_page.mjs": "7e44a640b2868799f6d07d4fbbfa7da0db237846f36cff8ac421087466662f6c",
+    "src/benchmark/gemm_gpu.mjs": "f2abda0d6cb5da3588998efa366842a61ab2ad2639c6880dac7d1b633a33d9a9",
+    "src/benchmark/gemm_m1.wgsl": "898c7e82451c02cc135ddfffb9d7c97e2f667859745dbdc930804347eaee2647",
+    "src/benchmark/gemm_math.mjs": "9766c61c439e739972371afc38b934911d40a249d4a831899c4e705e53a3f7b0",
+    "src/benchmark/gemm_naive.wgsl": "6038d4bdd568cfc23dbc937448f41a4bc6c723d23e062c2963272032082cdadf",
+    "src/benchmark/gemm_pair_math.mjs": "540d037d16483ec9dd92eb06e72130eb99320e6713f5d7ab9eafc58438ee6101",
+    "src/benchmark/gemm_tiled.wgsl": "4585c3216469c9904eb345723e0f0e85d829255bc3a88690c772d2f1aabdc597",
+    "src/benchmark/gemm_triple_math.mjs": "78cd6088d602af1fce0b75d91136070ff13ebbf0c2f14fe24d6d2a129e842b1c",
+    "src/benchmark/index.html": "a68865de474bf27a9147b2b1039f81425b398e56d1160f7fd1a2427c43017a7b",
+    "src/benchmark/part2_a_f16.wgsl": "56c7de50f8d74d910c5cb571af4a209027fba704cb55ad6366037c14b3435fdd",
+    "src/benchmark/part2_a_fallback.wgsl": "87c922a8a66425b51ff8cdeba9368709f556be2ceed6d54180f8004a742c48d1",
+    "src/benchmark/part2_ab.html": "ec498dc576a2497c8bb90cbd22af10222855a7a0090c9881c489ff630f199a1f",
+    "src/benchmark/part2_ab.js": "6c974de0f42cd2320c817356ac18a4f20cd0882230fb12988b482c065c44158c",
+    "src/benchmark/part2_abc.html": "785ebb8a216c8315efd6d75ec589d2887eb713bc9c7b8e4be17044909af7d584",
+    "src/benchmark/part2_abc.js": "f76751ec66ba376a48636e60f46d4305183408830eb7b02aeb987e2338f5c9cc",
+    "src/benchmark/part2_abc_math.mjs": "0017be2d055dfc1de9a9632e32f1b3564fe1ca6d235e09c48e468e0f8e2d7aba",
+    "src/benchmark/part2_abcd.html": "da1fc8f586aab1135eeb236ab898a355052153aa84306b2a3f237477acf7a7ec",
+    "src/benchmark/part2_abcd.js": "e10ff86222e1742c326c973f29cfaee99a44622b6b537a492f9ee1a1843d6d42",
+    "src/benchmark/part2_abcd_math.mjs": "1e5d04ec3f6783aea50a519aa2b5940f92d245527c5859c8b3aec56a9b6110e1",
+    "src/benchmark/part2_ad_page.mjs": "0c4d8afa318105e46a17f141b4221a7fcc7e3730dd256d6008434555dc038a1d",
+    "src/benchmark/part2_b_f16.wgsl": "b18141f04cbd3ad7f6e7c95b57d10d86544c8a677df250a529544f1f4fdc3402",
+    "src/benchmark/part2_b_fallback.wgsl": "10a659f744bb3d61759c97b14f1b27b15e544fde332a535b3d20ff8bd9cf917e",
+    "src/benchmark/part2_c_f16.wgsl": "71266d3c59ff5d3693868ab12c732b88ffe769f4785a288a1291c1a01586a395",
+    "src/benchmark/part2_d_f16.wgsl": "e0bbe2c98e027093a2fb421ee5ede2cc7070478c61051da8a6102a54e75a0939",
+    "src/benchmark/part2_d_q8_f16.wgsl": "af88ef3c804815600515f772f8602557e4c9db22cb4c7131a5a32b8354b3ffcc",
+    "src/benchmark/part2_math.mjs": "8da7503d2db4659de4f992b83fc224dd5a90a87d473a48cd524f8d13bcf243b8",
+    "src/benchmark/part2_page.mjs": "69c9cc231003ea5da40bccf45c680a1e5c339aa1189a7830e680dcfe3f8b9863",
+    "src/benchmark/part2_q8_abcd.html": "2f489e060fe4a8df598fdd5231f7f2cd5f69934767206751b18246a105bda2e3",
+    "src/benchmark/part2_q8_abcd.js": "c0ec90f868d26ac32d45e7f85e7950233f84a5397d8948606d41920aaf6fe094",
+    "src/benchmark/part2_repeat.html": "757c0cc2d332fd78aa2ab1ca811595a514fd8e0fe990fd540910f1b19cc3fe83",
+    "src/benchmark/part2_repeat_plan.mjs": "de14f5a427b995cddc4a1dd32075c0c45edbc55b514de3a531820ddf24537e76",
+    "src/benchmark/part2_sweep.html": "723068bdd7824cced15ad3cec01873402d0a6dcaf04d03a0a4cafa1fe23fae96",
+    "src/benchmark/part2_sweep.js": "dd7c1a9d2baa9521944238305d47b7e1d85967f40b3eab5152131401e8457bda",
+    "src/benchmark/part2_sweep_math.mjs": "252498ccfaa40bdd3c398273baff1ce43c5502190f4ab6941f860b554abe8fcc",
+    "src/benchmark/part2_sweep_shader.mjs": "5b3865071dbee205f6130aaf8658dda17545b935358d27020294375d3a7d8109",
+    "src/benchmark/real_shape_config.mjs": "3fd87efff1ac1edca7dcc29835186bc49ec9606499026bb578230441028472b2",
+    "src/benchmark/smoke.js": "8fda93df608cebf1d2735d8868d24482774e310ab71be404020e274a87aa9474",
+    "src/benchmark/timestamp_control.html": "d46199b806f223546c499c593432def64574b70dcb3b5ce69ab01fa7bb8d6f8b",
+    "src/benchmark/timestamp_control.js": "507699f733b26ac7ddf1c577fd4c2d0e6ef9a30d48d2854f048e2e426e6093c9",
+    "src/benchmark/timestamp_control_math.mjs": "f03d96d1b645056920d88d49420ebc319c34a9f2e421618e3a75d2993b51100a",
+    "src/benchmark/timing.html": "fcb14621d52355e167de8449db5a9dfdd80cfeeb1218d731bbfa442efb61ef42",
+    "src/benchmark/timing.js": "aa109561e8e0dba88373fffdc8a20ef52f34d176902c150b6858f8c5f1669cdb",
+    "src/benchmark/timing_math.mjs": "f8024e0963294a88da8369d6abefd3861bc7126575f71d1a55bbbd2f8f6ad8cc",
+    "src/benchmark/timing_vector_add.wgsl": "7e51ee5add7c62a0208e6f135fed5edc3adadc405c3c086d7ca061eef07cb3b7",
+    "src/benchmark/vector_add.wgsl": "7742d4a034ae39f35f5213f569a34d94a515cbd2ef3bc7a5abc13db781ba1616",
+    "src/profiling/count_observer.mjs": "b3acdf0142e6004edddea0d3327d56023df721a32b03f987b8c9ea7c00e63681",
+    "src/profiling/pass_timestamps.mjs": "eae954a5b2f7d43d306975f8dcd09e69537c19e00f3fa2e7b4c0f890bdcaf1c2",
+    "src/profiling/profile002.html": "3908be24d8226234e8b9d75a4eb425b385ff67fe11e927d644eb68558b5850f6",
+    "src/profiling/profile002.js": "cf0c1f1baa293acc898479652ca421b17eb3e490803d2631c071a817adcb9385",
+    "src/profiling/profile003.html": "c41f72080a2dc22d35d4731c84336cdc4acde078e125bc826aedccae1e0e3e04",
+    "src/profiling/profile003.js": "1c9d7267da7dd881b3c68c856e3bb82b69d4a8e21347ee13d80d301663d3625d",
+    "src/profiling/shape001.html": "84834475d7d315b82896da02f125b70bd532bb3303e82cd20aaadbd91056fc6d",
+    "src/profiling/shape001.js": "5685b7fb5fb99dc614ad9d0d3c39d90a6399c067f820ba2135824574efae1d67",
+    "src/profiling/shape_capture.mjs": "3d5cdd408f936e1a81df7d17dcded4fc15c3b9563c4d8399d9e2c2da60d9c868"
+  },
+  "exclusions": [
+    "Immutable assignment/third-party originals",
+    "Original JSON and existing verification records",
+    "Byte-preserved historical Markdown snapshots (not current prose; original links intentionally retained)",
+    "Ignored updates,model weights,vendor,private system originals,temporary integrity snapshots"
+  ],
+  "externalOriginals": [
+    {
+      "path": "assignment/webgpu_adreno_assignment.pdf",
+      "category": "external-original",
+      "sha256": "dc02d42a5fdf521b75794ac641478cfe91ec7d9e165fa93a1c2e43b3ec63e9c3",
+      "handling": "Unmodified original; bilingual matrix is a project summary,not an authoritative translation"
+    }
+  ]
+}

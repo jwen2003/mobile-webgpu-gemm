@@ -17,7 +17,9 @@ def check():
     requirements=json.loads((ROOT/'results/analysis/stage_requirements.json').read_text(encoding='utf-8'))
     assert set(r['status'] for r in requirements)=={'COMPLETE','PARTIAL','BLOCKED','NOT_RUN'}
     for r in requirements:assert (ROOT/r['evidence']).exists(),r['evidence']
-    docs=['report/performance_report.md','docs/assignment_requirements_matrix.md']
+    docs=['report/performance_report.md','docs/assignment_requirements_matrix.md',
+          'report/zh-CN/performance_report.md','report/en/performance_report.md',
+          'docs/zh-CN/assignment_requirements_matrix.md','docs/en/assignment_requirements_matrix.md']
     links=0
     for name in docs:
         p=ROOT/name;s=p.read_text(encoding='utf-8')
@@ -38,6 +40,8 @@ def check():
                 baselineSessions=15,part2Sessions=5,candidateSessionRows=125,figures=figures,
                 figureQA='SVG parse,labels,data provenance and layout bounds reviewed;browser visual preview unavailable (tool initialization failed)',
                 noNewExperiment=True,limits='No physical GPU memory,real generated-token/phase or additive GPU breakdown claim')
-    (ROOT/'results/analysis/stage_delivery_checks.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
+    output=ROOT/'results/documentation'
+    output.mkdir(parents=True,exist_ok=True)
+    (output/'stage_delivery_checks.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
     print('PASS: raw hashes,125 candidate-session rows,requirement statuses,document links and3 SVG figures')
 if __name__=='__main__':check()

@@ -146,5 +146,7 @@ for r in rows:
     confidence = '<br>'.join(x['confidence'] for x in r['labels'])
     evidence = '<br>'.join(f"L{x['line']}: `{x['text'].replace('|', '&#124;')[:150]}`" for x in r['sourceEvidence'])
     doc.append(f"| [{r['shaderId']}]({link})<br>`{r['sha256']}` | {','.join(r['entryPoints'])} | {r['encodedDispatches']} / {r['submittedDispatches']} | {labels} | {confidence} | {evidence} |")
-(ROOT / 'docs/profile002_shader_analysis.md').write_text('\n'.join(doc)+'\n',encoding='utf-8')
+# Publish bilingual presentation, preserving the legacy navigation page.
+from render_bilingual_docs import main as render_documentation
+render_documentation()
 print(json.dumps(summary,indent=2))

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "originalDocuments": 34,
+  "pairedAuthoredPages": 38,
+  "protectedFilesChecked": 318,
+  "currentMarkdownFilesChecked": 118,
+  "relativeLinksChecked": 1476,
+  "pairedNumericalTables": "IDENTICAL",
+  "computeAndVerificationAlgorithms": "UNCHANGED",
+  "archivePolicy": "Historical Markdown retains original bytes/links and is excluded from current navigation checks",
+  "humanReview": "Edited prose and reviewed source boundaries; no claim of manual line-by-line review of every historical archive",
+  "noPhoneModelBenchmark": true,
+  "noCommitPush": true
+}
